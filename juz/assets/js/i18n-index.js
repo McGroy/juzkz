@@ -5,14 +5,14 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "JUZ — БҚ әзірлеу, ақпараттық жүйелерді сүйемелдеу және деректер аналитикасы",
+      title: "ORTA JUZ — БҚ әзірлеу, ақпараттық жүйелерді сүйемелдеу және деректер аналитикасы",
       description: "Қазақстандағы бизнес пен мемлекеттік сектор үшін ақпараттық жүйелерді жобалаймыз, әзірлейміз және сүйемелдейміз. Көлемі мен бағасы басталғанға дейін бекітіледі, код пен құжаттама тапсырыс берушіде қалады."
     },
 
     hero: {
       eyebrow: "БҚ әзірлеу · ЖЖ сүйемелдеу · Аналитика",
       title: "Жоба тапсырылғаннан <span class=\"accent-text\">кейін де</span> жұмыс істейтін жүйелер",
-      lead: "JUZ Қазақстандағы бизнес пен мемлекеттік сектор үшін ақпараттық жүйелерді жобалайды, әзірлейді және сүйемелдейді. Көлемі мен бағасы жұмыс басталғанға дейін бекітіледі. Код, құжаттама және құқықтар сізде қалады — мердігерді кез келген сәтте ауыстыруға болады.",
+      lead: "ORTA JUZ Қазақстандағы бизнес пен мемлекеттік сектор үшін ақпараттық жүйелерді жобалайды, әзірлейді және сүйемелдейді. Көлемі мен бағасы жұмыс басталғанға дейін бекітіледі. Код, құжаттама және құқықтар сізде қалады — мердігерді кез келген сәтте ауыстыруға болады.",
       meta1: "Жаңа жобалар қабылдаймыз",
       meta2Strong: "1 жұмыс күні",
       meta2: "— өтінімге жауап беру мерзімі",
@@ -42,7 +42,7 @@ window.I18N_PAGE = {
       bad3: "Құжаттама тапсыру күні пайда болады да, екі релизден кейін ескіреді.",
       bad4: "«Қоңырау шалсаңыз» деген қолдау: басымдықсыз, жауап беру уақытысыз, есептіліксіз.",
       bad5: "Есептілік әр жиналысқа Excel-де қолмен жиналады — сонда да сандар сәйкес келмейді.",
-      goodLabel: "JUZ ТӘСІЛІ",
+      goodLabel: "ORTA JUZ ТӘСІЛІ",
       goodTitle: "Біз мұны қалай өзгертеміз",
       good1: "Шартқа дейінгі дискавери: көлем, тәуекелдер мен баға әзірлеу басталғанға дейін жазбаша бекітіледі.",
       good2: "Инфрақұрылым код түрінде, CI/CD және автотесттер жеткізілімге кіреді — жүйені бізсіз де дамытуға болады.",
@@ -160,8 +160,8 @@ window.I18N_PAGE = {
       a4: "Мәселені өз сөзіңізбен сипаттау жеткілікті: не ауырады, кім зардап шегеді, не жетіспейді. Техникалық тапсырма — дискавери нәтижесі, кіріс шарты емес. Оның үстіне, инженерлердің қатысуынсыз жазылған ТТ көбіне кедергі келтіреді: онда әдетте міндет емес, шешім бекітілген.",
       q5: "Қаншалықты тез бастай аласыздар?",
       a5: "Өтінімге бір жұмыс күні ішінде жауап беріп, 30–40 минуттық қоңырау ұсынамыз. Дискавери әдетте қол қойылғаннан кейін бір-екі апта ішінде басталады. Бізде сүйемелдеуде тұрған жүйелердегі инциденттер үшін бөлек әрекет ету регламенті қолданылады.",
-      q6: "JUZ пен ORTA JUZ айырмашылығы неде?",
-      a6: "Бұл — бір команданың екі бренді. JUZ жобалық жұмысты жүргізеді: дискавери, жаңа жүйелерді жобалау және әзірлеу. ORTA JUZ пайдалануға жауап береді: тәулік бойы кезекшілік, SLA, мониторинг және жұмыс істеп тұрған жүйелерді сүйемелдеу. Екі жақ та бір стекті және бірдей инженерлік стандарттарды қолданады, сондықтан жүйені әзірлеуден пайдалануға тапсыру бөлек жобаға айналмайды."
+      q6: "Компанияның неге екі сайты бар?",
+      a6: "ORTA JUZ сипаты бойынша екі түрлі жұмысты жүргізеді, әрқайсысының өз сайты бар. Осында, juz.kz-те, — жобалық жұмыс: дискавери, жаңа жүйелерді жобалау және әзірлеу. ortajuz.kz-те — пайдалану: тәулік бойы кезекшілік, SLA, мониторинг және жұмыс істеп тұрған жүйелерді сүйемелдеу. Команда, стек және инженерлік стандарттар ортақ, сондықтан жүйені әзірлеуден пайдалануға тапсыру бөлек жобаға айналмайды."
     },
 
     ctaBlock: {
@@ -173,14 +173,14 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "JUZ — software development, IT system support and data analytics",
+      title: "ORTA JUZ — software development, IT system support and data analytics",
       description: "We design, build and maintain information systems for business and the public sector in Kazakhstan. Scope and price are fixed before we start; code, documentation and rights stay with you."
     },
 
     hero: {
       eyebrow: "Software development · System support · Analytics",
       title: "Systems that keep working <span class=\"accent-text\">after</span> the project is handed over",
-      lead: "JUZ designs, builds and maintains information systems for business and the public sector in Kazakhstan. Scope and price are fixed before work starts. The code, the documentation and the rights stay with you — you can change vendors at any point.",
+      lead: "ORTA JUZ designs, builds and maintains information systems for business and the public sector in Kazakhstan. Scope and price are fixed before work starts. The code, the documentation and the rights stay with you — you can change vendors at any point.",
       meta1: "Taking on new projects",
       meta2Strong: "1 business day",
       meta2: "— time to reply to your brief",
@@ -210,7 +210,7 @@ window.I18N_PAGE = {
       bad3: "Documentation appears on handover day and is outdated two releases later.",
       bad4: "Support \"by phone call\": no priorities, no response times, no reporting.",
       bad5: "Reporting is assembled by hand in Excel before every meeting — and the numbers still disagree.",
-      goodLabel: "THE JUZ APPROACH",
+      goodLabel: "THE ORTA JUZ APPROACH",
       goodTitle: "What we do differently",
       good1: "Discovery before the contract: scope, risks and price are put in writing before development begins.",
       good2: "Infrastructure as code, CI/CD and automated tests ship with the system — it can be developed without us.",
@@ -328,8 +328,8 @@ window.I18N_PAGE = {
       a4: "A description of the problem in your own words is enough: what hurts, who suffers, what is missing. A specification is an output of discovery, not an entry requirement. In fact a spec written without engineers usually gets in the way: it tends to fix a solution rather than state a problem.",
       q5: "How quickly can you start?",
       a5: "We reply to a brief within one business day and propose a 30–40 minute call. Discovery usually starts within one to two weeks of signing. Systems already under our support are covered by a separate incident response policy.",
-      q6: "What is the difference between JUZ and ORTA JUZ?",
-      a6: "They are two brands of one team. JUZ runs project work: discovery, design and development of new systems. ORTA JUZ runs operations: round-the-clock duty, SLAs, monitoring and support of systems already in service. Both sides use the same stack and the same engineering standards, so moving a system from build to operation does not turn into a project of its own."
+      q6: "Why does the company have two websites?",
+      a6: "ORTA JUZ runs two kinds of work, each with its own site. Here on juz.kz it is project work: discovery, design and development of new systems. On ortajuz.kz it is operations: round-the-clock duty, SLAs, monitoring and support of systems already in service. The team, the stack and the engineering standards are shared, so moving a system from build to operation does not turn into a project of its own."
     },
 
     ctaBlock: {

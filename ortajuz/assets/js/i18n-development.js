@@ -58,7 +58,7 @@ window.I18N_PAGE = {
       c2l2: "Платформаны ауыстыру немесе жүйені қайта жазу",
       c2l3: "Нөлден мобильді қосымша",
       c2l4: "Интерфейсті толық қайта жасау",
-      c2note: "Мұндай міндеттерді JUZ жүргізеді — сол команда, бірақ дискавери, жоспар және бөлек шартпен. Жүйе бұл кезде үзіліссіз біздің сүйемелдеуде қалады."
+      c2note: "Мұндай міндеттерді біз бөлек жобамен жүргіземіз — дискавери, жоспар және өз шартымен; ол juz.kz-те сипатталған. Жүйе бұл кезде үзіліссіз біздің сүйемелдеуде қалады."
     },
     faq: {
       eyebrow: "Жетілдіру туралы сұрақтар",
@@ -135,7 +135,7 @@ window.I18N_PAGE = {
       c2l2: "A platform change or a rewrite",
       c2l3: "A mobile application from scratch",
       c2l4: "A complete redesign of the interface",
-      c2note: "Work like that is run by JUZ — the same team, but with discovery, a plan and a separate contract. The system stays under our support throughout, without a break."
+      c2note: "Work like that we run as a separate project — with discovery, a plan and its own contract; it is described on juz.kz. The system stays under our support throughout, without a break."
     },
     faq: {
       eyebrow: "Questions about changes",

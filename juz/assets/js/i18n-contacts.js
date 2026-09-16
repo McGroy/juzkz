@@ -2,7 +2,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Байланыс және өтінім — JUZ",
+      title: "Байланыс және өтінім — ORTA JUZ",
       description: "БҚ әзірлеуге, ақпараттық жүйелерді сүйемелдеуге немесе аналитикаға өтінім қалдырыңыз. Бір жұмыс күні ішінде жауап береміз."
     },
     page: {
@@ -22,7 +22,7 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "Contact and brief — JUZ",
+      title: "Contact and brief — ORTA JUZ",
       description: "Send us a brief for software development, information system support or analytics. We reply within one business day."
     },
     page: {

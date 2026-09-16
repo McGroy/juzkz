@@ -39,7 +39,7 @@ window.I18N_COMMON = {
       faq: "Жиі қойылатын сұрақтар",
       privacy: "Дербес деректер саясаты",
       rights: "Барлық құқықтар қорғалған.",
-      sisterHint: "Топ бренді"
+      sisterHint: "Екінші бағыт"
     },
     form: {
       title: "Міндетті сипаттаңыз",
@@ -126,7 +126,7 @@ window.I18N_COMMON = {
       faq: "FAQ",
       privacy: "Privacy policy",
       rights: "All rights reserved.",
-      sisterHint: "Group brand"
+      sisterHint: "Our other practice"
     },
     form: {
       title: "Tell us about the project",

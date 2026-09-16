@@ -3,7 +3,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Бет табылмады — JUZ",
+      title: "Бет табылмады — ORTA JUZ",
       description: "juz.kz сайтында мұндай бет жоқ — сілтеме ескірген немесе мекенжайда қате. Басты бетке немесе қызметтер сипаттамасына өтіңіз."
     },
     nf: { title: "Мұндай бет жоқ",
@@ -12,7 +12,7 @@ window.I18N_PAGE = {
   },
   en: {
     meta: {
-      title: "Page not found — JUZ",
+      title: "Page not found — ORTA JUZ",
       description: "This page does not exist on juz.kz — the link is out of date or the address has a typo. Go to the homepage or to the services."
     },
     nf: { title: "This page does not exist",

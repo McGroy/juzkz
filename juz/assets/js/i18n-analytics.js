@@ -2,7 +2,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Аналитика және деректермен жұмыс — JUZ",
+      title: "Аналитика және деректермен жұмыс — ORTA JUZ",
       description: "Деректер қоймасы, ETL, BI-витриналар және регламенттік есептілік. Көрсеткіштер барлық есептерде бірдей есептеледі, әр сан дереккөзге дейін қадағаланады."
     },
     page: {
@@ -79,7 +79,7 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "Analytics and data engineering — JUZ",
+      title: "Analytics and data engineering — ORTA JUZ",
       description: "Data warehouse, ETL, BI data marts and regulatory reporting. Metrics are computed the same way in every report and every figure traces back to its source."
     },
     page: {

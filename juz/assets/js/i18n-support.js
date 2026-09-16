@@ -2,7 +2,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Ақпараттық жүйелерді сүйемелдеу және дамыту — JUZ",
+      title: "Ақпараттық жүйелерді сүйемелдеу және дамыту — ORTA JUZ",
       description: "SLA бойынша ЖЖ сүйемелдеу: бөгде кодты қабылдау, аудит, мониторинг, өлшенетін әрекет ету уақытымен инциденттерді жою және техникалық қарызды жоспарлы түрде азайту."
     },
     page: {
@@ -84,8 +84,8 @@ window.I18N_PAGE = {
       a2: "Онсыз жұмыс істейміз. Бастапқы кодқа, серверлерге және дерекқорларға қолжетімділік керек — осы жеткілікті. Бастапқы код мүлдем болмаса, аудит шын мәнінде нені қалпына келтіруге болатынын бағалаудан және қайта жазу арзанырақ па деген адал жауаптан басталады.",
       q3: "Тек мониторингті немесе тек жетілдіруді алуға бола ма?",
       a3: "Жетілдіру — иә, бөлек шартпен. Мониторинг пен сақтық көшірмені бақыламай қалпына келтіру уақытына жауап беру — жоқ: бұл орындалуы мүмкін емес міндеттеме, ал орындалмайтынды уәде етпейміз.",
-      q4: "Бұл ORTA JUZ-дан несімен ерекшеленеді?",
-      a4: "Бұл бір команда. ORTA JUZ — пайдалану жұмыс істейтін бренд: кезекші ауысым, мониторинг және SLA. Егер сізге жобалық әзірлеусіз тек сүйемелдеу керек болса, бірден сонда барыңыз — шарттар мен регламент бірдей."
+      q4: "Бұл ortajuz.kz-те сипатталғаннан несімен ерекшеленеді?",
+      a4: "Ешнәрсемен: бұл бір команда және бір шарт. ortajuz.kz-те пайдалану толығырақ жазылған — кезекші ауысым, SLA деңгейлері, қолдау пакеттері және қосылу тәртібі. Егер сізге жобалық әзірлеусіз тек сүйемелдеу керек болса, бірден сол жақтан бастаңыз."
     },
     ctaBlock: {
       eyebrow: "Келесі қадам",
@@ -96,7 +96,7 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "Information system support and evolution — JUZ",
+      title: "Information system support and evolution — ORTA JUZ",
       description: "System support under an SLA: taking over someone else's code, audit, monitoring, incident resolution with measurable response times and steady reduction of technical debt."
     },
     page: {
@@ -178,8 +178,8 @@ window.I18N_PAGE = {
       a2: "We work without them. We need access to the source code, the servers and the databases — that is enough. If there is no source code at all, the audit starts by assessing what can realistically be recovered and answering honestly whether rewriting is cheaper.",
       q3: "Can we buy monitoring only, or changes only?",
       a3: "Changes, yes, under a separate contract. Committing to a recovery time without control over monitoring and backups, no: that is an obligation nobody can meet, and we will not promise what cannot be delivered.",
-      q4: "How is this different from ORTA JUZ?",
-      a4: "It is the same team. ORTA JUZ is the brand the operations side works under: on-call rota, monitoring and SLAs. If you need support only, without project development, go there directly — the terms and the policy are identical."
+      q4: "How is this different from what ortajuz.kz describes?",
+      a4: "It is not: the same team and the same contract. Operations are covered in more detail on ortajuz.kz — the on-call rota, SLA levels, support plans and the onboarding sequence. If you need support only, without project development, start there."
     },
     ctaBlock: {
       eyebrow: "Next step",

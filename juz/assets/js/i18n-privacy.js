@@ -2,7 +2,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Дербес деректерді өңдеу саясаты — JUZ",
+      title: "Дербес деректерді өңдеу саясаты — ORTA JUZ",
       description: "juz.kz сайты арқылы қандай деректер алынады, олар не үшін қажет, қанша сақталады және оларды қалай жоюға болады."
     },
     privacy: {
@@ -33,7 +33,7 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "Privacy policy — JUZ",
+      title: "Privacy policy — ORTA JUZ",
       description: "What data juz.kz collects, why it is needed, how long it is kept and how to have it deleted."
     },
     privacy: {

@@ -137,8 +137,8 @@ window.I18N_PAGE = {
       a3: "Қалыпты жағдай. Құжаттама білім беру кезеңінде код пен дерекқор бойынша қалпына келтіріледі: деректер схемасы, интеграциялар картасы, орналастыру сценарийлері, бас тарту нүктелері. Бұл дайындықты ұзартады, бірақ жүйені қолдауға алуға кедергі емес.",
       q4: "Біз кетсек — бізде не қалады?",
       a4: "Сүйемелдеу кезінде жасалғанның бәрі: қалпына келтірілген және толықтырылған құжаттама, мониторинг баптаулары, қалпына келтіру сценарийлері, инциденттер мен өзгерістер тарихы. Қолжетімділік бірінші күннен сізде, біз сіздің инфрақұрылымда жұмыс істейміз. Келесі командаға білім беру шартқа кіреді.",
-      q5: "ORTA JUZ пен JUZ айырмашылығы неде?",
-      a5: "Бұл — бір команданың екі бренді. JUZ жаңа жүйелерді жобалайды және салады. ORTA JUZ жұмыс істеп тұрған жүйелердің жұмысын жалғастыруына жауап береді: кезекшілік, SLA, мониторинг, дамыту. Стек пен инженерлік стандарттар ортақ, сондықтан жүйені әзірлеуден пайдалануға тапсыру бөлек жобаға айналмайды.",
+      q5: "Компанияның неге екі сайты бар?",
+      a5: "ORTA JUZ сипаты бойынша екі түрлі жұмысты жүргізеді. Осында, ortajuz.kz-те, — пайдалану: кезекшілік, SLA, мониторинг және сүйемелдеу. juz.kz-те — жобалық жұмыс: дискавери, жаңа жүйелерді жобалау және әзірлеу. Команда мен инженерлік стандарттар ортақ, сондықтан жүйе әзірлеуден пайдалануға бөлек тапсыру жобасынсыз көшеді.",
       q6: "Пилоттық айсыз бастауға бола ма?",
       a6: "Өзіміз салған жүйе болса — болады, онда танысу кезеңі жоқ. Қалған жағдайларда пилот екі тарапты да қорғайды: сіз тәжірибеде әлі тексерілмеген міндеттемелер үшін төлемейсіз, ал біз жүйенің жүктеме кезінде қалай ұстайтынын және ақау кезінде не болатынын көрмей тұрып қалпына келтіру уақытына қол қоймаймыз."
     },
@@ -286,8 +286,8 @@ window.I18N_PAGE = {
       a3: "That is the normal case. Documentation is reconstructed from the code and the database during knowledge transfer: data schema, integration map, deployment procedures, points of failure. It lengthens preparation but does not stop us taking the system on.",
       q4: "If we leave, what stays with us?",
       a4: "Everything we produced during the engagement: the reconstructed and extended documentation, monitoring configuration, recovery procedures, the history of incidents and changes. You hold the access from day one and we work inside your infrastructure. Knowledge transfer to the next team is part of the contract.",
-      q5: "How is ORTA JUZ different from JUZ?",
-      a5: "They are two brands of one team. JUZ designs and builds new systems. ORTA JUZ makes sure systems already in service keep running: on-call cover, SLAs, monitoring, development. The stack and the engineering standards are shared, so moving a system from build to operation does not become a project of its own.",
+      q5: "Why does the company have two websites?",
+      a5: "ORTA JUZ runs two kinds of work. Here on ortajuz.kz it is operations: on-call cover, SLAs, monitoring and support. On juz.kz it is project work: discovery, design and development of new systems. The team and the engineering standards are shared, so a system moves from build to operation without a separate handover project.",
       q6: "Can we start without the pilot month?",
       a6: "Yes, if it is a system we built ourselves — there is no getting-to-know-it stage. Otherwise the pilot protects both sides: you do not pay for commitments that have not been tested in practice, and we do not sign up to a recovery time before seeing how the system behaves under load and what happens when it fails."
     },

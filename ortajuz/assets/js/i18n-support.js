@@ -63,7 +63,7 @@ window.I18N_PAGE = {
       c1l3: "Мониторинг пен сақтық көшірмеге қолжетімсіз қалпына келтіру уақыты бойынша міндеттемелер",
       c1l4: "Бастапқы коды жоқ жүйе үшін жауапкершілік",
       c2t: "Оның орнына не ұсынамыз",
-      c2l1: "Жобалық әзірлеуді JUZ жүргізеді — сол команда, бөлек шарт және жоспар",
+      c2l1: "Жобалық әзірлеуді өзіміз жүргіземіз, бөлек шартпен — ол juz.kz-те сипатталған",
       c2l2: "Ескі мен жаңаның қатар жұмысымен жүйені кезең-кезеңмен ауыстыру",
       c2l3: "Дайындық кезеңі: алдымен мониторинг пен көшірмелер, содан кейін SLA міндеттемелері",
       c2l4: "Адал бағасы бар аудит: нені шынымен қалпына келтіруге болады, нені қайта салу арзанырақ"
@@ -150,7 +150,7 @@ window.I18N_PAGE = {
       c1l3: "Recovery time commitments without access to monitoring and backups",
       c1l4: "Responsibility for a system whose source code does not exist",
       c2t: "What we offer instead",
-      c2l1: "Project work is run by JUZ — the same team, a separate contract and plan",
+      c2l1: "We run project work ourselves under a separate contract — it is described on juz.kz",
       c2l2: "Staged replacement with the old and new systems running in parallel",
       c2l3: "A preparation phase: monitoring and backups first, SLA commitments after",
       c2l4: "An audit with an honest verdict on what can be recovered and what is cheaper to rebuild"
