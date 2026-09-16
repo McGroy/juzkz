@@ -141,9 +141,12 @@ h1, h2, h3, h4, h5 {
   line-height: 1.1;
   letter-spacing: -0.024em;
   text-wrap: balance;
+  /* Длинные слова (казахский даёт их регулярно) иначе растягивают
+     грид-колонку и ломают раскладку на узких экранах */
+  overflow-wrap: break-word;
 }
 
-p { text-wrap: pretty; }
+p { text-wrap: pretty; overflow-wrap: break-word; }
 
 ul, ol { list-style: none; padding: 0; }
 
@@ -263,7 +266,10 @@ ul, ol { list-style: none; padding: 0; }
   gap: var(--sp-4);
   max-width: 760px;
   margin-bottom: clamp(40px, 5vw, 68px);
+  min-width: 0;
 }
+
+.section-head > * { min-width: 0; }
 
 .section-head--center {
   margin-inline: auto;
@@ -439,7 +445,13 @@ ul, ol { list-style: none; padding: 0; }
 
 .chip--accent { border-color: var(--accent-line); color: var(--accent-2); background: var(--accent-soft); }
 
-.chip-row { display: flex; flex-wrap: wrap; gap: var(--sp-2); }
+.chip-row { display: flex; flex-wrap: wrap; gap: var(--sp-2); min-width: 0; }
+
+/* На узких экранах описательные чипы («Выход: требования, архитектура…»)
+   не помещаются в строку и распирают раскладку — разрешаем перенос. */
+@media (max-width: 720px) {
+  .chip { white-space: normal; border-radius: var(--r-md); }
+}
 
 /* Живой индикатор «в работе» */
 .pulse-dot {
@@ -878,7 +890,8 @@ body.nav-open .burger__bars span:nth-child(3) { transform: translateY(-4.75px) r
   padding-top: 5px;
 }
 
-.step__body { display: grid; gap: var(--sp-3); max-width: 62ch; }
+.step__body { display: grid; gap: var(--sp-3); max-width: 62ch; min-width: 0; }
+.step__body > * { min-width: 0; }
 .step__title { font-size: var(--t-h4); font-weight: 600; }
 .step__text { font-size: var(--t-sm); color: var(--fg-muted); }
 
@@ -1425,6 +1438,7 @@ body.nav-open .burger__bars span:nth-child(3) { transform: translateY(-4.75px) r
    -------------------------------------------------------------------------- */
 .split-card {
   display: grid;
+  min-width: 0;
   grid-template-columns: minmax(0, 1.25fr) minmax(300px, 0.75fr);
   gap: clamp(24px, 3.5vw, 56px);
   align-items: center;
@@ -1433,6 +1447,8 @@ body.nav-open .burger__bars span:nth-child(3) { transform: translateY(-4.75px) r
 @media (max-width: 900px) {
   .split-card { grid-template-columns: minmax(0, 1fr); }
 }
+
+.split-card > * { min-width: 0; }
 
 /* --------------------------------------------------------------------------
    26. Таблица уровней сервиса
@@ -1542,6 +1558,7 @@ body.nav-open .burger__bars span:nth-child(3) { transform: translateY(-4.75px) r
 
 .flow__node {
   position: relative;
+  min-width: 0;
   padding: var(--sp-5);
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
