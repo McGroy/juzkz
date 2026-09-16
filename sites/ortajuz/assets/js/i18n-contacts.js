@@ -2,7 +2,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Байланыс және өтінім — ORTAJUZ",
+      title: "Байланыс және өтінім — ORTA JUZ",
       description: "Ақпараттық жүйелерді аудиттеуге және сүйемелдеуге өтінім қалдырыңыз. Бір жұмыс күні ішінде жауап береміз, SLA астындағы инциденттер бойынша — регламент бойынша."
     },
     page: {
@@ -22,7 +22,7 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "Contact and brief — ORTAJUZ",
+      title: "Contact and brief — ORTA JUZ",
       description: "Request an audit and support for your information systems. We reply within one business day; incidents under SLA follow the agreed response policy."
     },
     page: {

@@ -70,7 +70,7 @@ window.I18N_PAGE = {
       q3: "Техникалық тапсырманы кім жазады?",
       a3: "Біз — дискавери кезеңінде, сіздің мамандармен бірге. ТТ бұрыннан бар болса, оны негізге аламыз, бірақ тексереміз: онда көбіне міндет емес, нақты шешім бекітілген, ал әрпін ұстану қайта қараудан қымбатқа түседі.",
       q4: "Іске қосудан кейін не болады?",
-      a4: "Үш нұсқа бар, және таңдау сізде. Біздің жақтағы SLA бойынша сүйемелдеу — бұл ORTAJUZ жұмысы. Оқытумен және құжаттамамен сіздің командаға тапсыру. Немесе аралас режим: пайдалану сізде, күрделі жетілдірулер бізде."
+      a4: "Үш нұсқа бар, және таңдау сізде. Біздің жақтағы SLA бойынша сүйемелдеу — бұл ORTA JUZ жұмысы. Оқытумен және құжаттамамен сіздің командаға тапсыру. Немесе аралас режим: пайдалану сізде, күрделі жетілдірулер бізде."
     },
     ctaBlock: {
       eyebrow: "Келесі қадам",
@@ -149,7 +149,7 @@ window.I18N_PAGE = {
       q3: "Who writes the specification?",
       a3: "We do, during discovery, together with your specialists. If a spec already exists we use it as a basis but check it: it often fixes a particular solution rather than stating the problem, and following it to the letter costs more than revising it.",
       q4: "What happens after launch?",
-      a4: "Three options, and the choice is yours. Support under an SLA on our side — that is what ORTAJUZ does. A handover to your team with training and documentation. Or a mixed mode: you operate it, we handle the harder changes."
+      a4: "Three options, and the choice is yours. Support under an SLA on our side — that is what ORTA JUZ does. A handover to your team with training and documentation. Or a mixed mode: you operate it, we handle the harder changes."
     },
     ctaBlock: {
       eyebrow: "Next step",

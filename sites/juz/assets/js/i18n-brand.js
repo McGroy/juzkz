@@ -5,7 +5,6 @@
 window.I18N_BRAND = {
   kk: {
     a11y: { skip: "Негізгі мазмұнға өту" },
-    brand: { tagline: "Software engineering" },
     footer: {
       about: "Қазақстандағы бизнес пен мемлекеттік сектор үшін БҚ әзірлеу, ақпараттық жүйелерді сүйемелдеу және деректер аналитикасы.",
       sisterWhat: "ЖЖ тәулік бойы пайдалану және қолдау"
@@ -13,7 +12,6 @@ window.I18N_BRAND = {
   },
   en: {
     a11y: { skip: "Skip to main content" },
-    brand: { tagline: "Software engineering" },
     footer: {
       about: "Software development, information system support and data analytics for business and the public sector in Kazakhstan.",
       sisterWhat: "24/7 operation and support of IT systems"

@@ -32,5 +32,5 @@ window.SITE = {
 
   /* --- Родственный бренд ------------------------------------------------ */
   sisterUrl:  "https://ortajuz.kz",
-  sisterName: "ORTAJUZ"
+  sisterName: "ORTA JUZ"
 };

@@ -2,7 +2,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "SLA бойынша ақпараттық жүйелерді сүйемелдеу — ORTAJUZ",
+      title: "SLA бойынша ақпараттық жүйелерді сүйемелдеу — ORTA JUZ",
       description: "Кезекшілік, мониторинг, сақтық көшірме және шартта жазылған әрекет ету уақытымен инциденттерді жою. Басқа мердігердің жүйелерімен де жұмыс істейміз."
     },
     page: {
@@ -89,7 +89,7 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "Information system support under SLA — ORTAJUZ",
+      title: "Information system support under SLA — ORTA JUZ",
       description: "On-call cover, monitoring, backups and incident resolution with response times written into the contract. We also work with systems built by another vendor."
     },
     page: {

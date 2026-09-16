@@ -2,7 +2,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Жұмыс істеп тұрған жүйелерді жетілдіру және дамыту — ORTAJUZ",
+      title: "Жұмыс істеп тұрған жүйелерді жетілдіру және дамыту — ORTA JUZ",
       description: "Сүйемелдеу шартындағы өзгерістерге арналған сағаттар пулы: жаңа функциялар, техникалық қарызды жою, өнімділік, интеграциялар. Басымдықтар ай сайын қайта қаралады."
     },
     page: {
@@ -79,7 +79,7 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "Changes and development of live systems — ORTAJUZ",
+      title: "Changes and development of live systems — ORTA JUZ",
       description: "A pool of change hours inside the support contract: new features, paying down technical debt, performance, integrations. Priorities are reviewed monthly."
     },
     page: {

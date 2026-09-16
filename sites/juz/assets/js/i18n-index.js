@@ -160,8 +160,8 @@ window.I18N_PAGE = {
       a4: "Мәселені өз сөзіңізбен сипаттау жеткілікті: не ауырады, кім зардап шегеді, не жетіспейді. Техникалық тапсырма — дискавери нәтижесі, кіріс шарты емес. Оның үстіне, инженерлердің қатысуынсыз жазылған ТТ көбіне кедергі келтіреді: онда әдетте міндет емес, шешім бекітілген.",
       q5: "Қаншалықты тез бастай аласыздар?",
       a5: "Өтінімге бір жұмыс күні ішінде жауап беріп, 30–40 минуттық қоңырау ұсынамыз. Дискавери әдетте қол қойылғаннан кейін бір-екі апта ішінде басталады. Бізде сүйемелдеуде тұрған жүйелердегі инциденттер үшін бөлек әрекет ету регламенті қолданылады.",
-      q6: "JUZ пен ORTAJUZ айырмашылығы неде?",
-      a6: "Бұл — бір команданың екі бренді. JUZ жобалық жұмысты жүргізеді: дискавери, жаңа жүйелерді жобалау және әзірлеу. ORTAJUZ пайдалануға жауап береді: тәулік бойы кезекшілік, SLA, мониторинг және жұмыс істеп тұрған жүйелерді сүйемелдеу. Екі жақ та бір стекті және бірдей инженерлік стандарттарды қолданады, сондықтан жүйені әзірлеуден пайдалануға тапсыру бөлек жобаға айналмайды."
+      q6: "JUZ пен ORTA JUZ айырмашылығы неде?",
+      a6: "Бұл — бір команданың екі бренді. JUZ жобалық жұмысты жүргізеді: дискавери, жаңа жүйелерді жобалау және әзірлеу. ORTA JUZ пайдалануға жауап береді: тәулік бойы кезекшілік, SLA, мониторинг және жұмыс істеп тұрған жүйелерді сүйемелдеу. Екі жақ та бір стекті және бірдей инженерлік стандарттарды қолданады, сондықтан жүйені әзірлеуден пайдалануға тапсыру бөлек жобаға айналмайды."
     },
 
     ctaBlock: {
@@ -328,8 +328,8 @@ window.I18N_PAGE = {
       a4: "A description of the problem in your own words is enough: what hurts, who suffers, what is missing. A specification is an output of discovery, not an entry requirement. In fact a spec written without engineers usually gets in the way: it tends to fix a solution rather than state a problem.",
       q5: "How quickly can you start?",
       a5: "We reply to a brief within one business day and propose a 30–40 minute call. Discovery usually starts within one to two weeks of signing. Systems already under our support are covered by a separate incident response policy.",
-      q6: "What is the difference between JUZ and ORTAJUZ?",
-      a6: "They are two brands of one team. JUZ runs project work: discovery, design and development of new systems. ORTAJUZ runs operations: round-the-clock duty, SLAs, monitoring and support of systems already in service. Both sides use the same stack and the same engineering standards, so moving a system from build to operation does not turn into a project of its own."
+      q6: "What is the difference between JUZ and ORTA JUZ?",
+      a6: "They are two brands of one team. JUZ runs project work: discovery, design and development of new systems. ORTA JUZ runs operations: round-the-clock duty, SLAs, monitoring and support of systems already in service. Both sides use the same stack and the same engineering standards, so moving a system from build to operation does not turn into a project of its own."
     },
 
     ctaBlock: {

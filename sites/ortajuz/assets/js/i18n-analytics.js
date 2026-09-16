@@ -2,7 +2,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Аналитика және регламенттік есептілік — ORTAJUZ",
+      title: "Аналитика және регламенттік есептілік — ORTA JUZ",
       description: "Біз сүйемелдейтін жүйелердің деректері негізінде қойма, витриналар және есептілік. Жүктеу қалған сервистермен бірдей мониторинг астында."
     },
     page: {
@@ -75,7 +75,7 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "Analytics and regulatory reporting — ORTAJUZ",
+      title: "Analytics and regulatory reporting — ORTA JUZ",
       description: "A warehouse, data marts and reporting built on the systems we already support. Ingestion sits under the same monitoring as every other service."
     },
     page: {

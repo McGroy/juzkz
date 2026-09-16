@@ -2,13 +2,13 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "ORTAJUZ — SLA бойынша ақпараттық жүйелерді сүйемелдеу, 24/7",
+      title: "ORTA JUZ — SLA бойынша ақпараттық жүйелерді сүйемелдеу, 24/7",
       description: "Өлшенетін SLA-мен ЖЖ пайдалану және сүйемелдеу: тәулік бойы кезекші ауысым, мониторинг, сақтық көшірме, инциденттерді жою және дамыту. Басқа мердігер жазған жүйелерді қоса."
     },
     hero: {
       eyebrow: "ЖЖ сүйемелдеу · 24/7 мониторинг · Аналитика",
       title: "Жүйелеріңіз қатарда. <span class=\"accent-text\">Тәулік бойы</span>",
-      lead: "ORTAJUZ ақпараттық жүйелерді пайдалануды өз мойнына алады: кезекші ауысым, өлшенетін әрекет ету уақыты бар SLA, мониторинг және жоспарлы дамыту. Біз жазбаған жүйелерді қоса.",
+      lead: "ORTA JUZ ақпараттық жүйелерді пайдалануды өз мойнына алады: кезекші ауысым, өлшенетін әрекет ету уақыты бар SLA, мониторинг және жоспарлы дамыту. Біз жазбаған жүйелерді қоса.",
       meta1: "Кезекші ауысым байланыста",
       meta2Strong: "15 минут",
       meta2: "— сыншыл инцидентке әрекет ету",
@@ -36,7 +36,7 @@ window.I18N_PAGE = {
       bad3: "Сақтық көшірмелер жасалады. Олардан қалпына келтіруді ешкім бірде-бір рет тексермеген.",
       bad4: "Қауіпсіздік жаңартулары инциденттен кейін еске түседі.",
       bad5: "Ай ішінде нақты не істелгенін тек мердігер біледі.",
-      goodLabel: "ORTAJUZ РЕГЛАМЕНТІМЕН",
+      goodLabel: "ORTA JUZ РЕГЛАМЕНТІМЕН",
       goodTitle: "Бізде бұл қалай жұмыс істейді",
       good1: "Өтініштер тарихы бар бірыңғай кіру нүктесі. Нақты адам емес, кезекші ауысым.",
       good2: "Инцидент класы бизнеске әсерімен анықталады және әрекет ету уақытымен бірге шартта бекітілген.",
@@ -137,8 +137,8 @@ window.I18N_PAGE = {
       a3: "Қалыпты жағдай. Құжаттама білім беру кезеңінде код пен дерекқор бойынша қалпына келтіріледі: деректер схемасы, интеграциялар картасы, орналастыру сценарийлері, бас тарту нүктелері. Бұл дайындықты ұзартады, бірақ жүйені қолдауға алуға кедергі емес.",
       q4: "Біз кетсек — бізде не қалады?",
       a4: "Сүйемелдеу кезінде жасалғанның бәрі: қалпына келтірілген және толықтырылған құжаттама, мониторинг баптаулары, қалпына келтіру сценарийлері, инциденттер мен өзгерістер тарихы. Қолжетімділік бірінші күннен сізде, біз сіздің инфрақұрылымда жұмыс істейміз. Келесі командаға білім беру шартқа кіреді.",
-      q5: "ORTAJUZ пен JUZ айырмашылығы неде?",
-      a5: "Бұл — бір команданың екі бренді. JUZ жаңа жүйелерді жобалайды және салады. ORTAJUZ жұмыс істеп тұрған жүйелердің жұмысын жалғастыруына жауап береді: кезекшілік, SLA, мониторинг, дамыту. Стек пен инженерлік стандарттар ортақ, сондықтан жүйені әзірлеуден пайдалануға тапсыру бөлек жобаға айналмайды.",
+      q5: "ORTA JUZ пен JUZ айырмашылығы неде?",
+      a5: "Бұл — бір команданың екі бренді. JUZ жаңа жүйелерді жобалайды және салады. ORTA JUZ жұмыс істеп тұрған жүйелердің жұмысын жалғастыруына жауап береді: кезекшілік, SLA, мониторинг, дамыту. Стек пен инженерлік стандарттар ортақ, сондықтан жүйені әзірлеуден пайдалануға тапсыру бөлек жобаға айналмайды.",
       q6: "Пилоттық айсыз бастауға бола ма?",
       a6: "Өзіміз салған жүйе болса — болады, онда танысу кезеңі жоқ. Қалған жағдайларда пилот екі тарапты да қорғайды: сіз тәжірибеде әлі тексерілмеген міндеттемелер үшін төлемейсіз, ал біз жүйенің жүктеме кезінде қалай ұстайтынын және ақау кезінде не болатынын көрмей тұрып қалпына келтіру уақытына қол қоймаймыз."
     },
@@ -151,13 +151,13 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "ORTAJUZ — information system support under SLA, 24/7",
+      title: "ORTA JUZ — information system support under SLA, 24/7",
       description: "Operation and support of IT systems with a measurable SLA: 24/7 on-call rota, monitoring, backups, incident resolution and continued development — including systems built by another vendor."
     },
     hero: {
       eyebrow: "System support · 24/7 monitoring · Analytics",
       title: "Your systems stay up. <span class=\"accent-text\">Around the clock</span>",
-      lead: "ORTAJUZ takes over the operation of information systems: an on-call rota, an SLA with measurable response times, monitoring and steady development — including systems we did not build.",
+      lead: "ORTA JUZ takes over the operation of information systems: an on-call rota, an SLA with measurable response times, monitoring and steady development — including systems we did not build.",
       meta1: "On-call team available",
       meta2Strong: "15 minutes",
       meta2: "— response to a critical incident",
@@ -185,7 +185,7 @@ window.I18N_PAGE = {
       bad3: "Backups are taken. Nobody has ever tested restoring from them.",
       bad4: "Security updates come to mind after an incident.",
       bad5: "What was actually done during the month is known only to the vendor.",
-      goodLabel: "WITH THE ORTAJUZ POLICY",
+      goodLabel: "WITH THE ORTA JUZ POLICY",
       goodTitle: "How it works with us",
       good1: "A single entry point with full request history. An on-call team, not one particular person.",
       good2: "Severity is set by business impact and written into the contract together with response times.",
@@ -286,8 +286,8 @@ window.I18N_PAGE = {
       a3: "That is the normal case. Documentation is reconstructed from the code and the database during knowledge transfer: data schema, integration map, deployment procedures, points of failure. It lengthens preparation but does not stop us taking the system on.",
       q4: "If we leave, what stays with us?",
       a4: "Everything we produced during the engagement: the reconstructed and extended documentation, monitoring configuration, recovery procedures, the history of incidents and changes. You hold the access from day one and we work inside your infrastructure. Knowledge transfer to the next team is part of the contract.",
-      q5: "How is ORTAJUZ different from JUZ?",
-      a5: "They are two brands of one team. JUZ designs and builds new systems. ORTAJUZ makes sure systems already in service keep running: on-call cover, SLAs, monitoring, development. The stack and the engineering standards are shared, so moving a system from build to operation does not become a project of its own.",
+      q5: "How is ORTA JUZ different from JUZ?",
+      a5: "They are two brands of one team. JUZ designs and builds new systems. ORTA JUZ makes sure systems already in service keep running: on-call cover, SLAs, monitoring, development. The stack and the engineering standards are shared, so moving a system from build to operation does not become a project of its own.",
       q6: "Can we start without the pilot month?",
       a6: "Yes, if it is a system we built ourselves — there is no getting-to-know-it stage. Otherwise the pilot protects both sides: you do not pay for commitments that have not been tested in practice, and we do not sign up to a recovery time before seeing how the system behaves under load and what happens when it fails."
     },

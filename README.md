@@ -2,7 +2,7 @@
 
 Два сайта одной команды. Общая дизайн-система, разное позиционирование.
 
-| | **JUZ** — juz.kz | **ORTAJUZ** — ortajuz.kz |
+| | **JUZ** — juz.kz | **ORTA JUZ** — ortajuz.kz |
 |---|---|---|
 | Роль | Проектный бренд | Сервисный бренд |
 | Продаёт | Разработку ПО, полный цикл | Сопровождение ИС по SLA, эксплуатацию |
@@ -10,7 +10,7 @@
 | Главная конверсия | Заявка на дискавери | Заявка на аудит |
 
 Обе услуги — разработка, сопровождение и аналитика — представлены на обоих
-сайтах, но с разным приоритетом: у JUZ первой идёт разработка, у ORTAJUZ —
+сайтах, но с разным приоритетом: у JUZ первой идёт разработка, у ORTA JUZ —
 сопровождение.
 
 ---
@@ -199,7 +199,7 @@ formEndpoint: "https://formspree.io/f/XXXXXXX"
 
 ## Логотип
 
-**ORTAJUZ** использует фирменный знак: розетка и леттеринг из
+**ORTA JUZ** использует фирменный знак: розетка и леттеринг из
 предоставленного файла Illustrator, переведённые в SVG без изменения
 начертания. Исходники и описание собранных файлов — в
 [brand/README.md](brand/README.md).
@@ -250,7 +250,7 @@ formEndpoint: "https://formspree.io/f/XXXXXXX"
 
 ## Структура страниц
 
-| Страница | JUZ | ORTAJUZ |
+| Страница | JUZ | ORTA JUZ |
 |---|---|---|
 | Главная | `index.html` | `index.html` |
 | Услуги | `services/development.html`<br>`services/support.html`<br>`services/analytics.html` | `services/support.html`<br>`services/analytics.html`<br>`services/development.html` |

@@ -2,7 +2,7 @@
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Дербес деректерді өңдеу саясаты — ORTAJUZ",
+      title: "Дербес деректерді өңдеу саясаты — ORTA JUZ",
       description: "ortajuz.kz сайты арқылы қандай деректер алынады, олар не үшін қажет, қанша сақталады және оларды қалай жоюға болады."
     },
     privacy: {
@@ -38,7 +38,7 @@ window.I18N_PAGE = {
 
   en: {
     meta: {
-      title: "Privacy policy — ORTAJUZ",
+      title: "Privacy policy — ORTA JUZ",
       description: "What data ortajuz.kz collects, why it is needed, how long it is kept and how to have it deleted."
     },
     privacy: {
