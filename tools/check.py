@@ -7,7 +7,7 @@
 Что проверяет:
   * все внутренние ссылки ведут на существующие файлы;
   * все якоря (#id) существуют на целевой странице;
-  * каждая страница подключает нужные скрипты и свой словарь;
+  * каждая страница подключает нужные скрипты и свой отдельный словарь;
   * общие файлы в sites/ совпадают с источником в shared/.
 """
 import pathlib, re, sys
@@ -47,19 +47,34 @@ def check_links(site_root, page):
             report(page.relative_to(ROOT), f"нет якоря #{anchor} в {path}")
 
 
+page_dicts = {}
+
+
 def check_scripts(page):
     html = page.read_text()
     for name in REQUIRED_SCRIPTS:
         if f"assets/js/{name}" not in html:
             report(page.relative_to(ROOT), f"не подключён {name}")
     # У страницы должен быть ровно один собственный словарь
-    dicts = set(re.findall(r'assets/js/(i18n-(?!common|brand)[a-z-]+\.js)', html))
+    dicts = set(re.findall(r'assets/js/(i18n-(?!common|brand)[a-z0-9-]+\.js)', html))
     if len(dicts) != 1:
         report(page.relative_to(ROOT), f"ожидался один словарь страницы, найдено: {sorted(dicts) or 'ни одного'}")
     else:
         d = dicts.pop()
-        if not (page.parents[len(page.relative_to(SITES).parts) - 2] / "assets/js" / d).exists():
+        site = page.relative_to(SITES).parts[0]
+        if not (SITES / site / "assets/js" / d).exists():
             report(page.relative_to(ROOT), f"словарь {d} не существует")
+        page_dicts.setdefault((site, d), []).append(page)
+
+
+def check_dict_sharing():
+    """Два словаря на одну страницу — ошибка, но и один словарь на две
+       страницы тоже: meta.title из чужой страницы подменит заголовок
+       вкладки при переключении языка."""
+    for (site, d), pages in sorted(page_dicts.items()):
+        if len(pages) > 1:
+            names = ", ".join(str(p.relative_to(SITES / site)) for p in pages)
+            problems.append(f"sites/{site}/assets/js/{d}: один словарь на несколько страниц ({names})")
 
 
 def check_shared():
@@ -81,6 +96,7 @@ def main():
             pages += 1
             check_links(site, page)
             check_scripts(page)
+    check_dict_sharing()
     check_shared()
 
     if problems:

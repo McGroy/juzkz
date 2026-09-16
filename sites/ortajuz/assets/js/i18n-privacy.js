@@ -1,9 +1,9 @@
-/* Переводы служебных страниц: privacy.html и 404.html */
+/* Переводы страницы политики обработки персональных данных. */
 window.I18N_PAGE = {
   kk: {
     meta: {
-      title: "Дербес деректерді өңдеу саясаты — JUZ",
-      description: "juz.kz сайты арқылы қандай деректер алынады, олар не үшін қажет, қанша сақталады және оларды қалай жоюға болады."
+      title: "Дербес деректерді өңдеу саясаты — ORTA JUZ",
+      description: "ortajuz.kz сайты арқылы қандай деректер алынады, олар не үшін қажет, қанша сақталады және оларды қалай жоюға болады."
     },
     privacy: {
       title: "Дербес деректерді өңдеу саясаты",
@@ -28,18 +28,13 @@ window.I18N_PAGE = {
       p9: "Саясаттың өзекті редакциясы әрдайым осы бетте орналастырылады. Соңғы жаңарту күні төменде көрсетілген.",
       updated: "Соңғы жаңарту",
       date: "16.09.2026"
-    },
-    nf: {
-      title: "Мұндай бет жоқ",
-      lead: "Сілтеме ескірген немесе мекенжайда қате бар. Төменде — жиі іздейтін беттер.",
-      home: "Басты бетке"
     }
   },
 
   en: {
     meta: {
-      title: "Privacy policy — JUZ",
-      description: "What data juz.kz collects, why it is needed, how long it is kept and how to have it deleted."
+      title: "Privacy policy — ORTA JUZ",
+      description: "What data ortajuz.kz collects, why it is needed, how long it is kept and how to have it deleted."
     },
     privacy: {
       title: "Personal data processing policy",
@@ -64,11 +59,6 @@ window.I18N_PAGE = {
       p9: "The current version of this policy is always published on this page. The date of the last update is shown below.",
       updated: "Last updated",
       date: "16.09.2026"
-    },
-    nf: {
-      title: "This page does not exist",
-      lead: "The link is out of date or the address has a typo. Below are the pages people look for most.",
-      home: "Go to homepage"
     }
   }
 };
