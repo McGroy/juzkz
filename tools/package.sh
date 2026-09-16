@@ -25,9 +25,11 @@ rm -f dist/juz.zip dist/ortajuz.zip
 
 for site in juz ortajuz; do
   [ -d "$site" ] || { echo "нет папки $site" >&2; exit 1; }
-  ( cd "$site" && zip -qr "../dist/$site.zip" . -x '.DS_Store' '*/.DS_Store' )
+  # README.md — инструкция для разработки, на хостинге он лежал бы
+  # в открытом доступе по адресу вида example.kz/README.md
+  ( cd "$site" && zip -qr "../dist/$site.zip" . -x 'README.md' '.DS_Store' '*/.DS_Store' )
   size=$(du -h "dist/$site.zip" | cut -f1)
-  files=$(find "$site" -type f | wc -l | tr -d ' ')
+  files=$(unzip -Z1 "dist/$site.zip" | grep -vc '/$')
   echo "dist/$site.zip — $files файлов, $size"
 done
 
