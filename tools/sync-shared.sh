@@ -18,7 +18,7 @@ sites=(juz ortajuz)
 copied=0
 
 for site in "${sites[@]}"; do
-  dest="sites/$site/assets"
+  dest="$site/assets"
   [ -d "$dest" ] || { echo "пропускаю: нет $dest" >&2; continue; }
 
   mkdir -p "$dest/css" "$dest/js"
@@ -27,7 +27,7 @@ for site in "${sites[@]}"; do
   cp shared/js/i18n.js          "$dest/js/i18n.js"
   cp shared/js/i18n-common.js   "$dest/js/i18n-common.js"
   copied=$((copied + 4))
-  echo "  → sites/$site: core.css, core.js, i18n.js, i18n-common.js"
+  echo "  → $site/: core.css, core.js, i18n.js, i18n-common.js"
 done
 
 echo "Готово. Скопировано файлов: $copied"

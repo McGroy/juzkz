@@ -8,15 +8,18 @@
   * все внутренние ссылки ведут на существующие файлы;
   * все якоря (#id) существуют на целевой странице;
   * каждая страница подключает нужные скрипты и свой отдельный словарь;
-  * общие файлы в sites/ совпадают с источником в shared/.
+  * один словарь не обслуживает несколько страниц;
+  * общие файлы внутри сайтов совпадают с источником в shared/.
 """
-import pathlib, re, sys
+import pathlib, sys, re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SITES = ROOT / "sites"
+SITES = ("juz", "ortajuz")
 SKIP = ("http://", "https://", "mailto:", "tel:", "data:", "#")
 
 REQUIRED_SCRIPTS = ["config.js", "i18n-common.js", "i18n-brand.js", "i18n.js", "core.js"]
+
+# Слева — источник правды, справа — путь внутри каждого сайта
 SHARED = {
     "shared/css/core.css": "assets/css/core.css",
     "shared/js/core.js": "assets/js/core.js",
@@ -25,10 +28,11 @@ SHARED = {
 }
 
 problems = []
+page_dicts = {}
 
 
 def report(page, message):
-    problems.append(f"{page}: {message}")
+    problems.append(f"{page.relative_to(ROOT)}: {message}")
 
 
 def check_links(site_root, page):
@@ -42,60 +46,59 @@ def check_links(site_root, page):
         target = site_root / path.lstrip("/") if value.startswith("/") else page.parent / path
         target = target.resolve()
         if not target.exists():
-            report(page.relative_to(ROOT), f"битая ссылка {value}")
+            report(page, f"битая ссылка {value}")
         elif anchor and target.suffix == ".html" and f'id="{anchor}"' not in target.read_text():
-            report(page.relative_to(ROOT), f"нет якоря #{anchor} в {path}")
+            report(page, f"нет якоря #{anchor} в {path}")
 
 
-page_dicts = {}
-
-
-def check_scripts(page):
+def check_scripts(site, site_root, page):
     html = page.read_text()
     for name in REQUIRED_SCRIPTS:
         if f"assets/js/{name}" not in html:
-            report(page.relative_to(ROOT), f"не подключён {name}")
+            report(page, f"не подключён {name}")
+
     # У страницы должен быть ровно один собственный словарь
     dicts = set(re.findall(r'assets/js/(i18n-(?!common|brand)[a-z0-9-]+\.js)', html))
     if len(dicts) != 1:
-        report(page.relative_to(ROOT), f"ожидался один словарь страницы, найдено: {sorted(dicts) or 'ни одного'}")
-    else:
-        d = dicts.pop()
-        site = page.relative_to(SITES).parts[0]
-        if not (SITES / site / "assets/js" / d).exists():
-            report(page.relative_to(ROOT), f"словарь {d} не существует")
-        page_dicts.setdefault((site, d), []).append(page)
+        report(page, f"ожидался один словарь страницы, найдено: {sorted(dicts) or 'ни одного'}")
+        return
+    name = dicts.pop()
+    if not (site_root / "assets/js" / name).exists():
+        report(page, f"словарь {name} не существует")
+    page_dicts.setdefault((site, name), []).append(page)
 
 
 def check_dict_sharing():
-    """Два словаря на одну страницу — ошибка, но и один словарь на две
-       страницы тоже: meta.title из чужой страницы подменит заголовок
-       вкладки при переключении языка."""
-    for (site, d), pages in sorted(page_dicts.items()):
+    """Один словарь на две страницы — тоже ошибка: meta.title чужой страницы
+       подменит заголовок вкладки при переключении языка."""
+    for (site, name), pages in sorted(page_dicts.items()):
         if len(pages) > 1:
-            names = ", ".join(str(p.relative_to(SITES / site)) for p in pages)
-            problems.append(f"sites/{site}/assets/js/{d}: один словарь на несколько страниц ({names})")
+            where = ", ".join(str(p.relative_to(ROOT / site)) for p in pages)
+            problems.append(f"{site}/assets/js/{name}: один словарь на несколько страниц ({where})")
 
 
 def check_shared():
     for src, dst in SHARED.items():
         origin = (ROOT / src).read_text()
-        for site in sorted(p.name for p in SITES.iterdir() if p.is_dir()):
-            copy = SITES / site / dst
+        for site in SITES:
+            copy = ROOT / site / dst
             if not copy.exists():
-                problems.append(f"sites/{site}/{dst}: файл отсутствует")
+                problems.append(f"{site}/{dst}: файл отсутствует")
             elif copy.read_text() != origin:
-                problems.append(
-                    f"sites/{site}/{dst}: расходится с {src} — запустите tools/sync-shared.sh")
+                problems.append(f"{site}/{dst}: расходится с {src} — запустите tools/sync-shared.sh")
 
 
 def main():
     pages = 0
-    for site in sorted(p for p in SITES.iterdir() if p.is_dir()):
-        for page in sorted(site.rglob("*.html")):
+    for site in SITES:
+        site_root = ROOT / site
+        if not site_root.is_dir():
+            problems.append(f"{site}/: папка сайта не найдена")
+            continue
+        for page in sorted(site_root.rglob("*.html")):
             pages += 1
-            check_links(site, page)
-            check_scripts(page)
+            check_links(site_root, page)
+            check_scripts(site, site_root, page)
     check_dict_sharing()
     check_shared()
 
