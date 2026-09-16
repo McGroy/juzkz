@@ -1,0 +1,392 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Аналитика и работа с данными — JUZ</title>
+<meta name="description" content="Хранилище данных, ETL, BI-витрины и регламентная отчётность. Показатели считаются одинаково во всех отчётах, каждая цифра прослеживается до источника.">
+<meta name="theme-color" content="#04060A">
+<link rel="canonical" href="https://juz.kz/services/analytics.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JUZ">
+<meta property="og:title" content="Аналитика и работа с данными — JUZ">
+<meta property="og:description" content="Хранилище данных, ETL, BI-витрины и регламентная отчётность. Показатели считаются одинаково во всех отчётах, каждая цифра прослеживается до источника.">
+<meta property="og:url" content="https://juz.kz/services/analytics.html">
+<meta property="og:image" content="https://juz.kz/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="ru" href="https://juz.kz/services/analytics.html?lang=ru">
+<link rel="alternate" hreflang="kk" href="https://juz.kz/services/analytics.html?lang=kk">
+<link rel="alternate" hreflang="en" href="https://juz.kz/services/analytics.html?lang=en">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script>document.documentElement.className += " js";</script>
+<link rel="stylesheet" href="../assets/css/core.css">
+<link rel="stylesheet" href="../assets/css/theme.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">К основному содержанию</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="header">
+  <div class="header__inner">
+    <a class="logo" href="../index.html" aria-label="JUZ">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="lmh" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F7CFF"/><stop offset="1" stop-color="#22D3EE"/>
+          </linearGradient>
+        </defs>
+        <path d="M16 2.4 29.6 16 16 29.6 2.4 16Z" stroke="url(#lmh)" stroke-width="1.4" opacity=".5"/><path d="M16 8.8 23.2 16 16 23.2 8.8 16Z" fill="url(#lmh)"/>
+      </svg>
+      <span class="logo__text">JUZ<span class="logo__sub" data-i18n="brand.tagline">Software engineering</span></span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="nav__link" href="../services/development.html" data-i18n="nav.development">Разработка</a>
+      <a class="nav__link" href="../services/support.html" data-i18n="nav.support">Сопровождение</a>
+      <a class="nav__link" href="../services/analytics.html" data-i18n="nav.analytics" aria-current="page">Аналитика</a>
+      <a class="nav__link" href="../index.html#approach" data-i18n="nav.approach">Подход</a>
+      <a class="nav__link" href="../contacts.html" data-i18n="nav.contacts">Контакты</a>
+      <a class="btn btn--primary nav__cta" href="../contacts.html#brief" data-i18n="cta.brief">Оставить заявку</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="langs" role="group" aria-label="Язык сайта">
+        <button class="langs__btn" type="button" data-lang-btn="ru" aria-pressed="true">Ру</button>
+        <button class="langs__btn" type="button" data-lang-btn="kk" aria-pressed="false">Қаз</button>
+        <button class="langs__btn" type="button" data-lang-btn="en" aria-pressed="false">En</button>
+      </div>
+      <a class="btn btn--primary btn--sm btn--cta" href="../contacts.html#brief" data-i18n="cta.brief">Оставить заявку</a>
+      <button class="burger" type="button" aria-expanded="false" aria-label="Меню">
+        <span class="burger__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="page-head">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow glow--a" aria-hidden="true"></div>
+  <div class="wrap" style="position:relative;z-index:2">
+    <nav class="crumbs" aria-label="Хлебные крошки">
+      <a href="../index.html" data-i18n="nav.home">Главная</a>
+      <span class="crumbs__sep">/</span>
+      <span data-i18n="nav.analytics">Аналитика данных</span>
+    </nav>
+    <span class="eyebrow" data-i18n="page.eyebrow">Услуга 03</span>
+    <h1 class="display" style="margin-block:var(--sp-5);max-width:18ch" data-i18n-html="page.title">
+      Аналитика и <span class="accent-text">работа с данными</span>
+    </h1>
+    <p class="lead" style="max-width:63ch" data-i18n="page.lead">
+      Цифры перестают расходиться между отчётами, а подготовка к совещанию перестаёт
+      занимать два дня. Хранилище, витрины и BI вместо ручной сборки в Excel.
+    </p>
+    <div class="hero__actions">
+      <a class="btn btn--primary btn--lg" href="../contacts.html#brief">
+        <span data-i18n="cta.discuss">Обсудить задачу</span>
+        <svg class="arrow" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--ghost btn--lg" href="#how" data-i18n="page.ctaSecondary">Как это устроено</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ЗАДАЧИ ============ -->
+<section class="section section--ruled" id="what">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="what.eyebrow">С чем приходят</span>
+      <h2 class="h2" data-i18n="what.title">Данные есть почти всегда. Проблема в том, что им нельзя верить</h2>
+    </div>
+
+    <div class="grid grid-2" data-reveal-group>
+      <div class="card card--glow" data-reveal>
+        <div class="card__index">01</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="what.c1t">Отчёты не сходятся между собой</h3>
+        <p class="card__text" data-i18n="what.c1d">Финансы, продажи и производство считают одно и то же число по-разному. Договариваемся об определениях, закрепляем их в коде витрин — и расхождения исчезают вместе со спорами о том, чья цифра правильная.</p>
+      </div>
+      <div class="card card--glow" data-reveal>
+        <div class="card__index">02</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="what.c2t">Отчётность собирается вручную</h3>
+        <p class="card__text" data-i18n="what.c2d">Несколько человек каждую неделю выгружают, сводят и перепроверяют. Переносим сборку в регламентный процесс: данные обновляются сами, люди занимаются выводами.</p>
+      </div>
+      <div class="card card--glow" data-reveal>
+        <div class="card__index">03</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="what.c3t">Данные заперты внутри систем</h3>
+        <p class="card__text" data-i18n="what.c3d">Учётная система, CRM, склад и сайт живут отдельно, а вопрос всегда на стыке. Собираем единое хранилище, где на такой вопрос можно ответить одним запросом.</p>
+      </div>
+      <div class="card card--glow" data-reveal>
+        <div class="card__index">04</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="what.c4t">Нужна регламентная отчётность</h3>
+        <p class="card__text" data-i18n="what.c4d">Формы для регулятора, головной организации или собственника, которые нельзя сдать с ошибкой. Автоматизируем сборку с проверками и полной прослеживаемостью каждой цифры до источника.</p>
+      </div>
+      <div class="card card--glow" data-reveal>
+        <div class="card__index">05</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="what.c5t">Справочники в беспорядке</h3>
+        <p class="card__text" data-i18n="what.c5d">Один контрагент записан пятью способами, номенклатура дублируется. Наводим порядок в мастер-данных и ставим правила, которые не дают беспорядку вернуться.</p>
+      </div>
+      <div class="card card--glow" data-reveal>
+        <div class="card__index">06</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="what.c6t">Нужен прогноз, а не факт</h3>
+        <p class="card__text" data-i18n="what.c6d">Спрос, отток, загрузка, сроки. Строим модели там, где для них хватает накопленных данных, — и честно говорим, когда не хватает.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ КАК УСТРОЕНО ============ -->
+<section class="section" id="how">
+  <div class="wrap">
+    <div class="section-head section-head--wide">
+      <span class="eyebrow" data-i18n="how.eyebrow">Архитектура</span>
+      <h2 class="h2" data-i18n="how.title">Пять слоёв между источником и цифрой на экране</h2>
+      <p class="lead" data-i18n="how.lead">
+        Каждый слой можно проверить отдельно. Поэтому на вопрос «откуда взялось это число»
+        всегда есть ответ, а не предположение.
+      </p>
+    </div>
+
+    <div class="flow" data-reveal-group>
+      <div class="flow__node" data-reveal>
+        <span class="flow__step">01</span>
+        <span class="flow__name" data-i18n="how.n1t">Источники</span>
+        <span class="flow__text" data-i18n="how.n1d">Учётные системы, CRM, 1С, файлы, внешние API. Забираем без нагрузки на рабочие базы.</span>
+      </div>
+      <div class="flow__node" data-reveal>
+        <span class="flow__step">02</span>
+        <span class="flow__name" data-i18n="how.n2t">Загрузка</span>
+        <span class="flow__text" data-i18n="how.n2d">Регламентные потоки с расписанием, повторными попытками и журналом. Сбой виден сразу, а не через неделю.</span>
+      </div>
+      <div class="flow__node" data-reveal>
+        <span class="flow__step">03</span>
+        <span class="flow__name" data-i18n="how.n3t">Хранилище</span>
+        <span class="flow__text" data-i18n="how.n3d">Сырой слой и очищенный слой раздельно. Историю можно пересчитать заново, ничего не потеряв.</span>
+      </div>
+      <div class="flow__node" data-reveal>
+        <span class="flow__step">04</span>
+        <span class="flow__name" data-i18n="how.n4t">Витрины</span>
+        <span class="flow__text" data-i18n="how.n4d">Бизнес-логика показателей описана кодом и покрыта проверками качества. Определение одно на всю компанию.</span>
+      </div>
+      <div class="flow__node" data-reveal>
+        <span class="flow__step">05</span>
+        <span class="flow__name" data-i18n="how.n5t">Отчёты и BI</span>
+        <span class="flow__text" data-i18n="how.n5d">Дашборды, регламентные формы, выгрузки и рассылки. Плюс доступ к данным для ваших аналитиков.</span>
+      </div>
+    </div>
+
+    <div class="grid grid-3" style="margin-top:var(--sp-7)">
+      <div class="card" data-reveal>
+        <h3 class="card__title" data-i18n="how.b1t">Проверки качества</h3>
+        <p class="card__text" data-i18n="how.b1d">Каждая загрузка проходит набор тестов: полнота, дубли, ссылочная целостность, аномалии. Отчёт не обновится на битых данных.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h3 class="card__title" data-i18n="how.b2t">Прослеживаемость</h3>
+        <p class="card__text" data-i18n="how.b2d">Любой показатель разворачивается до исходных строк. Это снимает большую часть вопросов на приёмке и в спорах между отделами.</p>
+      </div>
+      <div class="card" data-reveal>
+        <h3 class="card__title" data-i18n="how.b3t">Разграничение доступа</h3>
+        <p class="card__text" data-i18n="how.b3d">Видимость данных по ролям и подразделениям, журнал обращений. Важно, когда в одном дашборде смотрят и руководитель филиала, и центральный офис.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ РЕЗУЛЬТАТ ============ -->
+<section class="section section--ruled" id="result">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="res.eyebrow">Результат</span>
+      <h2 class="h2" data-i18n="res.title">Что остаётся у вас после проекта</h2>
+    </div>
+
+    <div class="split-card">
+      <ul class="ticks">
+        <li data-i18n="res.l1">Работающее хранилище со всеми потоками загрузки и расписанием</li>
+        <li data-i18n="res.l2">Витрины с описанной бизнес-логикой показателей — в коде, а не в голове аналитика</li>
+        <li data-i18n="res.l3">Дашборды и регламентные формы, согласованные с теми, кто ими пользуется</li>
+        <li data-i18n="res.l4">Словарь показателей: что считается, по какой формуле и из какого источника</li>
+        <li data-i18n="res.l5">Проверки качества данных и оповещения о сбоях загрузки</li>
+        <li data-i18n="res.l6">Обучение ваших аналитиков работе с хранилищем и построению новых витрин</li>
+      </ul>
+
+      <div class="term">
+        <div class="term__bar">
+          <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="term__title">dwh · daily_load</span>
+          <span class="term__status"><span class="pulse-dot" aria-hidden="true"></span>06:12</span>
+        </div>
+        <div class="term__body">
+          <div class="term__row"><span class="term__k">extract · 14 sources</span><span class="term__v term__v--ok">ok</span></div>
+          <div class="term__row"><span class="term__k">load · raw layer</span><span class="term__v term__v--ok">ok</span></div>
+          <div class="term__row"><span class="term__k">transform · marts</span><span class="term__v term__v--ok">ok</span></div>
+          <div class="term__row"><span class="term__k">quality checks</span><span class="term__v term__v--ok">128/128</span></div>
+          <div class="term__row"><span class="term__k">dashboards</span><span class="term__v">refreshed</span></div>
+          <div class="term__row" style="margin-top:8px;border-top:1px solid var(--line);padding-top:8px">
+            <span class="term__dim">next run in 24h</span><span class="caret" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="faq.eyebrow">Вопросы об аналитике</span>
+      <h2 class="h2" data-i18n="faq.title">Что обычно уточняют</h2>
+    </div>
+    <div class="acc" data-acc="single">
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="a1">
+          <span data-i18n="faq.q1">У нас мало данных. Есть смысл начинать?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="a1" data-open="false"><div>
+          <p data-i18n="faq.a1">Для наведения порядка в отчётности — да, объём здесь роли не играет. Для прогнозных моделей — смотрим на глубину истории и стабильность процесса. Если данных не хватает, мы скажем об этом прямо и предложим начать с накопления, а не продадим модель, которая будет угадывать.</p>
+        </div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="a2">
+          <span data-i18n="faq.q2">Обязательно покупать Power BI?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="a2" data-open="false"><div>
+          <p data-i18n="faq.a2">Нет. Хранилище и витрины не зависят от инструмента визуализации — их можно подключить к Power BI, Superset, Metabase или к тому, что у вас уже есть. Мы работаем и с коммерческими, и с открытыми решениями, выбор зависит от бюджета, требований к размещению данных и того, кто будет строить отчёты дальше.</p>
+        </div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="a3">
+          <span data-i18n="faq.q3">Можно ли разместить всё внутри нашего контура?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="a3" data-open="false"><div>
+          <p data-i18n="faq.a3">Да, и для значительной части заказчиков это обязательное требование. Хранилище, потоки загрузки и BI разворачиваются на вашей инфраструктуре или в казахстанском облаке. Решение описывается кодом, поэтому перенос между площадками не превращается в отдельный проект.</p>
+        </div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="a4">
+          <span data-i18n="faq.q4">Сколько времени до первого дашборда?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="a4" data-open="false"><div>
+          <p data-i18n="faq.a4">Первый работающий отчёт по одному источнику — обычно три-четыре недели вместе с загрузкой и проверками. Полный контур из нескольких систем со сверкой и согласованием определений занимает несколько месяцев. Идти лучше по одной области за раз: так результат видно рано, а переделок меньше.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <div class="cta__inner">
+        <span class="eyebrow" data-i18n="ctaBlock.eyebrow">Следующий шаг</span>
+        <h2 class="h2" data-i18n="ctaBlock.title">Покажите один отчёт, который болит сильнее всех</h2>
+        <p class="lead" data-i18n="ctaBlock.lead">
+          С него и начнём. Обычно этого достаточно, чтобы понять состояние данных
+          и оценить объём работ по всему контуру.
+        </p>
+        <div class="hero__actions" style="margin-top:var(--sp-5)">
+          <a class="btn btn--primary btn--lg" href="../contacts.html#brief">
+            <span data-i18n="cta.brief">Оставить заявку</span>
+            <svg class="arrow" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#" data-contact="phone" data-contact-text></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="../index.html" aria-label="JUZ">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="lmf" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F7CFF"/><stop offset="1" stop-color="#22D3EE"/>
+          </linearGradient>
+        </defs>
+        <path d="M16 2.4 29.6 16 16 29.6 2.4 16Z" stroke="url(#lmf)" stroke-width="1.4" opacity=".5"/><path d="M16 8.8 23.2 16 16 23.2 8.8 16Z" fill="url(#lmf)"/>
+      </svg>
+      <span class="logo__text">JUZ<span class="logo__sub" data-i18n="brand.tagline">Software engineering</span></span>
+    </a>
+        <p class="small muted" style="margin-top:var(--sp-5);max-width:40ch" data-i18n="footer.about">
+          Разработка ПО, сопровождение информационных систем и аналитика данных для бизнеса и госсектора Казахстана.
+        </p>
+        <a class="sister" href="https://ortajuz.kz" data-link="sisterUrl" style="margin-top:var(--sp-5)">
+          <span class="sister__dot" aria-hidden="true"></span>
+          <span><span data-i18n="footer.sisterHint">Бренд группы</span> — ORTAJUZ: <span data-i18n="footer.sisterWhat">эксплуатация и поддержка ИС 24/7</span></span>
+        </a>
+      </div>
+
+      <div>
+        <div class="footer__title" data-i18n="footer.servicesTitle">Услуги</div>
+        <div class="footer__list">
+          <a href="../services/development.html" data-i18n="nav.development">Разработка ПО</a>
+          <a href="../services/support.html" data-i18n="nav.support">Сопровождение ИС</a>
+          <a href="../services/analytics.html" data-i18n="nav.analytics">Аналитика данных</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__title" data-i18n="footer.companyTitle">Компания</div>
+        <div class="footer__list">
+          <a href="../index.html#approach" data-i18n="footer.approach">Как мы работаем</a>
+          <a href="../index.html#stack" data-i18n="footer.stack">Технологии</a>
+          <a href="../index.html#faq" data-i18n="footer.faq">Частые вопросы</a>
+          <a href="../contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__title" data-i18n="footer.contactsTitle">Контакты</div>
+        <div class="footer__list">
+          <a href="#" data-contact="phone" data-contact-text></a>
+          <a href="#" data-contact="email" data-contact-text></a>
+          <span data-contact="address" data-contact-text></span>
+          <span data-contact="hours" data-contact-text></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> <span data-contact="legalName" data-contact-text></span>. <span data-i18n="footer.rights">Все права защищены.</span></span>
+      <span class="mono">juz.kz</span>
+    </div>
+  </div>
+</footer>
+
+<div class="quick">
+  <a class="quick__btn" href="#" data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+  </a>
+  <a class="quick__btn" href="#" data-link="telegram" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.03c-.25 1.1-.9 1.38-1.83.86l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.15L17.99 6.4c.41-.36-.09-.56-.63-.2L5.78 13.4.83 11.85c-1.08-.34-1.1-1.08.22-1.6L20.55 2.7c.9-.33 1.68.2 1.39 1.6Z"/></svg>
+  </a>
+  <a class="quick__btn" href="#" data-contact="phone" aria-label="Позвонить">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+  </a>
+</div>
+
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/i18n-common.js"></script>
+<script src="../assets/js/i18n-brand.js"></script>
+<script src="../assets/js/i18n-analytics.js"></script>
+<script src="../assets/js/i18n.js"></script>
+<script src="../assets/js/core.js"></script>
+</body>
+</html>

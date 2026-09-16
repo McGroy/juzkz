@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JUZ — разработка ПО, сопровождение ИС и аналитика данных</title>
+<meta name="description" content="Проектируем, разрабатываем и сопровождаем информационные системы для бизнеса и госсектора Казахстана. Фиксированный объём после дискавери, код и документация — у заказчика.">
+<meta name="theme-color" content="#04060A">
+<link rel="canonical" href="https://juz.kz/">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="JUZ">
+<meta property="og:title" content="JUZ — разработка ПО, сопровождение ИС и аналитика данных">
+<meta property="og:description" content="Информационные системы, которые продолжают работать после сдачи проекта.">
+<meta property="og:url" content="https://juz.kz/">
+<meta property="og:image" content="https://juz.kz/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="ru" href="https://juz.kz/?lang=ru">
+<link rel="alternate" hreflang="kk" href="https://juz.kz/?lang=kk">
+<link rel="alternate" hreflang="en" href="https://juz.kz/?lang=en">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script>document.documentElement.className += " js";</script>
+<link rel="stylesheet" href="assets/css/core.css">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">К основному содержанию</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<!-- ======================= ШАПКА ======================= -->
+<header class="header">
+  <div class="header__inner">
+    <a class="logo" href="./" aria-label="JUZ — на главную">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="lm" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#4F7CFF"/><stop offset="1" stop-color="#22D3EE"/>
+          </linearGradient>
+        </defs>
+        <path d="M16 2.4 29.6 16 16 29.6 2.4 16Z" stroke="url(#lm)" stroke-width="1.4" opacity=".5"/>
+        <path d="M16 8.8 23.2 16 16 23.2 8.8 16Z" fill="url(#lm)"/>
+      </svg>
+      <span class="logo__text">
+        JUZ
+        <span class="logo__sub" data-i18n="brand.tagline">Software engineering</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="nav__link" href="services/development.html" data-i18n="nav.development">Разработка</a>
+      <a class="nav__link" href="services/support.html" data-i18n="nav.support">Сопровождение</a>
+      <a class="nav__link" href="services/analytics.html" data-i18n="nav.analytics">Аналитика</a>
+      <a class="nav__link" href="#approach" data-i18n="nav.approach">Подход</a>
+      <a class="nav__link" href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+      <a class="btn btn--primary nav__cta" href="contacts.html#brief" data-i18n="cta.brief">Оставить заявку</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="langs" role="group" aria-label="Язык сайта">
+        <button class="langs__btn" type="button" data-lang-btn="ru" aria-pressed="true">Ру</button>
+        <button class="langs__btn" type="button" data-lang-btn="kk" aria-pressed="false">Қаз</button>
+        <button class="langs__btn" type="button" data-lang-btn="en" aria-pressed="false">En</button>
+      </div>
+      <a class="btn btn--primary btn--sm btn--cta" href="contacts.html#brief" data-i18n="cta.brief">Оставить заявку</a>
+      <button class="burger" type="button" aria-expanded="false" aria-label="Меню">
+        <span class="burger__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ======================= ГЕРОЙ ======================= -->
+<section class="hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow glow--a" aria-hidden="true"></div>
+  <div class="glow glow--b" aria-hidden="true"></div>
+  <canvas class="hero__canvas" aria-hidden="true"></canvas>
+
+  <div class="wrap hero__inner hero__grid">
+   <div class="hero__content">
+    <span class="eyebrow" data-i18n="hero.eyebrow">Разработка ПО · Сопровождение ИС · Аналитика</span>
+
+    <h1 class="display hero__title" data-i18n-html="hero.title">
+      Системы, которые работают <span class="accent-text">после</span> сдачи проекта
+    </h1>
+
+    <p class="lead hero__lead" data-i18n="hero.lead">
+      JUZ проектирует, разрабатывает и сопровождает информационные системы для бизнеса
+      и госсектора Казахстана. Объём и цена фиксируются до старта. Код, документация
+      и права остаются у вас — сменить подрядчика можно в любой момент.
+    </p>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary btn--lg" href="contacts.html#brief">
+        <span data-i18n="cta.discuss">Обсудить задачу</span>
+        <svg class="arrow" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--ghost btn--lg" href="#services" data-i18n="cta.allServices">Смотреть услуги</a>
+    </div>
+
+    <div class="hero__meta">
+      <span class="hero__meta-item"><span class="pulse-dot" aria-hidden="true"></span><span data-i18n="hero.meta1">Принимаем новые проекты</span></span>
+      <span class="hero__meta-item"><strong data-i18n="hero.meta2Strong">1 рабочий день</strong><span data-i18n="hero.meta2">— срок ответа на заявку</span></span>
+      <span class="hero__meta-item"><strong data-i18n="hero.meta3Strong">RU · KZ · EN</strong><span data-i18n="hero.meta3">— языки проектной работы</span></span>
+    </div>
+   </div>
+
+   <aside class="hero__panel">
+     <div class="term">
+       <div class="term__bar">
+         <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+         <span class="term__title">delivery · release 14</span>
+         <span class="term__status"><span class="pulse-dot" aria-hidden="true"></span>live</span>
+       </div>
+       <div class="term__body">
+         <div class="term__row"><span class="term__prompt">01</span><span class="term__k" data-i18n="panel.r1">дискавери</span><span class="term__v term__v--ok" data-i18n="panel.v1">принято</span></div>
+         <div class="term__row"><span class="term__prompt">02</span><span class="term__k" data-i18n="panel.r2">архитектура</span><span class="term__v term__v--ok" data-i18n="panel.v2">принято</span></div>
+         <div class="term__row"><span class="term__prompt">03</span><span class="term__k" data-i18n="panel.r3">спринт 7 · демо</span><span class="term__v term__v--ok" data-i18n="panel.v3">принято</span></div>
+         <div class="term__row"><span class="term__prompt">04</span><span class="term__k" data-i18n="panel.r4">нагрузочное тестирование</span><span class="term__v" data-i18n="panel.v4">идёт</span></div>
+         <div class="term__row"><span class="term__prompt">05</span><span class="term__k term__dim" data-i18n="panel.r5">передача и обучение</span><span class="term__v term__dim" data-i18n="panel.v5">запланировано</span></div>
+         <div class="term__row" style="margin-top:8px;border-top:1px solid var(--line);padding-top:8px">
+           <span class="term__k" data-i18n="panel.r6">код и документация</span><span class="term__v term__v--ok" data-i18n="panel.v6">у заказчика</span>
+         </div>
+       </div>
+     </div>
+
+     <div class="hero__panel-stats">
+       <div class="hero__panel-stat"><b>10</b><span data-i18n="panel.s1">раб. дней до плана и оценки</span></div>
+       <div class="hero__panel-stat"><b>2 <span data-i18n="panel.s2u">нед.</span></b><span data-i18n="panel.s2">спринт с демо и приёмкой</span></div>
+       <div class="hero__panel-stat"><b>24/7</b><span data-i18n="panel.s3">режим поддержки</span></div>
+     </div>
+   </aside>
+  </div>
+</section>
+
+<!-- ======================= СТЕК (БЕГУЩАЯ СТРОКА) ======================= -->
+<section class="section--tight" style="padding-block:0 var(--sp-8)">
+  <div class="wrap">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">Java / Spring</span>
+        <span class="marquee__item">.NET</span>
+        <span class="marquee__item">Python</span>
+        <span class="marquee__item">Go</span>
+        <span class="marquee__item">TypeScript</span>
+        <span class="marquee__item">React</span>
+        <span class="marquee__item">PostgreSQL</span>
+        <span class="marquee__item">ClickHouse</span>
+        <span class="marquee__item">Oracle</span>
+        <span class="marquee__item">Kafka</span>
+        <span class="marquee__item">Airflow</span>
+        <span class="marquee__item">Kubernetes</span>
+        <span class="marquee__item">GitLab CI</span>
+        <span class="marquee__item">Terraform</span>
+        <span class="marquee__item">Grafana</span>
+        <span class="marquee__item">Power BI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= БОЛЬ / РЕШЕНИЕ ======================= -->
+<section class="section section--ruled" id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="why.eyebrow">Почему к нам приходят</span>
+      <h2 class="h2" data-i18n="why.title">Проблема редко в технологиях. Почти всегда — в том, как устроена работа</h2>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card" data-reveal>
+        <div class="card__index" data-i18n="why.badLabel">ТИПИЧНАЯ КАРТИНА</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="why.badTitle">Как это обычно выглядит</h3>
+        <ul class="ticks crosses" style="margin-top:var(--sp-5)">
+          <li data-i18n="why.bad1">Оценка «на глаз» до того, как кто-то разобрался в процессах, — сроки и бюджет плывут с первого месяца.</li>
+          <li data-i18n="why.bad2">Система работает, но изменить её не может никто, кроме подрядчика, который её написал.</li>
+          <li data-i18n="why.bad3">Документация появляется в день сдачи и устаревает через два релиза.</li>
+          <li data-i18n="why.bad4">Поддержка «по звонку»: без приоритетов, без времени реакции, без отчётности.</li>
+          <li data-i18n="why.bad5">Отчётность собирается вручную в Excel к каждому совещанию — и всё равно расходится.</li>
+        </ul>
+      </div>
+
+      <div class="card card--glow" data-reveal style="--reveal-delay:90ms">
+        <div class="card__index" style="color:var(--accent-2)" data-i18n="why.goodLabel">ПОДХОД JUZ</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="why.goodTitle">Как мы это меняем</h3>
+        <ul class="ticks" style="margin-top:var(--sp-5)">
+          <li data-i18n="why.good1">Дискавери до договора: объём, риски и цена фиксируются письменно, прежде чем начнётся разработка.</li>
+          <li data-i18n="why.good2">Инфраструктура как код, CI/CD и автотесты входят в поставку — систему можно развивать без нас.</li>
+          <li data-i18n="why.good3">Документация живёт в репозитории и обновляется в каждом релизе, а не пишется задним числом.</li>
+          <li data-i18n="why.good4">Регламент поддержки: уровни критичности, время реакции и восстановления, ежемесячный отчёт.</li>
+          <li data-i18n="why.good5">Витрины данных и BI: цифры собираются автоматически и сходятся между отчётами.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= УСЛУГИ ======================= -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="services.eyebrow">Услуги</span>
+      <h2 class="h2" data-i18n="services.title">Три направления. Одна инженерная культура</h2>
+      <p class="lead" data-i18n="services.lead">
+        Берём задачу на любом этапе: с нуля, с середины чужого проекта или с уже работающей
+        системы, которую нужно держать в строю и развивать.
+      </p>
+    </div>
+
+    <div class="bento" data-reveal-group>
+      <a class="card card--glow card--link card--wide" href="services/development.html" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M8 17 3 12l5-5M16 7l5 5-5 5M13.5 4l-3 16"/>
+          </svg>
+        </div>
+        <div class="card__index">01</div>
+        <h3 class="card__title" style="margin-top:var(--sp-2)" data-i18n="services.devTitle">Разработка ПО на заказ</h3>
+        <p class="card__text" data-i18n="services.devText">
+          Корпоративные порталы и личные кабинеты, учётные и отраслевые системы,
+          интеграционные шины, мобильные приложения. От дискавери до промышленной эксплуатации.
+        </p>
+        <div class="chip-row" style="margin-top:var(--sp-5)">
+          <span class="chip" data-i18n="services.devChip1">Дискавери и ТЗ</span>
+          <span class="chip" data-i18n="services.devChip2">Архитектура</span>
+          <span class="chip" data-i18n="services.devChip3">Интеграции</span>
+          <span class="chip" data-i18n="services.devChip4">Запуск и передача</span>
+        </div>
+        <span class="link-arrow" style="margin-top:var(--sp-6)">
+          <span data-i18n="cta.more">Подробнее</span>
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="card card--glow card--link card--wide" href="services/support.html" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><path d="M17 3.5 22 6l-2.5 4.5"/>
+          </svg>
+        </div>
+        <div class="card__index">02</div>
+        <h3 class="card__title" style="margin-top:var(--sp-2)" data-i18n="services.supTitle">Сопровождение и развитие ИС</h3>
+        <p class="card__text" data-i18n="services.supText">
+          Принимаем на поддержку системы, написанные не нами. Аудит, передача знаний,
+          регламент SLA, мониторинг, планомерное снятие legacy-рисков и развитие функциональности.
+        </p>
+        <div class="chip-row" style="margin-top:var(--sp-5)">
+          <span class="chip" data-i18n="services.supChip1">SLA и приоритеты</span>
+          <span class="chip" data-i18n="services.supChip2">Мониторинг</span>
+          <span class="chip" data-i18n="services.supChip3">Аудит legacy</span>
+          <span class="chip" data-i18n="services.supChip4">Развитие</span>
+        </div>
+        <span class="link-arrow" style="margin-top:var(--sp-6)">
+          <span data-i18n="cta.more">Подробнее</span>
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="card card--glow card--link card--full" href="services/analytics.html" data-reveal>
+        <div class="split-card">
+          <div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/>
+              </svg>
+            </div>
+            <div class="card__index">03</div>
+            <h3 class="card__title" style="margin-top:var(--sp-2)" data-i18n="services.anTitle">Аналитика и работа с данными</h3>
+            <p class="card__text" style="max-width:62ch" data-i18n="services.anText">
+              Собираем данные из разрозненных систем в одно хранилище, наводим порядок в справочниках
+              и делаем отчётность, которой можно пользоваться на совещании, а не пересобирать перед ним.
+            </p>
+            <div class="chip-row" style="margin-top:var(--sp-5)">
+              <span class="chip" data-i18n="services.anChip1">Хранилище и ETL</span>
+              <span class="chip" data-i18n="services.anChip2">BI-витрины</span>
+              <span class="chip" data-i18n="services.anChip3">Регламентная отчётность</span>
+              <span class="chip" data-i18n="services.anChip4">Прогнозные модели</span>
+            </div>
+            <span class="link-arrow" style="margin-top:var(--sp-6)">
+              <span data-i18n="cta.more">Подробнее</span>
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+
+          <div class="term">
+            <div class="term__bar">
+              <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="term__title">dwh · daily_load</span>
+            </div>
+            <div class="term__body">
+              <div class="term__row"><span class="term__k">extract · 14 sources</span><span class="term__v term__v--ok">ok</span></div>
+              <div class="term__row"><span class="term__k">transform · dbt run</span><span class="term__v term__v--ok">ok</span></div>
+              <div class="term__row"><span class="term__k">quality checks</span><span class="term__v term__v--ok">128/128</span></div>
+              <div class="term__row"><span class="term__k">marts refreshed</span><span class="term__v">06:12</span></div>
+              <div class="term__row"><span class="term__dim">next run 24h</span><span class="caret" aria-hidden="true"></span></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= МЕТРИКИ ======================= -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="stats" data-reveal>
+      <div class="stat">
+        <span class="stat__value"><span data-count="10">10</span></span>
+        <span class="stat__label" data-i18n="stats.l1">рабочих дней от брифа до плана работ, архитектурного наброска и оценки</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value"><span data-count="2">2</span> <span data-i18n="stats.v2">нед.</span></span>
+        <span class="stat__label" data-i18n="stats.l2">длина спринта: демо, приёмка и работающая сборка в конце каждого</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value"><span data-count="100" data-count-suffix="%">100%</span></span>
+        <span class="stat__label" data-i18n="stats.l3">исходного кода, документации и прав передаётся заказчику</span>
+      </div>
+      <div class="stat">
+        <span class="stat__value">24/7</span>
+        <span class="stat__label" data-i18n="stats.l4">режим поддержки для систем с круглосуточной критичностью</span>
+      </div>
+    </div>
+    <p class="xs dim" style="margin-top:var(--sp-4)" data-i18n="stats.note">
+      Это наши обязательства по регламенту работы, а не усреднённая статистика.
+    </p>
+  </div>
+</section>
+
+<!-- ======================= ПОДХОД ======================= -->
+<section class="section section--ruled" id="approach">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="approach.eyebrow">Как мы работаем</span>
+      <h2 class="h2" data-i18n="approach.title">Пять этапов, на каждом из которых видно результат</h2>
+      <p class="lead" data-i18n="approach.lead">
+        Ни один этап не заканчивается обещанием. Каждый заканчивается документом,
+        работающей сборкой или запущенным контуром.
+      </p>
+    </div>
+
+    <ol class="steps">
+      <li class="step" data-reveal>
+        <span class="step__num">01</span>
+        <div class="step__body">
+          <h3 class="step__title" data-i18n="approach.s1Title">Дискавери</h3>
+          <p class="step__text" data-i18n="approach.s1Text">
+            Интервью с владельцами процессов, разбор текущего ландшафта, аудит систем и данных.
+            Отвечаем на главный вопрос: что именно нужно построить и нужно ли строить вообще.
+          </p>
+          <div class="step__meta">
+            <span class="chip" data-i18n="approach.s1M1">1–2 недели</span>
+            <span class="chip chip--accent" data-i18n="approach.s1M2">Выход: требования, архитектура, оценка, план</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="step" data-reveal>
+        <span class="step__num">02</span>
+        <div class="step__body">
+          <h3 class="step__title" data-i18n="approach.s2Title">Архитектура и прототип</h3>
+          <p class="step__text" data-i18n="approach.s2Text">
+            Проектируем модель данных, интеграции и контур безопасности. Собираем кликабельный
+            прототип ключевых сценариев, чтобы спорить об интерфейсе до того, как он написан.
+          </p>
+          <div class="step__meta">
+            <span class="chip" data-i18n="approach.s2M1">2–3 недели</span>
+            <span class="chip chip--accent" data-i18n="approach.s2M2">Выход: схема данных, ТЗ, прототип</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="step" data-reveal>
+        <span class="step__num">03</span>
+        <div class="step__body">
+          <h3 class="step__title" data-i18n="approach.s3Title">Инженерия</h3>
+          <p class="step__text" data-i18n="approach.s3Text">
+            Спринты по две недели с демо и приёмкой. Код с первого дня лежит в вашем репозитории,
+            CI/CD и автотесты настраиваются до первой строчки бизнес-логики.
+          </p>
+          <div class="step__meta">
+            <span class="chip" data-i18n="approach.s3M1">Спринты по 2 недели</span>
+            <span class="chip chip--accent" data-i18n="approach.s3M2">Выход: работающая сборка каждые 2 недели</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="step" data-reveal>
+        <span class="step__num">04</span>
+        <div class="step__body">
+          <h3 class="step__title" data-i18n="approach.s4Title">Запуск</h3>
+          <p class="step__text" data-i18n="approach.s4Text">
+            Нагрузочное и приёмочное тестирование, миграция данных, обучение пользователей
+            и администраторов, эксплуатационная документация и регламенты.
+          </p>
+          <div class="step__meta">
+            <span class="chip" data-i18n="approach.s4M1">2–4 недели</span>
+            <span class="chip chip--accent" data-i18n="approach.s4M2">Выход: система в промышленной эксплуатации</span>
+          </div>
+        </div>
+      </li>
+
+      <li class="step" data-reveal>
+        <span class="step__num">05</span>
+        <div class="step__body">
+          <h3 class="step__title" data-i18n="approach.s5Title">Эксплуатация и развитие</h3>
+          <p class="step__text" data-i18n="approach.s5Text">
+            Сопровождение по SLA, мониторинг, план развития на год. Или полная передача системы
+            вашей команде — с документацией и обучением, без штрафов и заложников.
+          </p>
+          <div class="step__meta">
+            <span class="chip" data-i18n="approach.s5M1">Договор на год</span>
+            <span class="chip chip--accent" data-i18n="approach.s5M2">Выход: SLA, отчётность, роадмап</span>
+          </div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ======================= ФОРМАТЫ СОТРУДНИЧЕСТВА ======================= -->
+<section class="section" id="models">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="models.eyebrow">Форматы сотрудничества</span>
+      <h2 class="h2" data-i18n="models.title">Формат подбирается под задачу, а не наоборот</h2>
+    </div>
+
+    <div class="tabs" data-tabs>
+      <div class="tabs__list" role="tablist" aria-label="Форматы сотрудничества">
+        <button class="tabs__btn" role="tab" id="tab-fp" aria-controls="panel-fp" type="button" data-i18n="models.t1">Фиксированная цена</button>
+        <button class="tabs__btn" role="tab" id="tab-tm" aria-controls="panel-tm" type="button" data-i18n="models.t2">Time &amp; Material</button>
+        <button class="tabs__btn" role="tab" id="tab-team" aria-controls="panel-team" type="button" data-i18n="models.t3">Выделенная команда</button>
+        <button class="tabs__btn" role="tab" id="tab-sla" aria-controls="panel-sla" type="button" data-i18n="models.t4">Сопровождение по SLA</button>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="panel-fp" aria-labelledby="tab-fp">
+        <div class="grid grid-2">
+          <div>
+            <h3 class="h3" data-i18n="models.p1Title">Когда объём понятен</h3>
+            <p class="lead small" style="margin-top:var(--sp-3)" data-i18n="models.p1Text">
+              Подходит, если прошёл этап дискавери и требования зафиксированы. Цена и срок
+              зафиксированы в договоре, риск переработки — на нашей стороне.
+            </p>
+          </div>
+          <ul class="ticks">
+            <li data-i18n="models.p1L1">Бюджет известен до начала работ и не меняется без письменного запроса на изменение</li>
+            <li data-i18n="models.p1L2">Приёмка по формальным критериям из технического задания</li>
+            <li data-i18n="models.p1L3">Требует полноценного дискавери — иначе фиксировать нечего</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="panel-tm" aria-labelledby="tab-tm" hidden>
+        <div class="grid grid-2">
+          <div>
+            <h3 class="h3" data-i18n="models.p2Title">Когда объём будет меняться</h3>
+            <p class="lead small" style="margin-top:var(--sp-3)" data-i18n="models.p2Text">
+              Продуктовая разработка, исследовательские задачи, доработка живой системы.
+              Оплата за фактические часы, приоритеты пересматриваются каждый спринт.
+            </p>
+          </div>
+          <ul class="ticks">
+            <li data-i18n="models.p2L1">Прозрачный учёт времени и детализация по задачам в конце месяца</li>
+            <li data-i18n="models.p2L2">Согласованный потолок бюджета на период — без сюрпризов в счёте</li>
+            <li data-i18n="models.p2L3">Можно останавливать и возобновлять работы между спринтами</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="panel-team" aria-labelledby="tab-team" hidden>
+        <div class="grid grid-2">
+          <div>
+            <h3 class="h3" data-i18n="models.p3Title">Когда нужна долгая программа</h3>
+            <p class="lead small" style="margin-top:var(--sp-3)" data-i18n="models.p3Text">
+              Выделенная команда работает на вашей стороне от полугода: разработчики,
+              аналитик, тестировщик, DevOps. Управление — совместное.
+            </p>
+          </div>
+          <ul class="ticks">
+            <li data-i18n="models.p3L1">Фиксированный состав и месячная ставка, без перебросов между проектами</li>
+            <li data-i18n="models.p3L2">Команда работает в ваших процессах и вашем трекере</li>
+            <li data-i18n="models.p3L3">Возможен постепенный переход людей и компетенций в ваш штат</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabs__panel" role="tabpanel" id="panel-sla" aria-labelledby="tab-sla" hidden>
+        <div class="grid grid-2">
+          <div>
+            <h3 class="h3" data-i18n="models.p4Title">Когда система уже работает</h3>
+            <p class="lead small" style="margin-top:var(--sp-3)" data-i18n="models.p4Text">
+              Годовой договор на поддержку с уровнями критичности, временем реакции
+              и восстановления. Включает часы на развитие, а не только на починку.
+            </p>
+          </div>
+          <ul class="ticks">
+            <li data-i18n="models.p4L1">Классы инцидентов и измеримое время реакции по каждому</li>
+            <li data-i18n="models.p4L2">Ежемесячный отчёт: инциденты, изменения, накопленный технический долг</li>
+            <li data-i18n="models.p4L3">Пул часов на доработки, переносимый внутри квартала</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= ТЕХНОЛОГИИ ======================= -->
+<section class="section section--ruled" id="stack">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="stack.eyebrow">Технологии</span>
+      <h2 class="h2" data-i18n="stack.title">Зрелый стек без экзотики</h2>
+      <p class="lead" data-i18n="stack.lead">
+        Выбираем то, под что в Казахстане реально нанять инженеров. Систему должно быть
+        кому поддерживать и через пять лет — в том числе без нас.
+      </p>
+    </div>
+
+    <div class="grid grid-3" data-reveal-group>
+      <div class="card" data-reveal>
+        <h3 class="card__title" data-i18n="stack.c1">Бэкенд</h3>
+        <div class="chip-row" style="margin-top:var(--sp-4)">
+          <span class="chip">Java · Spring</span><span class="chip">.NET</span><span class="chip">Python · FastAPI</span>
+          <span class="chip">Go</span><span class="chip">Node.js</span>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <h3 class="card__title" data-i18n="stack.c2">Фронтенд</h3>
+        <div class="chip-row" style="margin-top:var(--sp-4)">
+          <span class="chip">TypeScript</span><span class="chip">React</span><span class="chip">Next.js</span>
+          <span class="chip">Vue</span><span class="chip">Design system</span>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <h3 class="card__title" data-i18n="stack.c3">Данные</h3>
+        <div class="chip-row" style="margin-top:var(--sp-4)">
+          <span class="chip">PostgreSQL</span><span class="chip">Oracle</span><span class="chip">MS SQL</span>
+          <span class="chip">ClickHouse</span><span class="chip">Kafka</span><span class="chip">Airflow</span>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <h3 class="card__title" data-i18n="stack.c4">Аналитика и BI</h3>
+        <div class="chip-row" style="margin-top:var(--sp-4)">
+          <span class="chip">Power BI</span><span class="chip">Superset</span><span class="chip">Metabase</span>
+          <span class="chip">Grafana</span><span class="chip">dbt</span>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <h3 class="card__title" data-i18n="stack.c5">Инфраструктура</h3>
+        <div class="chip-row" style="margin-top:var(--sp-4)">
+          <span class="chip">Docker</span><span class="chip">Kubernetes</span><span class="chip">GitLab CI</span>
+          <span class="chip">Ansible</span><span class="chip">Terraform</span><span class="chip">Zabbix</span>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <h3 class="card__title" data-i18n="stack.c6">Интеграции</h3>
+        <div class="chip-row" style="margin-top:var(--sp-4)">
+          <span class="chip">REST · gRPC</span><span class="chip">SOAP</span><span class="chip">1С</span>
+          <span class="chip">ЭЦП НУЦ РК</span><span class="chip">ШЭП</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FAQ ======================= -->
+<section class="section" id="faq">
+  <div class="wrap wrap--narrow">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="faq.eyebrow">Частые вопросы</span>
+        <h2 class="h2" data-i18n="faq.title">То, что спрашивают на первом созвоне</h2>
+      </div>
+
+      <div class="acc" data-acc="single">
+        <div class="acc__item">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq1">
+            <span data-i18n="faq.q1">Возьмёте на сопровождение систему, которую писали не вы?</span>
+            <span class="acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq1" data-open="false"><div>
+            <p data-i18n="faq.a1">Да, это один из основных сценариев. Начинаем с аудита: код, инфраструктура, данные, документация, критичные точки отказа. По итогам аудита получаете отчёт с рисками и план перехода — даже если дальше решите работать с другим подрядчиком. Полноценный SLA включается после периода параллельной работы с текущей командой или после передачи знаний.</p>
+          </div></div>
+        </div>
+
+        <div class="acc__item">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq2">
+            <span data-i18n="faq.q2">Как формируется цена?</span>
+            <span class="acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq2" data-open="false"><div>
+            <p data-i18n="faq.a2">Назвать честную цену до дискавери нельзя — можно только назвать диапазон. Поэтому дискавери оформляется отдельным небольшим договором: на выходе вы получаете требования, архитектурный набросок, план работ и твёрдую оценку. Дальше выбираете формат: фиксированная цена, Time &amp; Material или выделенная команда. Результаты дискавери остаются у вас в любом случае.</p>
+          </div></div>
+        </div>
+
+        <div class="acc__item">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq3">
+            <span data-i18n="faq.q3">Кому принадлежит код и что будет, если мы захотим уйти?</span>
+            <span class="acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq3" data-open="false"><div>
+            <p data-i18n="faq.a3">Исключительные права на разработанный код, документация и все артефакты проекта передаются заказчику по договору. Репозиторий ваш с первого дня, инфраструктура описана кодом, доступы — на вашей стороне. Уйти можно в любой момент: мы проводим передачу знаний и отдаём эксплуатационную документацию. Это условие договора, а не жест доброй воли.</p>
+          </div></div>
+        </div>
+
+        <div class="acc__item">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq4">
+            <span data-i18n="faq.q4">У нас нет технического задания. С чем к вам приходить?</span>
+            <span class="acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq4" data-open="false"><div>
+            <p data-i18n="faq.a4">Достаточно описания проблемы своими словами: что болит, кто страдает, чего не хватает. Техническое задание — это результат дискавери, а не входное условие. Более того, ТЗ, написанное без участия инженеров, чаще мешает, чем помогает: в нём обычно зафиксировано решение, а не задача.</p>
+          </div></div>
+        </div>
+
+        <div class="acc__item">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq5">
+            <span data-i18n="faq.q5">Как быстро вы можете начать?</span>
+            <span class="acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq5" data-open="false"><div>
+            <p data-i18n="faq.a5">На заявку отвечаем в течение рабочего дня и предлагаем созвон на 30–40 минут. Дискавери обычно стартует в течение одной-двух недель после подписания. Для инцидентов на системах, уже стоящих у нас на сопровождении, действует отдельный регламент реакции.</p>
+          </div></div>
+        </div>
+
+        <div class="acc__item">
+          <button class="acc__btn" type="button" aria-expanded="false" aria-controls="faq6">
+            <span data-i18n="faq.q6">Чем JUZ отличается от ORTAJUZ?</span>
+            <span class="acc__sign" aria-hidden="true"></span>
+          </button>
+          <div class="acc__panel" id="faq6" data-open="false"><div>
+            <p data-i18n="faq.a6">Это два бренда одной команды. JUZ ведёт проектную работу: дискавери, проектирование и разработку новых систем. ORTAJUZ отвечает за эксплуатацию: круглосуточное дежурство, SLA, мониторинг и сопровождение уже работающих систем. Обе стороны используют один стек и одни инженерные стандарты, поэтому передача системы из разработки в эксплуатацию не превращается в отдельный проект.</p>
+          </div></div>
+        </div>
+      </div>
+  </div>
+</section>
+
+<!-- ======================= CTA ======================= -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <div class="cta__inner">
+        <span class="eyebrow" data-i18n="ctaBlock.eyebrow">Следующий шаг</span>
+        <h2 class="h2" data-i18n="ctaBlock.title">Расскажите задачу — вернёмся с планом, а не с презентацией</h2>
+        <p class="lead" data-i18n="ctaBlock.lead">
+          В ответ на заявку вы получите уточняющие вопросы, предварительную оценку объёма
+          и конкретное предложение по первому шагу. Без слайдов о том, какие мы надёжные.
+        </p>
+        <div class="hero__actions" style="margin-top:var(--sp-5)">
+          <a class="btn btn--primary btn--lg" href="contacts.html#brief">
+            <span data-i18n="cta.brief">Оставить заявку</span>
+            <svg class="arrow" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#" data-contact="phone" data-contact-text></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ======================= ПОДВАЛ ======================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="./" aria-label="JUZ">
+          <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <defs>
+              <linearGradient id="lmf" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#4F7CFF"/><stop offset="1" stop-color="#22D3EE"/>
+              </linearGradient>
+            </defs>
+            <path d="M16 2.4 29.6 16 16 29.6 2.4 16Z" stroke="url(#lmf)" stroke-width="1.4" opacity=".5"/>
+            <path d="M16 8.8 23.2 16 16 23.2 8.8 16Z" fill="url(#lmf)"/>
+          </svg>
+          <span class="logo__text">JUZ<span class="logo__sub" data-i18n="brand.tagline">Software engineering</span></span>
+        </a>
+        <p class="small muted" style="margin-top:var(--sp-5);max-width:40ch" data-i18n="footer.about">
+          Разработка ПО, сопровождение информационных систем и аналитика данных
+          для бизнеса и госсектора Казахстана.
+        </p>
+        <a class="sister" href="https://ortajuz.kz" data-link="sisterUrl" style="margin-top:var(--sp-5)">
+          <span class="sister__dot" aria-hidden="true"></span>
+          <span><span data-i18n="footer.sisterHint">Бренд группы</span> — ORTAJUZ: <span data-i18n="footer.sisterWhat">эксплуатация и поддержка ИС 24/7</span></span>
+        </a>
+      </div>
+
+      <div>
+        <div class="footer__title" data-i18n="footer.servicesTitle">Услуги</div>
+        <div class="footer__list">
+          <a href="services/development.html" data-i18n="nav.development">Разработка ПО</a>
+          <a href="services/support.html" data-i18n="nav.support">Сопровождение ИС</a>
+          <a href="services/analytics.html" data-i18n="nav.analytics">Аналитика данных</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__title" data-i18n="footer.companyTitle">Компания</div>
+        <div class="footer__list">
+          <a href="#approach" data-i18n="footer.approach">Как мы работаем</a>
+          <a href="#stack" data-i18n="footer.stack">Технологии</a>
+          <a href="#faq" data-i18n="footer.faq">Частые вопросы</a>
+          <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__title" data-i18n="footer.contactsTitle">Контакты</div>
+        <div class="footer__list">
+          <a href="#" data-contact="phone" data-contact-text></a>
+          <a href="#" data-contact="email" data-contact-text></a>
+          <span data-contact="address" data-contact-text></span>
+          <span data-contact="hours" data-contact-text></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> <span data-contact="legalName" data-contact-text></span>. <span data-i18n="footer.rights">Все права защищены.</span></span>
+      <span class="mono">juz.kz</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================= БЫСТРЫЙ КОНТАКТ ======================= -->
+<div class="quick">
+  <a class="quick__btn" href="#" data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+  </a>
+  <a class="quick__btn" href="#" data-link="telegram" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.03c-.25 1.1-.9 1.38-1.83.86l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.15L17.99 6.4c.41-.36-.09-.56-.63-.2L5.78 13.4.83 11.85c-1.08-.34-1.1-1.08.22-1.6L20.55 2.7c.9-.33 1.68.2 1.39 1.6Z"/></svg>
+  </a>
+  <a class="quick__btn" href="#" data-contact="phone" aria-label="Позвонить">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+  </a>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/i18n-common.js"></script>
+<script src="assets/js/i18n-brand.js"></script>
+<script src="assets/js/i18n-index.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/core.js"></script>
+</body>
+</html>

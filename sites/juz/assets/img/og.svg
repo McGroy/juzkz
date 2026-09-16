@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4F7CFF"/><stop offset="1" stop-color="#22D3EE"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.1" r="0.8">
+      <stop stop-color="#4F7CFF" stop-opacity=".34"/><stop offset="1" stop-color="#4F7CFF" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#04060A"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(88 200)">
+    <path d="M28 0 56 28 28 56 0 28Z" fill="none" stroke="url(#g)" stroke-width="2.4" opacity=".6"/>
+    <path d="M28 13 43 28 28 43 13 28Z" fill="url(#g)"/>
+  </g>
+  <text x="168" y="248" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#E9EFF7" letter-spacing="-1">JUZ</text>
+  <text x="88" y="360" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="700" fill="#E9EFF7" letter-spacing="-2.4">Разработка ПО, сопровождение ИС</text>
+  <text x="88" y="436" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="700" fill="url(#g)" letter-spacing="-2.4">и аналитика данных</text>
+  <text x="88" y="512" font-family="monospace" font-size="22" fill="#7C8A9F" letter-spacing="3">JUZ.KZ · КАЗАХСТАН</text>
+</svg>

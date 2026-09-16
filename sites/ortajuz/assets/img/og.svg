@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0A82E"/><stop offset="1" stop-color="#F5CD6B"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.2" cy="0.1" r="0.8">
+      <stop stop-color="#E0A82E" stop-opacity=".28"/><stop offset="1" stop-color="#E0A82E" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0v48" fill="none" stroke="#ffffff" stroke-opacity=".05" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#06050A"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <g transform="translate(88 200)">
+    <path d="M28 0 56 28 28 56 0 28Z" fill="none" stroke="url(#g)" stroke-width="2.4" opacity=".6"/>
+    <path d="M28 14 42 28 28 42 14 28Z" fill="url(#g)"/>
+  </g>
+  <text x="168" y="248" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700" fill="#F0EBE6" letter-spacing="-1">ORTAJUZ</text>
+  <text x="88" y="360" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="700" fill="#F0EBE6" letter-spacing="-2.4">Сопровождение информационных</text>
+  <text x="88" y="436" font-family="Inter, Arial, sans-serif" font-size="62" font-weight="700" fill="url(#g)" letter-spacing="-2.4">систем по SLA · 24/7</text>
+  <text x="88" y="512" font-family="monospace" font-size="22" fill="#8B8296" letter-spacing="3">ORTAJUZ.KZ · КАЗАХСТАН</text>
+</svg>
