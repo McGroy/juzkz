@@ -1650,3 +1650,20 @@ body.nav-open .burger__bars span:nth-child(3) { transform: translateY(-4.75px) r
   text-decoration: underline;
   text-underline-offset: 2px;
 }
+
+/* --------------------------------------------------------------------------
+   31. Логотип-локап (готовый знак с леттерингом вместо текста)
+   -------------------------------------------------------------------------- */
+.logo--lockup { gap: 0; }
+
+.logo__img {
+  height: 42px;
+  width: auto;
+  display: block;
+}
+
+.footer .logo__img { height: 46px; }
+
+@media (max-width: 560px) {
+  .logo__img { height: 34px; }
+}
