@@ -30,8 +30,10 @@
 }
 
 /* В сервисном бренде «зелёный = в норме» встречается постоянно */
-.hero .glow--a { width: 50vw; max-width: 700px; aspect-ratio: 1; top: -20%; left: -12%; opacity: 0.26; }
-.hero .glow--b { width: 38vw; max-width: 520px; aspect-ratio: 1; top: 10%; right: -6%; opacity: 0.20; background: var(--ok); }
+/* Золото на почти чёрном при сильном блюре уходит в коричневый,
+   поэтому свечение держим слабым и уводим вниз, к кнопкам. */
+.hero .glow--a { width: 46vw; max-width: 620px; aspect-ratio: 1; top: 6%; left: -16%; opacity: 0.16; filter: blur(120px); }
+.hero .glow--b { width: 40vw; max-width: 560px; aspect-ratio: 1; top: 2%; right: -10%; opacity: 0.17; background: var(--ok); filter: blur(110px); }
 
 .logo__sub { color: var(--accent-2); opacity: 0.6; }
 

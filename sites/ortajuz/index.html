@@ -1,0 +1,664 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORTAJUZ — сопровождение информационных систем по SLA, 24/7</title>
+<meta name="description" content="Эксплуатация и сопровождение ИС с измеримым SLA: дежурная смена 24/7, мониторинг, резервное копирование, устранение инцидентов и развитие. В том числе систем, написанных другим подрядчиком.">
+<meta name="theme-color" content="#06050A">
+<link rel="canonical" href="https://ortajuz.kz/index.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ORTAJUZ">
+<meta property="og:title" content="ORTAJUZ — сопровождение информационных систем по SLA, 24/7">
+<meta property="og:description" content="Эксплуатация и сопровождение ИС с измеримым SLA: дежурная смена 24/7, мониторинг, резервное копирование, устранение инцидентов и развитие. В том числе систем, написанных другим подрядчиком.">
+<meta property="og:url" content="https://ortajuz.kz/index.html">
+<meta property="og:image" content="https://ortajuz.kz/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="ru" href="https://ortajuz.kz/index.html?lang=ru">
+<link rel="alternate" hreflang="kk" href="https://ortajuz.kz/index.html?lang=kk">
+<link rel="alternate" hreflang="en" href="https://ortajuz.kz/index.html?lang=en">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<script>document.documentElement.className += " js";</script>
+<link rel="stylesheet" href="assets/css/core.css">
+<link rel="stylesheet" href="assets/css/theme.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main" data-i18n="a11y.skip">К основному содержанию</a>
+<div class="progress" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
+
+<header class="header">
+  <div class="header__inner">
+    <a class="logo" href="index.html" aria-label="ORTAJUZ">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="lmh" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0A82E"/><stop offset="1" stop-color="#F5CD6B"/>
+          </linearGradient>
+        </defs>
+        <path d="M16 2.4 29.6 16 16 29.6 2.4 16Z" stroke="url(#lmh)" stroke-width="1.4" opacity=".5"/><path d="M16 9.6 22.4 16 16 22.4 9.6 16Z" fill="url(#lmh)"/><path d="M6.6 13.6 9 16 6.6 18.4 4.2 16Z" fill="url(#lmh)" opacity=".5"/><path d="M25.4 13.6 27.8 16 25.4 18.4 23 16Z" fill="url(#lmh)" opacity=".5"/>
+      </svg>
+      <span class="logo__text">ORTAJUZ<span class="logo__sub" data-i18n="brand.tagline">IT operations</span></span>
+    </a>
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a class="nav__link" href="services/support.html" data-i18n="nav.support">Сопровождение</a>
+      <a class="nav__link" href="services/analytics.html" data-i18n="nav.analytics">Аналитика</a>
+      <a class="nav__link" href="services/development.html" data-i18n="nav.development">Доработка</a>
+      <a class="nav__link" href="index.html#sla" data-i18n="nav.sla">SLA</a>
+      <a class="nav__link" href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+      <a class="btn btn--primary nav__cta" href="contacts.html#brief" data-i18n="cta.brief">Оставить заявку</a>
+    </nav>
+
+    <div class="header__actions">
+      <div class="langs" role="group" aria-label="Язык сайта">
+        <button class="langs__btn" type="button" data-lang-btn="ru" aria-pressed="true">Ру</button>
+        <button class="langs__btn" type="button" data-lang-btn="kk" aria-pressed="false">Қаз</button>
+        <button class="langs__btn" type="button" data-lang-btn="en" aria-pressed="false">En</button>
+      </div>
+      <a class="btn btn--primary btn--sm btn--cta" href="contacts.html#brief" data-i18n="cta.brief">Оставить заявку</a>
+      <button class="burger" type="button" aria-expanded="false" aria-label="Меню">
+        <span class="burger__bars" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="glow glow--a" aria-hidden="true"></div>
+  <div class="glow glow--b" aria-hidden="true"></div>
+  <canvas class="hero__canvas" aria-hidden="true"></canvas>
+
+  <div class="wrap hero__inner hero__grid">
+   <div class="hero__content">
+    <span class="eyebrow" data-i18n="hero.eyebrow">Сопровождение ИС · Мониторинг 24/7 · Аналитика</span>
+
+    <h1 class="display hero__title" data-i18n-html="hero.title">
+      Ваши системы в строю. <span class="accent-text">Круглосуточно</span>
+    </h1>
+
+    <p class="lead hero__lead" data-i18n="hero.lead">
+      ORTAJUZ берёт на себя эксплуатацию информационных систем: дежурная смена,
+      SLA с измеримым временем реакции, мониторинг и планомерное развитие.
+      В том числе систем, которые писали не мы.
+    </p>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary btn--lg" href="contacts.html#brief">
+        <span data-i18n="cta.audit">Запросить аудит</span>
+        <svg class="arrow" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="btn btn--ghost btn--lg" href="#sla" data-i18n="cta.seeSla">Смотреть уровни SLA</a>
+    </div>
+
+    <div class="hero__meta">
+      <span class="hero__meta-item"><span class="pulse-dot" aria-hidden="true"></span><span data-i18n="hero.meta1">Дежурная смена на связи</span></span>
+      <span class="hero__meta-item"><strong data-i18n="hero.meta2Strong">15 минут</strong><span data-i18n="hero.meta2">— реакция на критичный инцидент</span></span>
+      <span class="hero__meta-item"><strong data-i18n="hero.meta3Strong">RU · KZ · EN</strong><span data-i18n="hero.meta3">— языки поддержки</span></span>
+    </div>
+   </div>
+
+   <aside class="hero__panel">
+     <div class="term">
+       <div class="term__bar">
+         <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+         <span class="term__title">operations · on-call</span>
+         <span class="term__status"><span class="pulse-dot" aria-hidden="true"></span>online</span>
+       </div>
+       <div class="term__body">
+         <div class="term__row"><span class="term__k" data-i18n="panel.r1">дежурная смена</span><span class="term__v term__v--ok" data-i18n="panel.v1">на связи</span></div>
+         <div class="term__row"><span class="term__k" data-i18n="panel.r2">мониторинг</span><span class="term__v term__v--ok" data-i18n="panel.v2">активен</span></div>
+         <div class="term__row"><span class="term__k" data-i18n="panel.r3">резервное копирование</span><span class="term__v term__v--ok" data-i18n="panel.v3">проверено</span></div>
+         <div class="term__row"><span class="term__k" data-i18n="panel.r4">обновления безопасности</span><span class="term__v term__v--ok" data-i18n="panel.v4">по графику</span></div>
+         <div class="term__row"><span class="term__k" data-i18n="panel.r5">отчёт за месяц</span><span class="term__v" data-i18n="panel.v5">1-й рабочий день</span></div>
+         <div class="term__row" style="margin-top:8px;border-top:1px solid var(--line);padding-top:8px">
+           <span class="term__k" data-i18n="panel.r6">технический долг</span><span class="term__v term__v--warn" data-i18n="panel.v6">в плане, не в тумане</span>
+         </div>
+       </div>
+     </div>
+
+     <div class="hero__panel-stats">
+       <div class="hero__panel-stat"><b>15 <span data-i18n="panel.s1u">мин</span></b><span data-i18n="panel.s1">реакция на критичный инцидент</span></div>
+       <div class="hero__panel-stat"><b>99,9%</b><span data-i18n="panel.s2">целевая доступность в пакете 24/7</span></div>
+       <div class="hero__panel-stat"><b>24/7</b><span data-i18n="panel.s3">дежурство по договору</span></div>
+     </div>
+   </aside>
+  </div>
+</section>
+
+<section class="section--tight" style="padding-block:0 var(--sp-8)">
+  <div class="wrap">
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span class="marquee__item">Zabbix</span><span class="marquee__item">Grafana</span>
+        <span class="marquee__item">Prometheus</span><span class="marquee__item">ELK</span>
+        <span class="marquee__item">Kubernetes</span><span class="marquee__item">Docker</span>
+        <span class="marquee__item">PostgreSQL</span><span class="marquee__item">Oracle</span>
+        <span class="marquee__item">MS SQL</span><span class="marquee__item">1С</span>
+        <span class="marquee__item">Java · Spring</span><span class="marquee__item">.NET</span>
+        <span class="marquee__item">GitLab CI</span><span class="marquee__item">Ansible</span>
+        <span class="marquee__item">Terraform</span><span class="marquee__item">Power BI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ БОЛЬ / РЕШЕНИЕ ============ -->
+<section class="section section--ruled" id="why">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="why.eyebrow">Зачем нужен регламент</span>
+      <h2 class="h2" data-i18n="why.title">Разница между поддержкой и договором о поддержке — в том, можно ли её измерить</h2>
+    </div>
+
+    <div class="grid grid-2">
+      <div class="card" data-reveal>
+        <div class="card__index" data-i18n="why.badLabel">БЕЗ РЕГЛАМЕНТА</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="why.badTitle">Как это выглядит обычно</h3>
+        <ul class="ticks crosses" style="margin-top:var(--sp-5)">
+          <li data-i18n="why.bad1">Инцидент начинается со звонка знакомому разработчику. Если он в отпуске — начинается заново.</li>
+          <li data-i18n="why.bad2">«Срочно» у всех одинаковое, поэтому очередь выстраивается по громкости, а не по влиянию на бизнес.</li>
+          <li data-i18n="why.bad3">Резервные копии делаются. Восстановление из них никто ни разу не проверял.</li>
+          <li data-i18n="why.bad4">Об обновлениях безопасности вспоминают после инцидента.</li>
+          <li data-i18n="why.bad5">Что именно сделано за месяц — известно только подрядчику.</li>
+        </ul>
+      </div>
+
+      <div class="card card--glow" data-reveal style="--reveal-delay:90ms">
+        <div class="card__index" style="color:var(--accent-2)" data-i18n="why.goodLabel">С РЕГЛАМЕНТОМ ORTAJUZ</div>
+        <h3 class="card__title" style="margin-top:var(--sp-3)" data-i18n="why.goodTitle">Как это работает у нас</h3>
+        <ul class="ticks" style="margin-top:var(--sp-5)">
+          <li data-i18n="why.good1">Единая точка входа с историей обращений. Дежурная смена, а не конкретный человек.</li>
+          <li data-i18n="why.good2">Класс инцидента определяется влиянием на бизнес и зафиксирован в договоре вместе со временем реакции.</li>
+          <li data-i18n="why.good3">Восстановление из резервной копии проверяется по расписанию, а не в момент аварии.</li>
+          <li data-i18n="why.good4">Обновления безопасности идут плановым потоком, критичные — вне очереди.</li>
+          <li data-i18n="why.good5">Ежемесячный отчёт: инциденты, изменения, динамика технического долга.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ УСЛУГИ ============ -->
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="services.eyebrow">Услуги</span>
+      <h2 class="h2" data-i18n="services.title">Держим в строю, приводим в порядок данные, аккуратно развиваем</h2>
+    </div>
+
+    <div class="bento" data-reveal-group>
+      <a class="card card--glow card--link card--wide" href="services/support.html" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/>
+          </svg>
+        </div>
+        <div class="card__index">01</div>
+        <h3 class="card__title" style="margin-top:var(--sp-2)" data-i18n="services.supTitle">Сопровождение ИС по SLA</h3>
+        <p class="card__text" data-i18n="services.supText">
+          Основное направление. Приём системы, аудит, мониторинг, дежурство и устранение
+          инцидентов с измеримым временем реакции. Включая системы после другого подрядчика.
+        </p>
+        <div class="chip-row" style="margin-top:var(--sp-5)">
+          <span class="chip" data-i18n="services.supChip1">Дежурство 24/7</span>
+          <span class="chip" data-i18n="services.supChip2">Мониторинг</span>
+          <span class="chip" data-i18n="services.supChip3">Резервное копирование</span>
+          <span class="chip" data-i18n="services.supChip4">Отчётность</span>
+        </div>
+        <span class="link-arrow" style="margin-top:var(--sp-6)">
+          <span data-i18n="cta.more">Подробнее</span>
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="card card--glow card--link card--wide" href="services/analytics.html" data-reveal>
+        <div class="card__icon">
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 3v18h18"/><path d="M7 15l4-5 3 3 5-7"/>
+          </svg>
+        </div>
+        <div class="card__index">02</div>
+        <h3 class="card__title" style="margin-top:var(--sp-2)" data-i18n="services.anTitle">Аналитика и отчётность</h3>
+        <p class="card__text" data-i18n="services.anText">
+          Данные из систем, которые мы и так сопровождаем, собираются в хранилище
+          и превращаются в отчётность, которая обновляется сама и сходится между собой.
+        </p>
+        <div class="chip-row" style="margin-top:var(--sp-5)">
+          <span class="chip" data-i18n="services.anChip1">Хранилище</span>
+          <span class="chip" data-i18n="services.anChip2">Регламентные формы</span>
+          <span class="chip" data-i18n="services.anChip3">Дашборды</span>
+          <span class="chip" data-i18n="services.anChip4">Качество данных</span>
+        </div>
+        <span class="link-arrow" style="margin-top:var(--sp-6)">
+          <span data-i18n="cta.more">Подробнее</span>
+          <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <a class="card card--glow card--link card--full" href="services/development.html" data-reveal>
+        <div class="split-card">
+          <div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M8 17 3 12l5-5M16 7l5 5-5 5M13.5 4l-3 16"/>
+              </svg>
+            </div>
+            <div class="card__index">03</div>
+            <h3 class="card__title" style="margin-top:var(--sp-2)" data-i18n="services.devTitle">Доработка и развитие</h3>
+            <p class="card__text" style="max-width:62ch" data-i18n="services.devText">
+              Поддержка без развития превращается в консервацию. Поэтому в договор входит
+              пул часов на доработки: новые функции, снятие технического долга, замена
+              устаревших узлов — по согласованному плану, а не по авралам.
+            </p>
+            <div class="chip-row" style="margin-top:var(--sp-5)">
+              <span class="chip" data-i18n="services.devChip1">Пул часов в договоре</span>
+              <span class="chip" data-i18n="services.devChip2">Снятие legacy-рисков</span>
+              <span class="chip" data-i18n="services.devChip3">Роадмап на год</span>
+            </div>
+            <span class="link-arrow" style="margin-top:var(--sp-6)">
+              <span data-i18n="cta.more">Подробнее</span>
+              <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </span>
+          </div>
+
+          <div class="term">
+            <div class="term__bar">
+              <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="term__title">monthly · report</span>
+            </div>
+            <div class="term__body">
+              <div class="term__row"><span class="term__k">incidents closed</span><span class="term__v term__v--ok">within SLA</span></div>
+              <div class="term__row"><span class="term__k">changes released</span><span class="term__v">per roadmap</span></div>
+              <div class="term__row"><span class="term__k">restore test</span><span class="term__v term__v--ok">passed</span></div>
+              <div class="term__row"><span class="term__k">security patches</span><span class="term__v term__v--ok">applied</span></div>
+              <div class="term__row"><span class="term__dim">next review · quarterly</span><span class="caret" aria-hidden="true"></span></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SLA ============ -->
+<section class="section section--ruled" id="sla">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="sla.eyebrow">Уровни сервиса</span>
+      <h2 class="h2" data-i18n="sla.title">SLA в цифрах, а не в прилагательных</h2>
+      <p class="lead" data-i18n="sla.lead">
+        Класс инцидента определяется влиянием на бизнес, а не тем, насколько громко о нём
+        сообщили. Классификация и время реакции фиксируются в договоре.
+      </p>
+    </div>
+
+    <div class="table-wrap" data-reveal>
+      <table class="table">
+        <thead>
+          <tr>
+            <th data-i18n="sla.h1">Класс</th>
+            <th data-i18n="sla.h2">Что это означает</th>
+            <th data-i18n="sla.h3">Реакция</th>
+            <th data-i18n="sla.h4">Восстановление</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="sev sev--1" data-i18n="sla.r1n">Критичный</span></td>
+            <td data-i18n="sla.r1d">Система недоступна или потеряна целостность данных. Работа подразделения остановлена.</td>
+            <td class="num">15 мин</td><td class="num">4 ч</td>
+          </tr>
+          <tr>
+            <td><span class="sev sev--2" data-i18n="sla.r2n">Высокий</span></td>
+            <td data-i18n="sla.r2d">Ключевая функция не работает, обходного пути нет. Процесс идёт, но с потерями.</td>
+            <td class="num">1 ч</td><td class="num">8 раб. ч</td>
+          </tr>
+          <tr>
+            <td><span class="sev sev--3" data-i18n="sla.r3n">Средний</span></td>
+            <td data-i18n="sla.r3d">Функция работает с ограничениями или есть обходной путь. Бизнес не останавливается.</td>
+            <td class="num">4 раб. ч</td><td class="num">3 раб. дня</td>
+          </tr>
+          <tr>
+            <td><span class="sev sev--4" data-i18n="sla.r4n">Низкий</span></td>
+            <td data-i18n="sla.r4d">Консультация, вопрос по работе системы, косметический дефект, запрос на доработку.</td>
+            <td class="num">1 раб. день</td><td class="num" data-i18n="sla.r4r">по плану релизов</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="xs dim" style="margin-top:var(--sp-4)" data-i18n="sla.note">
+      Значения — базовый уровень пакета «Расширенный». Точные параметры фиксируются
+      в договоре после аудита: они зависят от архитектуры системы и того, что вообще
+      возможно восстановить за это время.
+    </p>
+  </div>
+</section>
+
+<!-- ============ ПАКЕТЫ ============ -->
+<section class="section" id="plans">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="plans.eyebrow">Пакеты поддержки</span>
+      <h2 class="h2" data-i18n="plans.title">Три уровня. Выбор зависит от цены простоя</h2>
+      <p class="lead" data-i18n="plans.lead">
+        Начните с вопроса «сколько стоит час, когда система не работает». Ответ на него
+        определяет пакет точнее любого сравнения возможностей.
+      </p>
+    </div>
+
+    <div class="grid grid-3" data-reveal-group>
+      <div class="card plan" data-reveal>
+        <div>
+          <div class="plan__name" data-i18n="plans.p1n">Базовый</div>
+          <p class="plan__for" style="margin-top:var(--sp-2)" data-i18n="plans.p1for">Для систем, простой которых переживается в пределах рабочего дня.</p>
+        </div>
+        <div class="plan__sep"></div>
+        <ul class="ticks ticks--tight">
+          <li data-i18n="plans.p1l1">Поддержка в рабочие часы, Пн–Пт</li>
+          <li data-i18n="plans.p1l2">Реакция на критичный инцидент — 4 рабочих часа</li>
+          <li data-i18n="plans.p1l3">Мониторинг доступности и оповещения</li>
+          <li data-i18n="plans.p1l4">Контроль резервного копирования</li>
+          <li data-i18n="plans.p1l5">Ежемесячный отчёт</li>
+        </ul>
+      </div>
+
+      <div class="card plan plan--featured" data-reveal>
+        <span class="plan__badge" data-i18n="plans.popular">Чаще всего</span>
+        <div>
+          <div class="plan__name" data-i18n="plans.p2n">Расширенный</div>
+          <p class="plan__for" style="margin-top:var(--sp-2)" data-i18n="plans.p2for">Для систем, на которых стоит основной процесс компании.</p>
+        </div>
+        <div class="plan__sep"></div>
+        <ul class="ticks ticks--tight">
+          <li data-i18n="plans.p2l1">Всё из пакета «Базовый»</li>
+          <li data-i18n="plans.p2l2">Реакция на критичный инцидент — 1 час</li>
+          <li data-i18n="plans.p2l3">Мониторинг производительности и ошибок приложения</li>
+          <li data-i18n="plans.p2l4">Регулярная проверка восстановления из копий</li>
+          <li data-i18n="plans.p2l5">Пул часов на доработки с переносом внутри квартала</li>
+          <li data-i18n="plans.p2l6">Ежеквартальный пересмотр плана развития</li>
+        </ul>
+      </div>
+
+      <div class="card plan" data-reveal>
+        <div>
+          <div class="plan__name" data-i18n="plans.p3n">Критичный 24/7</div>
+          <p class="plan__for" style="margin-top:var(--sp-2)" data-i18n="plans.p3for">Для систем, недоступность которых считается в деньгах поминутно.</p>
+        </div>
+        <div class="plan__sep"></div>
+        <ul class="ticks ticks--tight">
+          <li data-i18n="plans.p3l1">Всё из пакета «Расширенный»</li>
+          <li data-i18n="plans.p3l2">Дежурная смена круглосуточно, включая выходные</li>
+          <li data-i18n="plans.p3l3">Реакция на критичный инцидент — 15 минут</li>
+          <li data-i18n="plans.p3l4">Целевая доступность 99,9% с отчётом по факту</li>
+          <li data-i18n="plans.p3l5">Отработанные сценарии аварийного восстановления</li>
+          <li data-i18n="plans.p3l6">Выделенный инженер, знающий вашу систему</li>
+        </ul>
+      </div>
+    </div>
+
+    <p class="xs dim" style="margin-top:var(--sp-5)" data-i18n="plans.note">
+      Стоимость зависит от количества систем, их сложности и требуемого уровня доступности.
+      Называть цену до аудита — значит называть её наугад, поэтому мы этого не делаем.
+    </p>
+  </div>
+</section>
+
+<!-- ============ ПОДКЛЮЧЕНИЕ ============ -->
+<section class="section section--ruled" id="onboarding">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="onb.eyebrow">Подключение</span>
+      <h2 class="h2" data-i18n="onb.title">Четыре шага от первого разговора до SLA</h2>
+      <p class="lead" data-i18n="onb.lead">
+        Никто не подписывает обязательства по времени восстановления на систему,
+        которую не видел. Поэтому путь всегда один и тот же.
+      </p>
+    </div>
+
+    <ol class="steps">
+      <li class="step" data-reveal>
+        <span class="step__num">01</span>
+        <div class="step__body">
+          <h3 class="step__title" data-i18n="onb.s1t">Технический аудит</h3>
+          <p class="step__text" data-i18n="onb.s1d">Код, инфраструктура, базы данных, процессы выкладки и то, что называется документацией. На выходе — карта рисков, оценка технического долга и список критичных точек отказа.</p>
+          <div class="step__meta">
+            <span class="chip" data-i18n="onb.s1m1">1–2 недели</span>
+            <span class="chip chip--accent" data-i18n="onb.s1m2">Отчёт остаётся у вас в любом случае</span>
+          </div>
+        </div>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__num">02</span>
+        <div class="step__body">
+          <h3 class="step__title" data-i18n="onb.s2t">Передача знаний и подготовка</h3>
+          <p class="step__text" data-i18n="onb.s2d">Разворачиваем систему у себя, восстанавливаем недостающую документацию, настраиваем мониторинг, оповещения и проверку резервных копий. Если прежняя команда ещё на месте — работаем параллельно.</p>
+          <div class="step__meta"><span class="chip" data-i18n="onb.s2m">2–4 недели</span></div>
+        </div>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__num">03</span>
+        <div class="step__body">
+          <h3 class="step__title" data-i18n="onb.s3t">Пилотный месяц</h3>
+          <p class="step__text" data-i18n="onb.s3d">Полный процесс поддержки, но без штрафных обязательств. Обе стороны проверяют, что регламент рабочий, а классификация инцидентов соответствует тому, что происходит на самом деле.</p>
+          <div class="step__meta"><span class="chip" data-i18n="onb.s3m">1 месяц</span></div>
+        </div>
+      </li>
+      <li class="step" data-reveal>
+        <span class="step__num">04</span>
+        <div class="step__body">
+          <h3 class="step__title" data-i18n="onb.s4t">Договор с SLA</h3>
+          <p class="step__text" data-i18n="onb.s4d">Фиксируем уровни сервиса, пул часов на развитие и порядок отчётности. Дальше — ежемесячные отчёты и ежеквартальный пересмотр приоритетов.</p>
+          <div class="step__meta"><span class="chip chip--accent" data-i18n="onb.s4m">Обычно на 12 месяцев</span></div>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ МЕТРИКИ ============ -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="stats" data-reveal>
+      <div class="stat stat--live">
+        <span class="stat__value"><span data-count="15">15</span> <span data-i18n="stats.v1">мин</span></span>
+        <span class="stat__label" data-i18n="stats.l1">реакция на критичный инцидент в пакете 24/7</span>
+      </div>
+      <div class="stat stat--live">
+        <span class="stat__value">99,9%</span>
+        <span class="stat__label" data-i18n="stats.l2">целевая доступность, подтверждаемая отчётом по факту</span>
+      </div>
+      <div class="stat stat--live">
+        <span class="stat__value">24/7</span>
+        <span class="stat__label" data-i18n="stats.l3">дежурная смена, включая выходные и праздники</span>
+      </div>
+      <div class="stat stat--live">
+        <span class="stat__value"><span data-count="1">1</span></span>
+        <span class="stat__label" data-i18n="stats.l4">рабочий день месяца — срок отправки отчёта за предыдущий</span>
+      </div>
+    </div>
+    <p class="xs dim" style="margin-top:var(--sp-4)" data-i18n="stats.note">
+      Это параметры нашего регламента, которые закрепляются в договоре, а не усреднённая статистика.
+    </p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section" id="faq">
+  <div class="wrap wrap--narrow">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="faq.eyebrow">Частые вопросы</span>
+      <h2 class="h2" data-i18n="faq.title">То, что спрашивают до подписания</h2>
+    </div>
+
+    <div class="acc" data-acc="single">
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="o1">
+          <span data-i18n="faq.q1">Возьмёте систему, которую писали не вы?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="o1" data-open="false"><div>
+          <p data-i18n="faq.a1">Это наш основной сценарий — большая часть систем под нашим сопровождением написана до нас. Нужны доступы к исходному коду, серверам и базам. Дальше аудит покажет, какой уровень SLA реально выполним: обещать пятнадцатиминутную реакцию на систему без мониторинга и без резервных копий бессмысленно, и мы так делать не будем.</p>
+        </div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="o2">
+          <span data-i18n="faq.q2">Сколько стоит сопровождение?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="o2" data-open="false"><div>
+          <p data-i18n="faq.a2">Стоимость зависит от числа систем, их архитектуры, требуемого уровня доступности и объёма пула часов на развитие. После аудита вы получаете предложение с разбивкой: сколько стоит дежурство, сколько мониторинг и инфраструктурные работы, сколько доработки. Без аудита это была бы цифра наугад.</p>
+        </div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="o3">
+          <span data-i18n="faq.q3">Что если документации нет?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="o3" data-open="false"><div>
+          <p data-i18n="faq.a3">Обычная ситуация. Документация восстанавливается по коду и базе данных на этапе передачи знаний: схема данных, карта интеграций, сценарии развёртывания, точки отказа. Это удлиняет подготовку, но не мешает взять систему на поддержку.</p>
+        </div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="o4">
+          <span data-i18n="faq.q4">Мы уйдём — что останется у нас?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="o4" data-open="false"><div>
+          <p data-i18n="faq.a4">Всё, что мы сделали за время сопровождения: восстановленная и дополненная документация, настройки мониторинга, сценарии восстановления, история инцидентов и изменений. Доступы у вас с первого дня, мы работаем в вашей инфраструктуре. Передача знаний следующей команде входит в договор.</p>
+        </div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="o5">
+          <span data-i18n="faq.q5">Чем ORTAJUZ отличается от JUZ?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="o5" data-open="false"><div>
+          <p data-i18n="faq.a5">Это два бренда одной команды. JUZ проектирует и строит новые системы. ORTAJUZ отвечает за то, чтобы уже работающие системы продолжали работать: дежурство, SLA, мониторинг, развитие. Стек и инженерные стандарты общие, поэтому передача системы из разработки в эксплуатацию не превращается в отдельный проект.</p>
+        </div></div>
+      </div>
+      <div class="acc__item">
+        <button class="acc__btn" type="button" aria-expanded="false" aria-controls="o6">
+          <span data-i18n="faq.q6">Можно ли начать без пилотного месяца?</span><span class="acc__sign" aria-hidden="true"></span>
+        </button>
+        <div class="acc__panel" id="o6" data-open="false"><div>
+          <p data-i18n="faq.a6">Можно, если речь о системе, которую построили мы сами, — там нет этапа знакомства. В остальных случаях пилот защищает обе стороны: вы не платите за обязательства, которые ещё не проверены на практике, а мы не подписываемся под временем восстановления, пока не увидели, как система ведёт себя под нагрузкой и что происходит при сбое.</p>
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="cta" data-reveal>
+      <div class="cta__inner">
+        <span class="eyebrow" data-i18n="ctaBlock.eyebrow">Следующий шаг</span>
+        <h2 class="h2" data-i18n="ctaBlock.title">Начните с аудита — он полезен, даже если вы выберете не нас</h2>
+        <p class="lead" data-i18n="ctaBlock.lead">
+          Карта рисков и оценка технического долга остаются у вас. С ними можно идти
+          к любому подрядчику или в собственную команду.
+        </p>
+        <div class="hero__actions" style="margin-top:var(--sp-5)">
+          <a class="btn btn--primary btn--lg" href="contacts.html#brief">
+            <span data-i18n="cta.audit">Запросить аудит</span>
+            <svg class="arrow" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#" data-contact="phone" data-contact-text></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="ORTAJUZ">
+      <svg class="logo__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="lmf" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#E0A82E"/><stop offset="1" stop-color="#F5CD6B"/>
+          </linearGradient>
+        </defs>
+        <path d="M16 2.4 29.6 16 16 29.6 2.4 16Z" stroke="url(#lmf)" stroke-width="1.4" opacity=".5"/><path d="M16 9.6 22.4 16 16 22.4 9.6 16Z" fill="url(#lmf)"/><path d="M6.6 13.6 9 16 6.6 18.4 4.2 16Z" fill="url(#lmf)" opacity=".5"/><path d="M25.4 13.6 27.8 16 25.4 18.4 23 16Z" fill="url(#lmf)" opacity=".5"/>
+      </svg>
+      <span class="logo__text">ORTAJUZ<span class="logo__sub" data-i18n="brand.tagline">IT operations</span></span>
+    </a>
+        <p class="small muted" style="margin-top:var(--sp-5);max-width:40ch" data-i18n="footer.about">
+          Эксплуатация и сопровождение информационных систем по SLA, аналитика данных и доработка действующих решений.
+        </p>
+        <a class="sister" href="https://juz.kz" data-link="sisterUrl" style="margin-top:var(--sp-5)">
+          <span class="sister__dot" aria-hidden="true"></span>
+          <span><span data-i18n="footer.sisterHint">Бренд группы</span> — JUZ: <span data-i18n="footer.sisterWhat">проектирование и разработка новых систем</span></span>
+        </a>
+      </div>
+
+      <div>
+        <div class="footer__title" data-i18n="footer.servicesTitle">Услуги</div>
+        <div class="footer__list">
+          <a href="services/support.html" data-i18n="nav.support">Сопровождение ИС</a>
+          <a href="services/analytics.html" data-i18n="nav.analytics">Аналитика данных</a>
+          <a href="services/development.html" data-i18n="nav.development">Доработка и развитие</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__title" data-i18n="footer.companyTitle">Компания</div>
+        <div class="footer__list">
+          <a href="index.html#onboarding" data-i18n="footer.approach">Как мы работаем</a>
+          <a href="index.html#plans" data-i18n="footer.plans">Пакеты поддержки</a>
+          <a href="index.html#faq" data-i18n="footer.faq">Частые вопросы</a>
+          <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer__title" data-i18n="footer.contactsTitle">Контакты</div>
+        <div class="footer__list">
+          <a href="#" data-contact="phone" data-contact-text></a>
+          <a href="#" data-contact="email" data-contact-text></a>
+          <span data-contact="address" data-contact-text></span>
+          <span data-contact="hours" data-contact-text></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> <span data-contact="legalName" data-contact-text></span>. <span data-i18n="footer.rights">Все права защищены.</span></span>
+      <span class="mono">ortajuz.kz</span>
+    </div>
+  </div>
+</footer>
+
+<div class="quick">
+  <a class="quick__btn" href="#" data-link="whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.5.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.47-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+  </a>
+  <a class="quick__btn" href="#" data-link="telegram" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.94 4.3 18.6 20.03c-.25 1.1-.9 1.38-1.83.86l-5.05-3.72-2.44 2.35c-.27.27-.5.5-1.02.5l.36-5.15L17.99 6.4c.41-.36-.09-.56-.63-.2L5.78 13.4.83 11.85c-1.08-.34-1.1-1.08.22-1.6L20.55 2.7c.9-.33 1.68.2 1.39 1.6Z"/></svg>
+  </a>
+  <a class="quick__btn" href="#" data-contact="phone" aria-label="Позвонить">
+    <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.8a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2.1Z"/></svg>
+  </a>
+</div>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/i18n-common.js"></script>
+<script src="assets/js/i18n-brand.js"></script>
+<script src="assets/js/i18n-brand.js"></script>
+<script src="assets/js/i18n-index.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/core.js"></script>
+</body>
+</html>

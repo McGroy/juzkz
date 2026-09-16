@@ -13,6 +13,7 @@ window.I18N_COMMON = {
       analytics: "Аналитика",
       approach: "Тәсіл",
       contacts: "Байланыс",
+      sla: "SLA",
       services: "Қызметтер",
       home: "Басты бет",
       menu: "Мәзір"
@@ -24,7 +25,9 @@ window.I18N_COMMON = {
       write: "Жазу",
       more: "Толығырақ",
       allServices: "Барлық қызметтер",
-      estimate: "Бағасын білу"
+      estimate: "Бағасын білу",
+      audit: "Аудит сұрау",
+      seeSla: "SLA деңгейлерін көру"
     },
     footer: {
       servicesTitle: "Қызметтер",
@@ -32,6 +35,7 @@ window.I18N_COMMON = {
       contactsTitle: "Байланыс",
       approach: "Жұмыс тәсілі",
       stack: "Технологиялар",
+      plans: "Қолдау пакеттері",
       faq: "Жиі қойылатын сұрақтар",
       privacy: "Дербес деректер саясаты",
       rights: "Барлық құқықтар қорғалған.",
@@ -96,6 +100,7 @@ window.I18N_COMMON = {
       analytics: "Analytics",
       approach: "Approach",
       contacts: "Contact",
+      sla: "SLA",
       services: "Services",
       home: "Home",
       menu: "Menu"
@@ -107,7 +112,9 @@ window.I18N_COMMON = {
       write: "Message us",
       more: "Learn more",
       allServices: "All services",
-      estimate: "Get an estimate"
+      estimate: "Get an estimate",
+      audit: "Request an audit",
+      seeSla: "See SLA levels"
     },
     footer: {
       servicesTitle: "Services",
@@ -115,6 +122,7 @@ window.I18N_COMMON = {
       contactsTitle: "Contact",
       approach: "How we work",
       stack: "Technology",
+      plans: "Support plans",
       faq: "FAQ",
       privacy: "Privacy policy",
       rights: "All rights reserved.",
