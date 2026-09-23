@@ -1,0 +1,214 @@
+## irpi [Соответствие]: NO FORM (не в documentForms)
+## irpi [Фин. отчетность]: NO FORM (не в documentForms)
+## program [Соответствие] group=True tabs=None sections=2 collections=1 fields=16 required=7 sources=['stage1-123', 'stage1-124', 'stage1-283']
+  - general (obj) «Общая информация»: 2 полей: purpose:bilingual, norms:bilingual?
+  - questions (ROWS min=1 total=amount) «Детальный перечень вопросов»: 14 полей: question:text, registration:text?, topic:text?, subtopic:text?, norms:bilingual, indicator:select[4], budget:text?, from:date, to:date, amount:number, budgetAmount:number?, transfers:number?, assets:number?, method:select?[2]
+## program [Фин. отчетность] group=True tabs=None sections=2 collections=1 fields=13 required=9 sources=['stage1-124']
+  - general (obj) «Общая информация»: 2 полей: purpose:bilingual, norms:bilingual?
+  - questions (ROWS min=1 total=amount) «Детальный перечень вопросов»: 11 полей: question:text, registration:text?, topic:text?, subtopic:text?, norms:bilingual, indicator:select[4], from:date, to:date, method:select[2], balanceCurrency:text, amount:number
+## plan [Соответствие] group=False tabs=None sections=4 collections=2 fields=19 required=18 sources=['stage1-125']
+  - general (obj) «Аудиторское мероприятие»: 3 полей: start:date, end:date, resources:bilingual
+  - objects (ROWS min=1) «Объекты государственного аудита и маршруты следования»: 7 полей: bin:object, name:bilingual, start:date, end:date, location:bilingual, route:bilingual, auditor:person
+  - counterObjects (ROWS min=0) «Объекты встречной проверки и маршруты следования»: 7 полей: bin:object, name:bilingual, start:date, end:date, location:bilingual, route:bilingual, auditor:person
+  - coverage (obj) «Объем средств и (или) активов, охватываемый аудиторским мероприятием»: 2 полей: amount:number, materiality:number?
+## assignment [Соответствие] group=True tabs=None sections=2 collections=1 fields=16 required=10 sources=['stage1-126', 'stage1-132']
+  - general (obj) «Срок аудиторского мероприятия»: 3 полей: start:date, end:date, days:number
+  - questions (ROWS min=1) «Вопрос аудиторского мероприятия»: 13 полей: question:text, from:date, to:date, auditor:person, reviewFrom:date, reviewTo:date, days:number, submissionDate:date?, registration:text?, topic:long?, subtopic:long?, norms:bilingual?, method:select?[2]
+## assignment [Фин. отчетность] group=True tabs=None sections=2 collections=1 fields=17 required=10 sources=['stage1-126', 'stage1-132']
+  - general (obj) «Срок аудиторского мероприятия»: 3 полей: start:date, end:date, days:number
+  - questions (ROWS min=1) «Вопрос аудиторского мероприятия»: 14 полей: question:text, from:date, to:date, auditor:person, reviewFrom:date, reviewTo:date, days:number, submissionDate:date?, registration:text?, topic:long?, subtopic:long?, norms:bilingual?, method:select?[2], balanceCurrency:number?
+## instruction [Соответствие] group=True tabs=None sections=6 collections=1 fields=16 required=12 sources=['stage1-127']
+  - general (obj) «Аудиторское мероприятие по вопросу»: 1 полей: purpose:bilingual
+  - duration (obj) «Срок аудиторского мероприятия»: 2 полей: start:date, end:date
+  - period (obj) «Период охвата аудиторского мероприятия»: 2 полей: periodFrom:date, periodTo:date
+  - responsible (obj) «Лицо, ответственное за аудиторское мероприятие»: 1 полей: person:person
+  - risks (ROWS min=0 total=amount) «Объект риска»: 9 полей: riskType:select[7], riskObject:text, riskNumber:text, year:number, amount:number, budgetAmount:number?, transfers:number?, assets:number?, questionReferences:long?
+  - head (obj) «Руководитель уполномоченного органа по внутреннему государственному ау»: 1 полей: person:person
+## quality1 [Соответствие] group=True tabs=None sections=5 collections=1 fields=31 required=20 sources=['stage1-161']
+  - quality (obj) «Реквизиты контроля качества»: 7 полей: basis:long, date:date, receivedAt:date, level:select[2], departmentReview:boolean?, approverPosition:text?, basisKz:long?
+  - context (obj) «Сведения об аудиторском мероприятии · пункты 1–8»: 9 полей: object:long, legalBasis:long, purpose:long, type:text, period:text, duration:text, group:long, responsible:text, objects:long
+  - requirements (obj) «Оценка соблюдения требований»: 6 полей: complianceRu:long, complianceKz:long?, formComplianceRu:long, formComplianceKz:long?, counterRu:long?, counterKz:long?
+  - remarks (ROWS min=0) «Замечания к документам (при наличии)»: 6 полей: document:text, version:text, remarkRu:long, remarkKz:long?, recommendationRu:long?, recommendationKz:long?
+  - conclusion (obj) «16. Выводы и рекомендации»: 3 полей: decision:select[2], textRu:long, textKz:long?
+## account [Соответствие] group=True tabs=None sections=8 collections=2 fields=47 required=37 sources=['stage1-152']
+  - general (obj) «Сведения»: 9 полей: number:text, registeredAt:date, start:date, end:date, periodFrom:date, periodTo:date, scope:text, exceptional:boolean?, objectType:text
+  - registration (obj) «Прочее»: 8 полей: goDate:date, department:text, basis:text, authority:text, investor:boolean?, prosecutor:text{when investor}, registrar:text, moratorium:text?
+  - questions (ROWS min=1) «Вопросы проверки»: 3 полей: question:bilingual, subjectCode:text, subject:bilingual
+  - subject (obj) «Данные о субъекте»: 10 полей: recipientBin:object, recipientName:bilingual?, ip:boolean?, opf:text, ownership:text, commercial:boolean?, address:bilingual, businessType:text, size:text, oked:text
+  - objects (ROWS min=1) «Данные об объектах»: 3 полей: bin:object, name:bilingual, address:bilingual
+  - unplanned (obj) «Для внеплановой проверки»: 4 полей: basis:text?, appealNumber:text?, iin:text?, applicant:text?
+  - author (obj) «Сотрудник, создавший акт о назначении проверки»: 5 полей: iin:text, name:text, position:bilingual, authority:text, phone:text
+  - signer (obj) «Сотрудник, подписавший акт о назначении проверки»: 5 полей: iin:text, name:text, position:bilingual, authority:text, phone:text
+## vap [Соответствие] group=False tabs=None sections=1 collections=0 fields=5 required=4 sources=['stage1-168']
+  - recipient (obj) «Сведения получателя»: 5 полей: vapBin:object, commissionBin:object?, number:text, date:date, description:bilingual
+## additional [Соответствие] group=True tabs=['Общая информация', 'Программа аудита', 'План аудита', 'Поручение'] sections=6 collections=3 fields=44 required=33 sources=['stage1-153', 'stage1-154', 'stage1-155', 'stage1-156', 'stage1-157', 'stage1-158', 'stage1-160']
+  - order (obj tab=Общая информация) «Сведения о приказе»: 11 полей: type:select[5], suspendDate:date{when type}, resumeDate:date{when type}, extendDate:date{when type}, reason:long, responsible:person, effective:text, information:bilingual, law:bilingual, basis:bilingual, notes:bilingual?
+  - program (obj tab=Программа аудита) «Цель аудита»: 1 полей: purpose:bilingual
+  - questions (ROWS min=0 tab=Программа аудита) «Сроки (этапы) проведения»: 13 полей: question:text, registration:text?, topic:text?, subtopic:text?, norms:bilingual, indicator:select[4], budget:text?, from:date, to:date, amount:number, budgetAmount:number?, transfers:number?, assets:number?
+  - objects (ROWS min=0 tab=План аудита) «Объекты аудита»: 7 полей: bin:object, name:bilingual, start:date, end:date, location:bilingual, route:bilingual, auditor:person
+  - duration (obj tab=Поручение) «Срок аудиторского мероприятия»: 4 полей: start:date, end:date, periodFrom:date, periodTo:date
+  - risks (ROWS min=0 tab=Поручение) «Объект риска»: 8 полей: riskType:select[7], riskObject:text, riskNumber:text, year:number, amount:number, budgetAmount:number?, transfers:number?, assets:number?
+## request [Соответствие] group=False tabs=None sections=2 collections=1 fields=5 required=3 sources=['stage1-165', 'stage1-174']
+  - general (obj) «Срок сдачи»: 2 полей: deadline:datetime-local, date:date
+  - requested (ROWS min=1) «Перечень необходимых документов»: 3 полей: name:bilingual, period:text?, description:bilingual?
+## obstruction [Соответствие] group=True tabs=None sections=4 collections=2 fields=9 required=9 sources=['stage1-169', 'stage1-176']
+  - general (obj) «Общая информация»: 3 полей: date:date, place:bilingual, auditor:person
+  - obstructions (ROWS min=1) «Воспрепятствования»: 2 полей: form:text, description:bilingual
+  - representatives (ROWS min=1) «Представители объекта аудита»: 3 полей: iin:text, name:text, position:bilingual
+  - measures (obj) «Принятые меры»: 1 полей: description:bilingual
+## report [Соответствие] group=True tabs=None sections=7 collections=3 fields=27 required=17 sources=['stage2-001', 'stage2-002']
+  - general (obj) «Срок, период и реквизиты аудиторского мероприятия»: 8 полей: start:date, end:date, periodFrom:date, periodTo:date, date:date?, place:bilingual?, copies:number?, attachmentPages:number?
+  - officials (ROWS min=0) «Должностные лица объекта государственного аудита»: 3 полей: iin:text, name:text, position:bilingual
+  - previous (obj) «Результаты предыдущего аудита»: 1 полей: text:bilingual
+  - results (obj) «Результаты аудита»: 1 полей: text:bilingual
+  - questions (ROWS min=1) «Список вопросов»: 11 полей: question:text, from:date, to:date, answer:bilingual, documentDetails:long, noViolations:boolean?, registration:text?, topic:long?, subtopic:long?, norms:bilingual?, method:select?[2]
+  - obstructions (ROWS min=0) «Воспрепятствования»: 2 полей: form:text, description:bilingual
+  - measures (obj) «Принятые меры»: 1 полей: description:bilingual
+## report [Фин. отчетность] group=True tabs=None sections=9 collections=3 fields=34 required=22 sources=['stage2-002']
+  - general (obj) «Срок, период и реквизиты аудиторского мероприятия»: 8 полей: start:date, end:date, periodFrom:date, periodTo:date, date:date?, place:bilingual?, copies:number?, attachmentPages:number?
+  - questions (ROWS min=1) «Список вопросов»: 12 полей: question:text, from:date, to:date, answer:bilingual, documentDetails:long, noViolations:boolean?, registration:text?, topic:long?, subtopic:long?, norms:bilingual?, method:select?[2], balanceCurrency:number?
+  - circumstances (obj) «Изложение обстоятельств»: 1 полей: text:bilingual
+  - officials (ROWS min=0) «Должностные лица объекта государственного аудита»: 3 полей: iin:text, name:text, position:bilingual
+  - auditResult (obj) «Сведения о результатах аудита»: 4 полей: result:select[4], management:bilingual, auditor:bilingual, obstructionPresent:boolean?
+  - previous (obj) «Результаты предыдущего аудита»: 1 полей: text:bilingual
+  - obstructions (ROWS min=0) «Воспрепятствования»: 2 полей: form:text, description:bilingual
+  - opinion (obj) «Мнение аудитора»: 2 полей: basis:bilingual, text:bilingual
+  - measures (obj) «Принятые меры»: 1 полей: description:bilingual
+## violations [Соответствие] group=False tabs=['Объекты риска', 'Результаты аудита'] sections=5 collections=4 fields=42 required=17 sources=['stage2-003', 'stage2-004', 'stage2-024', 'stage2-030']
+  - risks (ROWS min=1 total=amount tab=Объекты риска) «Объекты риска»: 9 полей: riskType:select[7], riskObject:text, riskNumber:text, year:number, amount:number, budgetAmount:number?, transfers:number?, assets:number?, questionReferences:long?
+  - riskQuestions (ROWS min=0 tab=Объекты риска) «Связь объектов риска с вопросами программы аудита»: 3 полей: riskId:text?, questionId:text?, question:long?
+  - result (obj tab=Результаты аудита) «Результаты аудита»: 1 полей: noViolations:boolean?
+  - results (ROWS min=0 tab=Результаты аудита) «Результаты рассмотрения вопросов аудита»: 7 полей: questionId:text?, question:long?, riskId:text?, topic:long?, hours:number?, result:select?[2], comment:bilingual?
+  - violations (ROWS min=0 +files total=amount tab=Результаты аудита) «Нарушения»: 22 полей: question:text, riskType:select[7], riskObject:text, riskNumber:text, kind:select[2], violationType:text, consequence:select[7], principles:text?, amount:number, recovered:number?, restored:number?, accounted:number?, conformed:number?, paragraph:text, npa:bilingual, remediation:select[5], description:bilingual, questionId:text?, riskId:text?, resultId:text?, remaining:number?, inefficientAmount:number?
+## violations [Фин. отчетность] group=False tabs=['Объекты риска', 'Результаты аудита'] sections=5 collections=4 fields=49 required=17 sources=['stage2-003', 'stage2-004', 'stage2-024', 'stage2-030']
+  - risks (ROWS min=1 total=amount tab=Объекты риска) «Объекты риска»: 9 полей: riskType:select[7], riskObject:text, riskNumber:text, year:number, amount:number, budgetAmount:number?, transfers:number?, assets:number?, questionReferences:long?
+  - riskQuestions (ROWS min=0 tab=Объекты риска) «Связь объектов риска с вопросами программы аудита»: 3 полей: riskId:text?, questionId:text?, question:long?
+  - result (obj tab=Результаты аудита) «Результаты аудита»: 1 полей: noViolations:boolean?
+  - results (ROWS min=0 tab=Результаты аудита) «Результаты рассмотрения вопросов аудита»: 7 полей: questionId:text?, question:long?, riskId:text?, topic:long?, hours:number?, result:select?[2], comment:bilingual?
+  - violations (ROWS min=0 +files total=amount tab=Результаты аудита) «Нарушения»: 29 полей: question:text, riskType:select[7], riskObject:text, riskNumber:text, kind:select[2], violationType:text, consequence:select[7], principles:text?, amount:number, recovered:number?, restored:number?, accounted:number?, conformed:number?, paragraph:text, npa:bilingual, remediation:select[6], description:bilingual, questionId:text?, riskId:text?, resultId:text?, remaining:number?, inefficientAmount:number?, balanceLine:text?, balanceAmount:number?, materiality:number?, distorted:number?, notDistorted:number?, reportingType:select?[2], materialityExcess:number?
+## evidence [Соответствие] group=False tabs=None sections=2 collections=1 fields=8 required=8 sources=['stage2-005']
+  - general (obj) «Сведения о дате составления аудиторского доказательства»: 1 полей: date:date
+  - evidence (ROWS min=0 +files) «Нарушение и доказательство»: 7 полей: violationId:text, violationType:text, consequence:text, amount:number, evidence:bilingual, documentDetails:long, source:long
+## quality2 [Соответствие] group=True tabs=None sections=8 collections=3 fields=64 required=28 sources=['stage2-052']
+  - quality (obj) «Реквизиты контроля качества»: 7 полей: basis:long, date:date, receivedAt:date, level:select[2], departmentReview:boolean?, approverPosition:text?, basisKz:long?
+  - context (obj) «Сведения об аудиторском мероприятии · пункты 1–8»: 9 полей: object:long, legalBasis:long, purpose:long, type:text, period:text, duration:text, group:long, responsible:text, objects:long
+  - requirements (obj) «Оценка соблюдения требований»: 14 полей: complianceRu:long?, complianceKz:long?, formComplianceRu:long, formComplianceKz:long?, counterRu:long?, counterKz:long?, timelinessRu:long, timelinessKz:long?, measuresRu:long?, measuresKz:long?, recognition:bilingual?, document1:bilingual?, document2:bilingual?, document3:bilingual?
+  - coverage (ROWS min=1) «10. Полнота охвата и раскрытия вопросов программы аудита, оценка дости»: 10 полей: indicator:text?, question:long, reimbursement:number?, restoration:number?, procedural:number?, paragraph:text?, assessmentRu:long, assessmentKz:long?, violationId:text?, npa:bilingual?
+  - coverageSummary (obj) «Выводы по полноте охвата вопросов программы»: 2 полей: textRu:long, textKz:long?
+  - remarks (ROWS min=0) «Замечания к документам (при наличии)»: 6 полей: document:text, version:text, remarkRu:long, remarkKz:long?, recommendationRu:long?, recommendationKz:long?
+  - corrections (ROWS min=0) «Корректировки реестра нарушений (при необходимости)»: 13 полей: violationId:text, field:text, current:long, next:long, assessmentRu:long, assessmentKz:long?, question:long?, riskType:text?, riskObject:text?, paragraph:text?, npa:bilingual?, objectionAmount:number?, acceptedMeasures:number?
+  - conclusion (obj) «16. Выводы и рекомендации»: 3 полей: decision:select[2], textRu:long, textKz:long?
+## weekly [Соответствие] group=False tabs=None sections=2 collections=1 fields=10 required=9 sources=['stage2-006']
+  - general (obj) «Заголовок»: 2 полей: from:date, to:date
+  - questions (ROWS min=1) «Ход исполнения программы аудита»: 8 полей: question:text, from:date, to:date, auditor:person, result:bilingual, plannedDays:number, actualDays:number, deviation:bilingual?
+## measurement [Соответствие] group=True tabs=None sections=3 collections=2 fields=10 required=10 sources=['stage2-007', 'stage2-047']
+  - representatives (ROWS min=1) «Представители объекта аудита»: 3 полей: iin:text, name:text, position:bilingual
+  - general (obj) «Место и дата проведения»: 2 полей: place:bilingual, date:date
+  - items (ROWS min=1) «Предмет контрольного обмера»: 5 полей: name:text, unit:text, reported:number, actual:number, price:number
+## objections [Соответствие] group=False tabs=None sections=2 collections=1 fields=11 required=11 sources=['stage2-053']
+  - general (obj) «Возражения объекта аудита»: 7 полей: submittedAt:date, method:select[3], place:bilingual, applicant:text, identification:text, grounds:bilingual, documents:bilingual
+  - violations (ROWS min=1 +files) «Список нарушений, к которым есть возражения»: 4 полей: violationId:text, violationType:text, amount:number, objection:bilingual
+## objection-result [Соответствие] group=False tabs=None sections=3 collections=1 fields=8 required=8 sources=['stage2-054']
+  - general (obj) «Сведения о результате рассмотрения нарушений»: 2 полей: date:date, result:select[3]
+  - decisions (ROWS min=1) «Результаты возражения к аудиторскому отчету»: 5 полей: violationId:text, amount:number, status:select[3], cancelled:number, note:bilingual
+  - decision (obj) «Решение, принятое по рассмотрению возражения»: 1 полей: description:bilingual
+## conclusion [Соответствие] group=False tabs=None sections=4 collections=1 fields=8 required=7 sources=['stage3-001', 'stage3-018']
+  - general (obj) «Общие сведения»: 3 полей: periodFrom:date, periodTo:date, results:bilingual
+  - conclusions (obj) «Выводы по итогам ВГА»: 1 полей: text:bilingual
+  - recommendations (ROWS min=0) «Рекомендации»: 2 полей: text:bilingual, deadline:date?
+  - measures (obj) «Меры реагирования»: 2 полей: description:bilingual, deadline:date
+## prescription [Соответствие] group=False tabs=['Общая информация', 'Финансовые нарушения', 'Процедурные нарушения'] sections=3 collections=2 fields=23 required=12 sources=['stage3-014', 'stage3-015', 'stage3-016']
+  - general (obj tab=Общая информация) «Общие сведения»: 7 полей: deadline:date, legalBasis:bilingual?, measures:bilingual?, procurementMeasures:bilingual?, liability:bilingual?, budgetCode:text?, head:person
+  - financial (ROWS min=0 total=amount tab=Финансовые нарушения) «Финансовые нарушения»: 9 полей: violationId:text, riskType:text, riskObject:text, paragraph:text, deadline:date?, amount:number, recover:number?, restoreWork:number?, restoreAccounting:number?
+  - procedural (ROWS min=0 total=amount tab=Процедурные нарушения) «Процедурные нарушения»: 7 полей: violationId:text, riskType:text, riskObject:text, paragraph:text, deadline:date?, amount:number, affected:number?
+## quality3 [Соответствие] group=True tabs=None sections=6 collections=2 fields=51 required=26 sources=['stage3-017']
+  - quality (obj) «Реквизиты контроля качества»: 7 полей: basis:long, date:date, receivedAt:date, level:select[2], departmentReview:boolean?, approverPosition:text?, basisKz:long?
+  - context (obj) «Сведения об аудиторском мероприятии · пункты 1–8»: 9 полей: object:long, legalBasis:long, purpose:long, type:text, period:text, duration:text, group:long, responsible:text, objects:long
+  - requirements (obj) «Оценка соблюдения требований»: 13 полей: complianceRu:long?, complianceKz:long?, formComplianceRu:long, formComplianceKz:long?, counterRu:long?, counterKz:long?, timelinessRu:long?, timelinessKz:long?, measuresRu:long, measuresKz:long?, recognitionRu:long, recognitionKz:long?, document1:bilingual?
+  - remarks (ROWS min=0) «Замечания к документам (при наличии)»: 6 полей: document:text, version:text, remarkRu:long, remarkKz:long?, recommendationRu:long?, recommendationKz:long?
+  - corrections (ROWS min=0) «Корректировки реестра нарушений (при необходимости)»: 13 полей: violationId:text, field:text, current:long, next:long, assessmentRu:long, assessmentKz:long?, question:long?, riskType:text?, riskObject:text?, paragraph:text?, npa:bilingual?, objectionAmount:number?, acceptedMeasures:number?
+  - conclusion (obj) «16. Выводы и рекомендации»: 3 полей: decision:select[2], textRu:long, textKz:long?
+## notification [Соответствие] group=False tabs=None sections=3 collections=1 fields=22 required=16 sources=['stage3-002', 'stage3-049']
+  - general (obj) «Сведения о результатах проверки»: 8 полей: location:text, place:text, recipient:bilingual, end:date, result:text, protected:text, court:text?, sent:date?
+  - liability (obj) «Сведения по нарушениям и ответственности»: 7 полей: npa:long, responsibility:text, activity:text, termination:text, summary:long, phone:text, notes:long?
+  - npa (ROWS min=0) «Реквизиты нарушенных норм НПА»: 7 полей: kind:text, article:text, part:text?, paragraph:text?, subparagraph:text?, number:text, date:date
+## forward-up [Соответствие] group=False tabs=None sections=1 collections=0 fields=4 required=4 sources=['stage3-008']
+  - general (obj) «Сведения о передаче в вышестоящие органы»: 4 полей: letterNumber:text, recipient:text, letterDate:date, description:bilingual
+## reply-up [Соответствие] group=False tabs=None sections=2 collections=1 fields=4 required=3 sources=['stage3-009']
+  - general (obj) «Сведения о передаче»: 1 полей: transfer:document<forward-up>
+  - answers (ROWS min=1 +files) «Сведения об ответе»: 3 полей: description:bilingual, date:date, officials:text?
+## forward-law [Соответствие] group=False tabs=None sections=1 collections=0 fields=5 required=5 sources=['stage3-006']
+  - general (obj) «Сведения о передаче в правоохранительные органы»: 5 полей: letterNumber:text, recipient:text, letterDate:date, description:bilingual, amount:number
+## reply-law [Соответствие] group=False tabs=None sections=2 collections=1 fields=4 required=3 sources=['stage3-007']
+  - general (obj) «Сведения о передаче»: 1 полей: transfer:document<forward-law>
+  - answers (ROWS min=1 +files) «Сведения об ответе»: 3 полей: description:bilingual, date:date, officials:text?
+## forward-abp [Соответствие] group=False tabs=None sections=1 collections=0 fields=5 required=5 sources=['stage3-004']
+  - general (obj) «Сведения о передаче в уполномоченные органы»: 5 полей: letterNumber:text, recipient:text, letterDate:date, description:bilingual, amount:number
+## reply-abp [Соответствие] group=False tabs=None sections=2 collections=1 fields=6 required=5 sources=['stage3-005']
+  - general (obj) «Сведения о передаче»: 3 полей: transfer:document<forward-abp>, letterNumber:text, sender:text
+  - answers (ROWS min=1 +files) «Сведения об ответе»: 3 полей: description:bilingual, date:date, officials:text?
+## claim-invalid [Соответствие] group=False tabs=None sections=3 collections=1 fields=21 required=10 sources=['stage3-003']
+  - general (obj) «Договор по государственным закупкам»: 9 полей: contract:text, number:text, date:date, protocolDate:date, protocolNumber:text, amount:number, claimDate:date, court:text, executor:person
+  - defendants (ROWS min=1) «Соответчики»: 2 полей: recipientBin:object, recipientName:bilingual?
+  - enforcement (obj) «Информация с АИС ОИП»: 10 полей: creditor:text?, bailiff:text?, workplace:text?, address:text?, enforcementStart:date?, category:bilingual?, department:text?, writ:text?, writDate:date?, recoveryAmount:number?
+## claim-dishonest [Соответствие] group=False tabs=None sections=1 collections=0 fields=5 required=4 sources=['stage3-050']
+  - general (obj) «Сведения»: 5 полей: recipientBin:object, recipientName:bilingual?, claimDate:date, court:text, executor:person
+## claim-recover [Соответствие] group=False tabs=None sections=2 collections=0 fields=18 required=7 sources=['stage3-010']
+  - general (obj) «Сведения»: 8 полей: plaintiff:text, defendant:text, amount:number, claimDate:date, court:text, executor:person, demands:long, grounds:long?
+  - enforcement (obj) «Информация с АИС ОИП»: 10 полей: creditor:text?, bailiff:text?, workplace:text?, address:text?, enforcementStart:date?, category:bilingual?, department:text?, writ:text?, writDate:date?, recoveryAmount:number?
+## claim-liquidation [Соответствие] group=False tabs=None sections=1 collections=0 fields=7 required=6 sources=['ПЗ: перечень документов / Figma: stage1-260']
+  - general (obj) «Сведения об иске»: 7 полей: recipientBin:object, recipientName:bilingual?, claimDate:date, court:text, executor:person, demands:long, grounds:long
+## claim-decisions [Соответствие] group=False tabs=None sections=2 collections=0 fields=5 required=5 sources=['stage3-011']
+  - general (obj) «Иски»: 2 полей: kind:select[4], claim:document<claim-*>
+  - decision (obj) «Решение»: 3 полей: date:date, court:text, text:long
+## response [Соответствие] group=False tabs=None sections=5 collections=4 fields=20 required=17 sources=['stage3-013', 'stage3-055', 'stage3-056', 'stage3-057']
+  - general (obj) «Общие сведения»: 3 полей: extension:boolean?, extensionReason:long{when extension}, deadline:date{when extension}
+  - discipline (ROWS min=0) «Лица, в отношении которых принято дисциплинарное взыскание»: 3 полей: iin:text, name:text, position:bilingual
+  - measures (ROWS min=0 +files) «Список нарушений»: 9 полей: violationId:text, violationType:text, amount:number, accepted:number, status:select[4], date:date, letterNumber:text, letterDate:date, note:bilingual
+  - risks (ROWS min=0) «Объекты риска»: 3 полей: riskObject:text, measure:text, done:boolean?
+  - recommendations (ROWS min=0 +files) «Список рекомендаций»: 2 полей: text:bilingual, done:boolean?
+## completion [Соответствие] group=False tabs=None sections=2 collections=0 fields=5 required=5 sources=['stage3-012']
+  - general (obj) «Общие сведения»: 1 полей: shortcomings:bilingual
+  - measures (obj) «Сведения о принятых мерах»: 4 полей: measures:bilingual, administrative:bilingual, claims:bilingual, other:bilingual
+## counter-instruction [Соответствие] group=True tabs=None sections=4 collections=1 fields=10 required=8 sources=['stage1-325', 'Постановка Встречная проверка: UC.EKA.EGA.VP.02']
+  - period (obj) «Период охвата контроля»: 2 полей: periodFrom:date, periodTo:date
+  - duration (obj) «Продолжительность контроля»: 2 полей: start:date, end:date
+  - general (obj) «Сведения контроля»: 4 полей: law:bilingual, responsible:person, effective:text?, direction:text?
+  - questions (ROWS min=1) «Детали вопроса»: 2 полей: question:text, executor:person
+## counter-account [Соответствие] group=True tabs=None sections=8 collections=2 fields=47 required=37 sources=['stage1-326', 'Постановка Встречная проверка: UC.EKA.EGA.VP.03']
+  - general (obj) «Сведения»: 9 полей: number:text, registeredAt:date, start:date, end:date, periodFrom:date, periodTo:date, scope:text, exceptional:boolean?, objectType:text
+  - registration (obj) «Прочее»: 8 полей: goDate:date, department:text, basis:text, authority:text, investor:boolean?, prosecutor:text{when investor}, registrar:text, moratorium:text?
+  - questions (ROWS min=1) «Вопросы проверки»: 3 полей: question:bilingual, subjectCode:text, subject:bilingual
+  - subject (obj) «Данные о субъекте»: 10 полей: recipientBin:object, recipientName:bilingual?, ip:boolean?, opf:text, ownership:text, commercial:boolean?, address:bilingual, businessType:text, size:text, oked:text
+  - objects (ROWS min=1) «Данные об объектах»: 3 полей: bin:object, name:bilingual, address:bilingual
+  - unplanned (obj) «Для внеплановой проверки»: 4 полей: basis:text?, appealNumber:text?, iin:text?, applicant:text?
+  - author (obj) «Сотрудник, создавший акт о назначении проверки»: 5 полей: iin:text, name:text, position:bilingual, authority:text, phone:text
+  - signer (obj) «Сотрудник, подписавший акт о назначении проверки»: 5 полей: iin:text, name:text, position:bilingual, authority:text, phone:text
+## counter-additional [Соответствие] group=True tabs=['Общая информация', 'Программа аудита', 'План аудита', 'Поручение'] sections=6 collections=3 fields=44 required=33 sources=['stage1-329', 'stage1-330', 'stage1-331', 'Постановка Встречная проверка: UC.EKA.EGA.VP.04']
+  - order (obj tab=Общая информация) «Сведения о приказе»: 11 полей: type:select[5], suspendDate:date{when type}, resumeDate:date{when type}, extendDate:date{when type}, reason:long, responsible:person, effective:text, information:bilingual, law:bilingual, basis:bilingual, notes:bilingual?
+  - program (obj tab=Программа аудита) «Цель аудита»: 1 полей: purpose:bilingual
+  - questions (ROWS min=0 tab=Программа аудита) «Сроки (этапы) проведения»: 13 полей: question:text, registration:text?, topic:text?, subtopic:text?, norms:bilingual, indicator:select[4], budget:text?, from:date, to:date, amount:number, budgetAmount:number?, transfers:number?, assets:number?
+  - objects (ROWS min=0 tab=План аудита) «Объекты аудита»: 7 полей: bin:object, name:bilingual, start:date, end:date, location:bilingual, route:bilingual, auditor:person
+  - duration (obj tab=Поручение) «Срок аудиторского мероприятия»: 4 полей: start:date, end:date, periodFrom:date, periodTo:date
+  - risks (ROWS min=0 tab=Поручение) «Объект риска»: 8 полей: riskType:select[7], riskObject:text, riskNumber:text, year:number, amount:number, budgetAmount:number?, transfers:number?, assets:number?
+## counter-request [Соответствие] group=False tabs=None sections=2 collections=1 fields=5 required=3 sources=['Постановка Встречная проверка: UC.EKA.EGA.VP.05']
+  - general (obj) «Срок сдачи»: 2 полей: deadline:datetime-local, date:date
+  - requested (ROWS min=1) «Перечень необходимых документов»: 3 полей: name:bilingual, period:text?, description:bilingual?
+## counter-obstruction [Соответствие] group=True tabs=None sections=4 collections=2 fields=9 required=9 sources=['Постановка Встречная проверка: UC.EKA.EGA.VP.06']
+  - general (obj) «Общая информация»: 3 полей: date:date, place:bilingual, auditor:person
+  - obstructions (ROWS min=1) «Воспрепятствования»: 2 полей: form:text, description:bilingual
+  - representatives (ROWS min=1) «Представители объекта аудита»: 3 полей: iin:text, name:text, position:bilingual
+  - measures (obj) «Принятые меры»: 1 полей: description:bilingual
+## counter-act [Соответствие] group=True tabs=None sections=8 collections=3 fields=18 required=18 sources=['stage1-349', 'stage1-350', 'Постановка Встречная проверка: UC.EKA.EGA.VP.07']
+  - object (obj) «Объект контроля»: 1 полей: description:bilingual
+  - general (obj) «Место и дата проведения»: 2 полей: place:bilingual, date:date
+  - questions (ROWS min=1) «Предмет / вопрос встречной проверки»: 2 полей: question:text, answer:bilingual
+  - period (obj) «Срок проведения проверки и период охвата»: 4 полей: start:date, end:date, periodFrom:date, periodTo:date
+  - participants (ROWS min=0) «Участники»: 5 полей: participation:text, name:text, position:bilingual, from:date, to:date
+  - results (obj) «Сведения о результатах встречной проверки»: 1 полей: text:bilingual
+  - obstructions (ROWS min=0) «Воспрепятствования»: 2 полей: form:text, description:bilingual
+  - measures (obj) «Меры, принятые в ходе встречной проверки»: 1 полей: text:bilingual
+## counter-notification [Соответствие] group=False tabs=None sections=3 collections=1 fields=22 required=16 sources=['stage1-341']
+  - general (obj) «Сведения о результатах проверки»: 8 полей: location:text, place:text, recipient:bilingual, end:date, result:text, protected:text, court:text?, sent:date?
+  - liability (obj) «Сведения по нарушениям и ответственности»: 7 полей: npa:long, responsibility:text, activity:text, termination:text, summary:long, phone:text, notes:long?
+  - npa (ROWS min=0) «Реквизиты нарушенных норм НПА»: 7 полей: kind:text, article:text, part:text?, paragraph:text?, subparagraph:text?, number:text, date:date

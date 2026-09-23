@@ -1,0 +1,509 @@
+## MESSAGE REFERENCE CHECK
+evga_doc_51                                   Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_6_qc                                 Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=2
+evga_doc_6_qc                                 Message_PrevDocApproved      name=prev_document_approved       corr==string(processData.documentId)  refs=0
+evga_doc_objection_results                    Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=3
+evga_doc_audit_evidence                       Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_audit_evidence                       Message_16rohjb              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_audit_evidence                       Message_00i8x5e              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_audit_evidence                       Message_0awtmgv              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_audit_evidence                       Message_1faqun8              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_m50_adm_prot_uo                      Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_m44_vk_uk                            Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=2
+evga_doc_accounting_card                      Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_transfer_law_enforcement             Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_peredacha_pravoohran                 Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_lawsuit_decision                     Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_rezultat_vozrazhenii                 Message_09y3gmr              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_rezultat_vozrazhenii                 Message_DocAction            name=DOC_CONFIRM_EVENT            corr==string(processData.documentId)  refs=0
+evga_doc_qc_stage3                            Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_audit_completion_cert                Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_m53_adm_1ap                          Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_m55_vk_akt_osm                       Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_reshenie_iskovoe                     Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_m56_vk_akt_vos                       Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_1_irpi                               Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_5_poruchenie                         Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=11
+evga_doc_5_poruchenie                         Message_PrevDocApproved      name=prev_document_approved       corr==string(processData.documentId)  refs=0
+evga_doc_m47_vk_tu                            Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=2
+prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2               Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=11
+prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2               Message_CaseAction           name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_46_kk3                               Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=2
+evga_doc_oa_objection                         Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=2
+evga_doc_access_denial_act                    Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_m46_vk_akt                           Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=3
+CaseProcessV1                                 Message_CaseAction           name=TASK_COMPLETE_EVENT          corr==string(processData.caseId)  refs=4
+CaseProcessV1                                 Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.caseId)  refs=4
+CaseProcessV1                                 Message_1ysgtld              name=TASK_COMPLETE_EVENT          corr==string(processData.caseId)  refs=7
+CaseProcessV1                                 Message_05lm36t              name=TASK_COMPLETE_EVENT          corr==string(processData.caseId)  refs=0
+CaseProcessV1                                 Message_CreateQcConclusion   name=CREATE_QC_CONCLUSION_EVENT   corr==string(processData.caseId)  refs=0
+Process_14ytj1q                               Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=7
+Process_14ytj1q                               Message_0g9k0qw              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+m20_audit_objection                           Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=2
+evga_doc_7_zkk                                Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=3
+evga_doc_additional_order                     Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=10
+evga_doc_m18_m19_auto_create                  Message_DocStatusChanged     name=DOC_STATUS_CHANGED           corr==string(processData.caseId)  refs=0
+evga_doc_m18_m19_auto_create                  Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=9
+evga_doc_info_request                         Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=6
+evga_doc_m38_adm_osn                          Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_m49_adm_voz                          Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=3
+evga_doc_violation_order                      Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=8
+evga_doc_m42_adm_kvit                         Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_ad                                   Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_ad                                   Message_PrevDocApproved      name=prev_document_approved       corr==string(processData.documentId)  refs=0
+evga_doc_ad                                   Message_1iek430              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_otvet_pravoohran                     Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_otvet_mery                           Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=8
+evga_doc_m39_adm_prot                         Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_m52_adm_oplata                       Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_m43_vk_por                           Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=8
+evga_doc_m54_vk_dop_por                       Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=9
+evga_doc_transfer_authority                   Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_weekly_report                        Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_3_plan                               Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=6
+evga_doc_3_plan                               Message_PrevDocApproved      name=prev_document_approved       corr==string(processData.documentId)  refs=0
+evga_doc_law_enforcement_response             Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_predpisanie                          Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=7
+evga_doc_prikaz                               Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_qc_stage2                            Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+Process_1w9nalc                               Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+Process_1w9nalc                               Message_0gi0n7x              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+Process_1w9nalc                               Message_0uzmb96              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=0
+Process_1w9nalc                               Message_00mq0vg              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=0
+Process_1w9nalc                               Message_0i9yws0              name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=0
+evga_doc_m57_adm_resh                         Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_m41_adm_post_pr                      Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=3
+evga_doc_m40_adm_post_vz                      Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=3
+evga_doc_notification_slip                    Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=2
+evga_doc_m45_vk_treb                          Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_qc_stage1                            Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_vap_notification                     Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=1
+evga_doc_37_kk2                               Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=6
+evga_doc_audit_conclusion                     Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=7
+evga_doc_certificate_of_refusement            Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_talon_uvedomlenie                    Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_measures_response                    Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=8
+evga_doc_m21_ako                              Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_lawsuit                              Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=5
+evga_doc_2_pa                                 Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=7
+evga_doc_2_pa                                 Message_PrevDocApproved      name=prev_document_approved       corr==string(processData.documentId)  refs=0
+evga_doc_spravka_zavershenia                  Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_m48_adm_1av                          Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=9
+evga_doc_4_az                                 Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=6
+evga_doc_4_az                                 Message_PrevDocApproved      name=prev_document_approved       corr==string(processData.documentId)  refs=0
+evga_doc_peredacha_upoln                      Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+evga_doc_iskovye_zayavleniya                  Message_DocAction            name=TASK_COMPLETE_EVENT          corr==string(processData.documentId)  refs=4
+
+## PER-PROCESS TABLE
+| process id | name | statuses (workflow-update newStatus) | action codes (availableActions) | roles | timers | ext calls (zeebe action/action_code/doc_type; case-workflow-update newStatus; other urls) | counts |
+| evga_doc_51 | EVGA Doc 51: Возражения | draft, active | save[audit_object], signed[audit_object] | audit_object | Event_DeadlineExpired: =now() + duration("P10D") | zeebe:trigger_doc_message/signed_automatically/if processData.auditTypeCode = "16" then "M17-AO-F" else "M17-AO-S"; zeebe:publish_case_message/ready_send_to_appeal; zeebe:publish_case_message/default | st=6 gw=1 wait=2 end=2 |
+| evga_doc_6_qc | EVGA Doc 6: Дело КК | open, closed | qc_close[qc_expert/qc_head] | qc_expert, qc_head |  | zeebe:trigger_doc_message/ready_kvga_confirmed/"M7-POR" | st=4 gw=2 wait=2 end=1 |
+| evga_doc_objection_results | EVGA: Результаты возражения к аудиторскому отчету (2.7) | draft, pending_confirmation, revision, active | save[appeal_expert], send_to_confirmation[appeal_expert], confirm[appeal_head], return[appeal_head], change_confirmer[appeal_expert], resubmit[appeal_expert] | appeal_expert, appeal_head |  | case-workflow-update newStatus=audit_materials_implementation | st=5 gw=3 wait=3 end=1 |
+| evga_doc_audit_evidence | EVGA: М19 Аудиторские доказательства | draft, pending_approval, approved, revision, pending_confirmation, active | save[auditor], send_to_approval[auditor], approve[approver], return_from_approval[approver], change_approver[auditor], send_to_confirmation[auditor], resubmit[auditor], confirm[confirmer], return_from_confirmation[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  |  | st=6 gw=4 wait=5 end=1 |
+| evga_doc_m50_adm_prot_uo | EVGA Doc: Протокол, отправленный в уполномоченный орган для вынесения решения | active, draft | save[auditor], activate[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_m44_vk_uk | EVGA Doc: Учетная карточка по встречному контролю | draft, active, registered | save[auditor], activate[auditor], registered[auditor] | auditor |  |  | st=3 gw=2 wait=2 end=1 |
+| evga_doc_accounting_card | EVGA: Учетная карточка (М11) | registered_ersop, sent_revision_ersop, pending_for_consideration, rejected_ersop, sent_to_ersop, draft | save[auditor], send_to_ersop[auditor], check_status[auditor] | auditor |  | evga/check-audit-type; zeebe:trigger_doc_message/ersop_registered/"M7-POR" | st=8 gw=5 wait=4 end=2 |
+| evga_doc_transfer_law_enforcement | EVGA: Передача в правоохранительные органы | draft, pending_approval, revision, approved, pending_confirmation, active, sent_to_law_enforcement | save[auditor], change_approver[auditor], submit[auditor], approve[approver], return[approver/confirmer], change_confirmer[auditor], send_to_confirm[auditor], confirm[confirmer], send_to_law_enforcement[auditor] | approver, auditor, confirmer |  |  | st=7 gw=5 wait=5 end=1 |
+| evga_doc_peredacha_pravoohran | EVGA Doc: Передача в правоохранительные органы | pending_approval, revision, approved, return, active, draft, pending_confirmation | approve[approver], return[approver/confirmer], change_approver[auditor], save[auditor], submit[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  |  | st=7 gw=3 wait=4 end=1 |
+| evga_doc_lawsuit_decision | EVGA: Решение по исковому заявлению | draft, active | save[auditor], activate[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_rezultat_vozrazhenii | Результат возражений | approved, draft, pending_confirmation, active, revision, oa_acknowledged, sent_to_audit_object | save[appeal_expert], send_to_confirmation[appeal_expert], sign[appeal_expert], confirm[appeal_head], return[appeal_head], change_confirmer[appeal_expert], send_to_audit_object[appeal_head], audit_object_acknowledged[audit_object_signer/auditor] | appeal_expert, appeal_head, audit_object_signer, auditor |  | zeebe:publish_case_message/audit_object_acknowledged | st=8 gw=3 wait=5 end=1 |
+| evga_doc_qc_stage3 | EVGA: 3.11 KK 3-etap (Kontrol Kachestva Etap 3) | sent_to_qc, qc_acknowledged, expert_assigned, signed, pending_confirmation, revision, active | change_qc_approver[approver], acknowledge_qc[qc_head], assign_expert[qc_head], save[qc_expert], sign_zkk[qc_expert], submit_confirm[qc_expert], change_confirmer[qc_expert], qc_confirm[qc_head], qc_return[qc_head] | approver, qc_expert, qc_head |  | case-workflow-update newStatus=closed; zeebe:publish_case_message/qc_3_completed | st=9 gw=5 wait=5 end=1 |
+| evga_doc_audit_completion_cert | EVGA: 3.10 Справка о завершении госаудита | draft, pending_approval, revision, approved, pending_confirmation, active | save[auditor], submit[auditor], change_approver[auditor], approve[approver], return[approver/confirmer], send_to_confirmation[auditor], change_confirmer[auditor], confirm[confirmer] | approver, auditor, confirmer |  |  | st=6 gw=4 wait=4 end=1 |
+| evga_doc_m53_adm_1ap | EVGA Doc: Учётный документ формы 1-АП | active, draft | save[auditor], activate[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_m55_vk_akt_osm | EVGA Doc: Акт осмотра по встречному контролю | draft, pending_approval, revision, approved, active, sent_to_audit_object, oa_acknowledged | save[auditor], submit[auditor], approve[approver], return[approver], change_approver[auditor], sign[auditor], send_to_audit_object[auditor], audit_object_acknowledged[audit_object_signer] | approver, audit_object_signer, auditor |  |  | st=7 gw=5 wait=5 end=1 |
+| evga_doc_reshenie_iskovoe | EVGA Doc: Решение по исковому заявлению | draft, active | save[auditor], activate[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_m56_vk_akt_vos | EVGA Doc: Акт по факту воспрепятствования | draft, pending_approval, revision, approved, return, active, pending_confirmation | save[auditor], submit[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  |  | st=7 gw=4 wait=4 end=1 |
+| evga_doc_1_irpi | EVGA Doc 1: ИПИ | revision, pending_confirmation, approved, pending_approval, draft, active | save[auditor], submit[auditor], confirm[confirmer], return[approver/confirmer], change_confirmer[auditor], send_to_confirmation[auditor], approve[approver], change_approver[auditor] | approver, auditor, confirmer |  | zeebe:trigger_doc_message/prev_approved/"M6-PA-S"; zeebe:trigger_doc_message/prev_approved/"M6-PA-F" | st=12 gw=10 wait=5 end=1 |
+| evga_doc_5_poruchenie | EVGA Doc 5: Поручение | revision, pending_confirmation, draft, pending_kvga, active, kvga_confirmed, oa_acknowledged, approved, pending_approval, sent_to_audit_object | save[auditor], submit[auditor], confirm[confirmer], return[approver/confirmer/kvga_confirmer], change_confirmer[auditor], kvga_confirm[kvga_confirmer], kvga_reject[kvga_confirmer], change_kvga_confirmer[auditor], send_to_audit_object[auditor], send_to_kvga[auditor], approve[approver], change_approver[auditor], audit_object_acknowledged[audit_object_signer], send_to_confirmation[auditor] | approver, audit_object_signer, auditor, confirmer, kvga_confirmer |  | zeebe:publish_case_message/closed; zeebe:publish_case_message/ready_send_to_qc; evga/check-docs-status | st=17 gw=16 wait=11 end=1 |
+| evga_doc_m47_vk_tu | EVGA Doc: Талон-уведомление по встречному контролю | draft, active, registered | save[auditor], activate[auditor], registered[auditor] | auditor |  |  | st=3 gw=2 wait=2 end=1 |
+| prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2 | EVGA: М18 Реестр нарушений | revision, pending_confirmation, pending_kvga, active, approved, kvga_confirmed, pending_approval, signed_oa, signed_without_objection_oa, draft, sent_to_audit_object | save[auditor], submit[auditor], confirm[confirmer], return[approver/confirmer], change_confirmer[auditor], reestr_confirm[reestr_confirmer], reject[reestr_confirmer], change_reestr_confirmer[auditor], send_to_audit_object[auditor], send_to_reestr_confirmer[auditor], send_to_confirmation[auditor], approve[approver], change_approver[auditor], sign_without_objection[audit_object_signer], sign_with_objection[audit_object_signer] | approver, audit_object_signer, auditor, confirmer, reestr_confirmer |  | zeebe:publish_case_message/ready_send_to_qc_kvga; zeebe:publish_case_message/ready_send_to_qc_2; evga/cases/bases; evga/check-docs-status; zeebe:trigger_doc_message/prev_approved/"M19-AD"; zeebe:trigger_doc_message/doc_approved/if processData.auditTypeCode = "16" then "M17-AO-F" else "M17-AO-S" | st=25 gw=22 wait=12 end=2 |
+| evga_doc_46_kk3 | EVGA Doc 46: КК 3й этап (Контроль качества) | draft, signed, active, revision | save[qc_expert/qc_head], send_to_confirmation[qc_expert], confirm[qc_head], return[qc_head], change_head[auditor] | auditor, qc_expert, qc_head |  | zeebe:trigger_doc_message/create_qc_conclusion_stage3/"M24-AZK"; zeebe:trigger_doc_message/create_qc_conclusion_stage3/"M25-PRED" | st=6 gw=2 wait=2 end=1 |
+| evga_doc_oa_objection | EVGA: Возражение от ОА (2.6) | draft, signed, active | save[audit_object_signer], sign[audit_object_signer], send_to_ak[audit_object_signer] | audit_object_signer |  |  | st=3 gw=2 wait=2 end=1 |
+| evga_doc_access_denial_act | EVGA: М16 Акт об отказе в доступе | draft, signed, pending_confirmation, revision, active | save[auditor], sign[auditor], send_to_confirmation[auditor], change_confirmer[auditor], confirm[confirmer], return_for_revision[confirmer], resubmit[auditor] | auditor, confirmer |  |  | st=5 gw=4 wait=4 end=1 |
+| evga_doc_m46_vk_akt | EVGA Doc: Акт встречной проверки | draft, pending_approval, revision, approved, return, active | save[auditor], submit[auditor], approve[approver], return[approver], change_approver[auditor], send_to_confirmation[auditor] | approver, auditor |  |  | st=6 gw=3 wait=3 end=1 |
+| CaseProcessV1 | изменить статус дела |  | CASE:add_document[audit_object_signer/auditor], CASE:send_to_qc[auditor], CASE:change_qc_head[auditor], CASE:assign_qc_expert[qc_head], CASE:create_qc_conclusion[qc_expert], CASE:change_qc_expert[kvga_kk_head_approver/qc_head], CASE:send_to_qc_stage2[auditor], CASE:assign_qc_expert_stage2[qc_head], CASE:create_qc_conclusion_stage2[qc_expert], CASE:send_to_qc_kvga[auditor], CASE:assign_qc_expert_kvga[kvga_kk_head_approver], CASE:create_qc_conclusion_kvga[kvga_kk_expert], CASE:send_to_qc_stage3[auditor], CASE:assign_qc_expert_stage3[qc_head], CASE:create_qc_conclusion_stage3[qc_expert], CASE:assign_qc_expert_appeal[appeal_head], CASE:create_resultat_vozrazhenie[appeal_expert], CASE:resubmit_to_qc_stage2[auditor] | appeal_expert, appeal_head, audit_object_signer, auditor, kvga_kk_expert, kvga_kk_head_approver, qc_expert, qc_head |  | case-workflow-update newStatus=open; case-workflow-update(actions) | st=21 gw=28 wait=15 end=1 |
+| Process_14ytj1q | 2.1: Аудиторский отчет | draft, pending_approval, revision, pending_confirmation, confirmed, sent_to_oa, signed_by_oa, signed_with_objection | save[auditor], submit[auditor], approve[approver], return[approver/confirmer], confirm[confirmer], send_to_oa[auditor], accept[oa_responsible], objection[oa_responsible], send_to_audit_object[approver/auditor/confirmer], send_to_confirmation[auditor], create_objection_doc[oa_responsible] | approver, auditor, confirmer, oa_responsible |  |  | st=10 gw=6 wait=8 end=1 |
+| m20_audit_objection | EVGA: Возражение от объекта аудита (M20-VOZ) | draft, signed, active | save[oa_responsible], submit[oa_responsible], send_to_ak[oa_responsible] | oa_responsible |  |  | st=3 gw=3 wait=2 end=1 |
+| evga_doc_7_zkk | EVGA Doc 7: ЗКК (Заключение контроля качества) | revision, pending_confirmation, signed, draft, active | save[qc_expert], sign[qc_expert], confirm[qc_head], return[qc_head], change_head[auditor], send_to_confirmation[qc_expert] | auditor, qc_expert, qc_head |  | zeebe:trigger_doc_message/ready_kvga_confirmed/"M5-IPI" | st=6 gw=3 wait=3 end=1 |
+| evga_doc_additional_order | EVGA: Дополнительное поручение (М14) | draft, pending_approval, pending_confirmation, revision, active, approved, sent_to_audit_object, oa_acknowledged, sent_to_ersop, pending_for_consideration, registered_ersop, rejected_ersop, sent_revision_ersop | save[auditor], submit[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], confirm[confirmer], change_confirmer[auditor], send_to_ersop[auditor], send_to_confirmation[auditor], audit_object_acknowledged[audit_object_signer], send_to_audit_object[auditor], check_status[auditor] | approver, audit_object_signer, auditor, confirmer |  |  | st=16 gw=9 wait=10 end=2 |
+| send_notification | send_notification |  |  |  |  | =appBaseUrl + "/api/model-objects/objects/"+ processData.process.appName; =appBaseUrl + "/api/notifications/notifications"; =appBaseUrl + "/api/model-objects/objects/" + processData.process.appName | st=3 gw=0 wait=0 end=1 |
+| evga_doc_m18_m19_auto_create | EVGA: Автосоздание M18 и M19 | revision, active, pending_approval, signed_oa, signed_with_objection, signed_automatically, pending_work_group_approval, signed, draft, sent_to_audit_object | save[auditor], send_to_work_group[auditor], CASE:add_document[auditor], send_to_audit_object[auditor], approve[approver], return[approver], change_approver[auditor], sign_work_group[auditor/invited_specialist], submit[auditor], sign_without_objection[audit_object_signer], sign_with_objection[audit_object_signer], acknowledge[audit_object_signer] | approver, audit_object_signer, auditor, invited_specialist |  | work-group-approval(init); zeebe:publish_case_message/default; case-workflow-update newStatus=control; case-workflow-update newStatus=awaiting_objections; case-workflow-update newStatus=reviewing_objections; evga/documents(create); evga/check-docs-status; zeebe:trigger_doc_message/prev_approved/"M18-RNS"; zeebe:trigger_doc_message/prev_approved/"M18-RNAFO" | st=25 gw=14 wait=9 end=2 |
+| evga_doc_info_request | EVGA: М15 Требования по предоставлению сведений | active, send_to_auditor, audit_object_acknowledged, info_refused, sent_to_audit_object, draft, overdue, info_accepted | send_to_audit_object[auditor], save[auditor], accept_info[auditor], reject_info[auditor], resend_to_oa[auditor], provide_info[audit_object_signer], refuse_info[audit_object_signer], acknowledge[audit_object_signer], sign[auditor], mark_refused[auditor] | audit_object_signer, auditor | Event_TimerDeadline: =if taskVariable != null and taskVariable.deadlineDatetime != null then date and time(taskVariable.deadlineDatetime) else date and time("9999-12-31T23:59:59Z") |  | st=8 gw=7 wait=7 end=2 |
+| evga_doc_m38_adm_osn | EVGA Doc: Основание дела об административном правонарушении | active, draft | save[auditor], activate[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_m49_adm_voz | EVGA Doc: Возражения к Постановлению о наложении административного взыскания | pending_approval, revision, approved, return, active, draft | approve[approver], return[approver], change_approver[auditor], save[auditor], submit[auditor], send_to_confirmation[auditor] | approver, auditor |  |  | st=6 gw=3 wait=3 end=1 |
+| evga_doc_violation_order | EVGA: Предписание на устранение нарушений (3.2) | draft, pending_approval, revision, approved, pending_confirmation, active, sent_to_audit_object, delivered_to_oa, audit_object_acknowledged | save[auditor], send_to_approval[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], resubmit[auditor], send_to_qc[auditor], confirm[confirmer], change_confirmer[auditor], send_to_oa[auditor], receive[audit_object_signer], acknowledge[audit_object_signer] | approver, audit_object_signer, auditor, confirmer |  |  | st=9 gw=8 wait=8 end=1 |
+| evga_doc_m42_adm_kvit | EVGA Doc: Квитанция об уплате административного штрафа | active, draft | save[auditor], activate[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_ad | EVGA Doc: Аудиторское доказательство | draft, pending_approval, approved, revision, pending_confirmation, active | save[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], send_to_confirmation[auditor], submit[auditor], confirm[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  | zeebe:trigger_doc_message/doc_approved/if processData.auditTypeCode = "16" then "M17-AO-F" else "M17-AO-S"; zeebe:trigger_doc_message/prev_approved/"M18-RNS"; zeebe:trigger_doc_message/prev_approved/"M18-RNAFO" | st=12 gw=7 wait=6 end=1 |
+| evga_doc_otvet_pravoohran | EVGA Doc: Ответ от правоохр органов | draft, active | save[auditor], activate[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_otvet_mery | EVGA Doc: Ответ о принятых мерах | draft, pending_approval, revision, approved, pending_confirmation, return, active, accepted, pending_oa_confirmation, oa_confirmed | save[audit_object_signer/auditor], verification[audit_object_signer], approve[approver], return[approver/confirmer], change_approver[auditor], submit[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor], send_to_audit_object[auditor], oa_confirm[audit_object_signer], oa_cancel[audit_object_signer], with_auditor[auditor], accepted[approver] | approver, audit_object_signer, auditor, confirmer |  |  | st=12 gw=7 wait=8 end=1 |
+| evga_doc_m39_adm_prot | EVGA Doc: Протокол об административном правонарушении | pending_approval, revision, approved, return, active, draft, pending_confirmation | approve[approver], return[approver/confirmer], change_approver[auditor], save[auditor], submit[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  |  | st=7 gw=3 wait=4 end=1 |
+| evga_doc_m52_adm_oplata | EVGA Doc: Оплата штрафа | active, draft | save[auditor], activate[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_m43_vk_por | EVGA Doc: Поручение по встречному контролю | draft, pending_approval, revision, approved, pending_kvga, kvga_confirmed, pending_confirmation, return, active, sent_to_audit_object, oa_acknowledged | save[auditor], submit[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], send_to_kvga[auditor], kvga_confirm[kvga_confirmer], kvga_reject[kvga_confirmer], reject[kvga_confirmer], change_kvga_confirmer[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor], send_to_audit_object[auditor], audit_object_acknowledged[audit_object_signer] | approver, audit_object_signer, auditor, confirmer, kvga_confirmer |  |  | st=12 gw=8 wait=8 end=1 |
+| evga_doc_m54_vk_dop_por | EVGA Doc: Дополнительное поручение на проведение встречного контроля | draft, pending_approval, revision, approved, pending_confirmation, return, confirmed, sent_to_ersop, pending_for_consideration, registered_ersop, rejected_ersop, sent_revision_ersop | save[auditor], submit[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], send_to_confirmation[auditor], confirm[confirmer], send_to_ersop[auditor], check_status[auditor] | approver, auditor, confirmer |  |  | st=12 gw=9 wait=9 end=2 |
+| evga_doc_transfer_authority | EVGA: Передача в уполномоченный/вышестоящий орган (3.4) | draft, pending_approval, revision, approved, pending_confirmation, active | save[auditor], send_to_approval[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], resubmit[auditor], send_to_confirmation[auditor], change_confirmer[auditor], confirm[confirmer] | approver, auditor, confirmer |  |  | st=6 gw=5 wait=5 end=1 |
+| evga_doc_weekly_report | EVGA: Еженедельный отчет (2.4) | active, draft | save[auditor], sign[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_3_plan | EVGA Doc 3: План аудита | draft, pending_approval, pending_confirmation, revision, active, approved | save[auditor], submit[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], confirm[confirmer], change_confirmer[auditor], send_to_confirmation[auditor] | approver, auditor, confirmer |  | zeebe:trigger_doc_message/prev_approved/"M9-AZ"; zeebe:trigger_doc_message/prev_approved/"M7-POR"; evga/check-docs-status | st=15 gw=16 wait=6 end=1 |
+| evga_doc_law_enforcement_response | EVGA: Ответ от правоохранительных органов | draft, active | save[auditor], activate[auditor] | auditor |  |  | st=2 gw=1 wait=1 end=1 |
+| evga_doc_predpisanie | EVGA Doc: Предписание на устранение нарушений | revision, pending_confirmation, oa_acknowledged, approved, pending_approval, sent_to_audit_object, draft, active | save[auditor], submit[auditor], send_to_confirmation[auditor], confirm[confirmer], return[approver/confirmer], change_confirmer[auditor], approve[approver], change_approver[auditor], oa_acknowledge[audit_object_signer], send_to_audit_object[auditor] | approver, audit_object_signer, auditor, confirmer |  | zeebe:publish_case_message/ready_send_to_qc_3; evga/check-docs-status | st=12 gw=8 wait=7 end=1 |
+| evga_doc_prikaz | EVGA Doc: Приказ о начале / Приказ о завершении | draft, pending_approval, revision, approved, pending_confirmation, return, confirmed, registered | save[auditor], submit[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor], register[auditor] | approver, auditor, confirmer |  |  | st=8 gw=5 wait=5 end=1 |
+| evga_doc_qc_stage2 | EVGA: Контроль качества 2-этап (2.8) | open, draft, signed, pending_confirmation, revision, active | save[qc_expert], create_zkk[qc_expert], sign[qc_expert], send_to_confirmation[qc_expert], change_confirmer[qc_expert], confirm[qc_head], return[qc_head], resubmit[qc_expert] | qc_expert, qc_head |  | case-workflow-update newStatus=qc_approved | st=7 gw=5 wait=5 end=1 |
+| Process_1w9nalc | None | draft | save[auditor], submit[auditor] | auditor |  |  | st=2 gw=1 wait=2 end=0 |
+| evga_doc_m57_adm_resh | EVGA Doc: Решение по делу об административном правонарушении | draft, pending_approval, revision, approved, pending_confirmation, return, confirmed | save[auditor], submit[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  |  | st=7 gw=4 wait=4 end=1 |
+| evga_doc_m41_adm_post_pr | EVGA Doc: Постановление о прекращении административного производства | pending_approval, revision, approved, return, active, draft | approve[approver], return[approver], change_approver[auditor], save[auditor], submit[auditor], send_to_confirmation[auditor] | approver, auditor |  |  | st=6 gw=3 wait=3 end=1 |
+| evga_doc_m40_adm_post_vz | EVGA Doc: Постановление о наложении административного взыскания | pending_approval, revision, approved, return, active, draft | approve[approver], return[approver], change_approver[auditor], save[auditor], submit[auditor], send_to_confirmation[auditor] | approver, auditor |  |  | st=6 gw=3 wait=3 end=1 |
+| evga_doc_notification_slip | EVGA: 3.9 Талон-уведомление | draft, active, registered | save[auditor], activate[auditor], register_ersop[auditor] | auditor |  |  | st=3 gw=2 wait=2 end=1 |
+| evga_doc_m45_vk_treb | EVGA Doc: Требование по встречному контролю | draft, sent_to_audit_object, awaiting_info, info_refused, sent_by_audit_object, under_review, overdue, info_accepted | save[auditor], send_to_audit_object[auditor], provide_info[audit_object_signer], refuse_info[audit_object_signer], review_info[auditor], accept_info[auditor], reject_info[auditor], resend_to_oa[auditor], mark_refused[auditor] | audit_object_signer, auditor | Event_TimerDeadline: =if taskVariable != null and taskVariable.deadlineDatetime != null then date and time(taskVariable.deadlineDatetime) else date and time("9999-12-31T23:59:59Z") |  | st=9 gw=6 wait=6 end=3 |
+| evga_doc_qc_stage1 | EVGA: Контроль качества 1-этап | open, draft, signed, pending_confirmation, revision, active | save[qc_expert], create_zkk[qc_expert], sign[qc_expert], send_to_confirmation[qc_expert], change_confirmer[qc_expert], confirm[qc_head], return[qc_head], resubmit[qc_expert] | qc_expert, qc_head |  | case-workflow-update newStatus=qc_approved; zeebe:trigger_doc_message/zkk_confirmed/"M10-QC1" | st=8 gw=5 wait=5 end=1 |
+| evga_doc_vap_notification | EVGA: Уведомление для ИС ВАП (М13) | draft, sent | save[auditor], send_to_vap[auditor] | auditor |  | zeebe:trigger_doc_message/ersop_registered/"M7-POR" | st=3 gw=1 wait=1 end=1 |
+| evga_doc_37_kk2 | EVGA Doc 37: КК 2й этап (Контроль качества) | draft, pending_confirmation, active, revision, signed | save[kvga_kk_expert/qc_expert], sign[kvga_kk_expert/qc_expert], confirm[kvga_kk_head_approver/qc_head], return[kvga_kk_head_approver/qc_head], change_head[auditor], change_head_kvga[auditor], send_to_confirmation[kvga_kk_expert/qc_expert] | auditor, kvga_kk_expert, kvga_kk_head_approver, qc_expert, qc_head |  | evga/cases/bases; zeebe:trigger_doc_message/ready_send_confirmation/if processData.auditTypeCode = "16" then "M18-RNAFO" else "M18-RNS" | st=12 gw=8 wait=6 end=1 |
+| evga_doc_audit_conclusion | EVGA Doc: Аудиторское заключение | revision, pending_confirmation, oa_acknowledged, approved, pending_approval, sent_to_audit_object, draft, active | save[auditor], submit[auditor], send_to_confirmation[auditor], confirm[confirmer], return[approver/confirmer], change_confirmer[auditor], approve[approver], change_approver[auditor], oa_acknowledge[audit_object_signer], send_to_audit_object[auditor] | approver, audit_object_signer, auditor, confirmer |  | evga/check-docs-status; zeebe:publish_case_message/ready_send_to_qc_3; evga/documents(create) | st=15 gw=10 wait=7 end=1 |
+| evga_doc_certificate_of_refusement | EVGA: Акт об отказе (М15) | draft, pending_confirmation, active, revision, signed, sent_to_audit_object, oa_acknowledged | save[auditor], sign[auditor], confirm[confirmer], return[confirmer], change_confirmer[auditor], send_to_audit_object[auditor], send_to_confirmation[auditor], audit_object_acknowledged[audit_object_signer] | audit_object_signer, auditor, confirmer |  |  | st=7 gw=2 wait=5 end=1 |
+| evga_doc_talon_uvedomlenie | EVGA Doc: Талон-уведомление (M26-TU) — ЕРСОП FINISHED | draft, sent_to_ersop, pending_for_consideration, registered_ersop, rejected_ersop, sent_revision_ersop | save[auditor], send_to_ersop[auditor], check_status[auditor] | auditor |  |  | st=6 gw=4 wait=4 end=2 |
+| evga_doc_measures_response | EVGA: Ответ о принятых мерах (3.3) | draft, pending_oa_confirmation, oa_confirmed, sent_to_auditor, pending_approval, revision, approved, pending_confirmation, active | save[audit_object_signer/auditor], send_to_oa_confirmation[audit_object_signer], oa_confirm[oa_confirmer], send_to_auditor[audit_object_signer], review_decision[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], resubmit[auditor], send_to_confirmation[auditor], change_confirmer[auditor], confirm[confirmer] | approver, audit_object_signer, auditor, confirmer, oa_confirmer |  |  | st=9 gw=8 wait=8 end=1 |
+| evga_doc_m21_ako | EVGA: M21-AKO Ознакомление ОА | draft, pending_work_group_approval, active, sent_to_audit_object, oa_acknowledged | save[auditor], send_to_work_group[auditor], sign_work_group[auditor], send_to_audit_object[auditor], audit_object_acknowledged[audit_object_signer] | audit_object_signer, auditor |  | work-group-approval(init) | st=6 gw=2 wait=4 end=1 |
+| evga_doc_lawsuit | EVGA: Исковые заявления | draft, pending_approval, revision, approved, pending_confirmation, active, sent_to_court | save[auditor], submit[auditor], send_to_court[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  |  | st=8 gw=5 wait=5 end=2 |
+| evga_doc_2_pa | EVGA Doc 2: Программа аудита | active, revision, pending_confirmation, draft, approved, pending_approval | return_to_draft[approver], save[auditor], submit[auditor], confirm[confirmer], return[approver/confirmer], change_confirmer[auditor], send_to_confirmation[auditor], approve[approver], change_approver[auditor] | approver, auditor, confirmer |  | zeebe:trigger_doc_message/prev_approved/"M8-PLAN"; zeebe:trigger_doc_message/prev_approved/"M9-AZ"; zeebe:trigger_doc_message/prev_approved/"M7-POR"; evga/check-docs-status | st=22 gw=18 wait=7 end=1 |
+| evga_doc_spravka_zavershenia | EVGA Doc: Справка о завершении госаудита | pending_approval, revision, approved, active, draft, pending_confirmation | approve[approver], return[approver/confirmer], change_approver[auditor], save[auditor], submit[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  |  | st=7 gw=4 wait=4 end=1 |
+| evga_doc_m48_adm_1av | EVGA Doc: Учётный документ формы 1-АВ | draft, pending_approval, revision, approved, pending_confirmation, return, confirmed, sent_to_ersop, pending_for_consideration, registered_ersop, rejected_ersop, sent_revision_ersop | save[auditor], submit[auditor], approve[approver], return[approver/confirmer], change_approver[auditor], send_to_confirmation[auditor], confirm[confirmer], send_to_ersop[auditor], check_status[auditor] | approver, auditor, confirmer |  |  | st=12 gw=9 wait=9 end=2 |
+| evga_doc_4_az | EVGA Doc 4: Аудиторское задание | draft, pending_approval, revision, active, approved, pending_work_group_approval | save[auditor], submit[auditor], approve[approver], return[approver], change_approver[auditor], sign_work_group[auditor/invited_specialist], approve_work_group[auditor], send_to_work_group[auditor] | approver, auditor, invited_specialist |  | work-group-approval(init); zeebe:trigger_doc_message/prev_approved/"M7-POR"; evga/check-docs-status | st=12 gw=13 wait=6 end=1 |
+| evga_doc_peredacha_upoln | EVGA Doc: Передача в уполн или вышест орган | pending_approval, revision, approved, return, active, draft, pending_confirmation | approve[approver], return[approver/confirmer], change_approver[auditor], save[auditor], submit[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  |  | st=7 gw=3 wait=4 end=1 |
+| evga_doc_iskovye_zayavleniya | EVGA Doc: Исковые заявления | pending_approval, revision, approved, return, active, draft, pending_confirmation | approve[approver], return[approver/confirmer], change_approver[auditor], save[auditor], submit[auditor], send_to_confirmation[auditor], confirm[confirmer], change_confirmer[auditor] | approver, auditor, confirmer |  |  | st=7 gw=3 wait=4 end=1 |
+
+## STATUS CATALOG (workflow-update newStatus)
+draft                               n= 77 procs=68: Process_14ytj1q, Process_1w9nalc, evga_doc_1_irpi, evga_doc_2_pa, evga_doc_37_kk2, evga_doc_3_plan, evga_doc_46_kk3, evga_doc_4_az, evga_doc_51, evga_doc_5_poruchenie, evga_doc_7_zkk, evga_doc_access_denial_act, evga_doc_accounting_card, evga_doc_ad, evga_doc_additional_order, evga_doc_audit_complet
+active                              n= 66 procs=59: evga_doc_1_irpi, evga_doc_2_pa, evga_doc_37_kk2, evga_doc_3_plan, evga_doc_46_kk3, evga_doc_4_az, evga_doc_51, evga_doc_5_poruchenie, evga_doc_7_zkk, evga_doc_access_denial_act, evga_doc_ad, evga_doc_additional_order, evga_doc_audit_completion_cert, evga_doc_audit_conclusion, evga_doc_audit_evidence
+revision                            n= 54 procs=46: Process_14ytj1q, evga_doc_1_irpi, evga_doc_2_pa, evga_doc_37_kk2, evga_doc_3_plan, evga_doc_46_kk3, evga_doc_4_az, evga_doc_5_poruchenie, evga_doc_7_zkk, evga_doc_access_denial_act, evga_doc_ad, evga_doc_additional_order, evga_doc_audit_completion_cert, evga_doc_audit_conclusion, evga_doc_audit_evid
+approved                            n= 44 procs=35: evga_doc_1_irpi, evga_doc_2_pa, evga_doc_3_plan, evga_doc_4_az, evga_doc_5_poruchenie, evga_doc_ad, evga_doc_additional_order, evga_doc_audit_completion_cert, evga_doc_audit_conclusion, evga_doc_audit_evidence, evga_doc_iskovye_zayavleniya, evga_doc_lawsuit, evga_doc_m39_adm_prot, evga_doc_m40_adm_p
+pending_confirmation                n= 38 procs=38: Process_14ytj1q, evga_doc_1_irpi, evga_doc_2_pa, evga_doc_37_kk2, evga_doc_3_plan, evga_doc_5_poruchenie, evga_doc_7_zkk, evga_doc_access_denial_act, evga_doc_ad, evga_doc_additional_order, evga_doc_audit_completion_cert, evga_doc_audit_conclusion, evga_doc_audit_evidence, evga_doc_certificate_of_re
+pending_approval                    n= 37 procs=36: Process_14ytj1q, evga_doc_1_irpi, evga_doc_2_pa, evga_doc_3_plan, evga_doc_4_az, evga_doc_5_poruchenie, evga_doc_ad, evga_doc_additional_order, evga_doc_audit_completion_cert, evga_doc_audit_conclusion, evga_doc_audit_evidence, evga_doc_iskovye_zayavleniya, evga_doc_lawsuit, evga_doc_m18_m19_auto_cr
+return                              n= 15 procs=15: evga_doc_iskovye_zayavleniya, evga_doc_m39_adm_prot, evga_doc_m40_adm_post_vz, evga_doc_m41_adm_post_pr, evga_doc_m43_vk_por, evga_doc_m46_vk_akt, evga_doc_m48_adm_1av, evga_doc_m49_adm_voz, evga_doc_m54_vk_dop_por, evga_doc_m56_vk_akt_vos, evga_doc_m57_adm_resh, evga_doc_otvet_mery, evga_doc_pereda
+sent_to_audit_object                n= 15 procs=14: evga_doc_5_poruchenie, evga_doc_additional_order, evga_doc_audit_conclusion, evga_doc_certificate_of_refusement, evga_doc_info_request, evga_doc_m18_m19_auto_create, evga_doc_m21_ako, evga_doc_m43_vk_por, evga_doc_m45_vk_treb, evga_doc_m55_vk_akt_osm, evga_doc_predpisanie, evga_doc_rezultat_vozrazhe
+signed                              n= 13 procs=11: evga_doc_37_kk2, evga_doc_46_kk3, evga_doc_7_zkk, evga_doc_access_denial_act, evga_doc_certificate_of_refusement, evga_doc_m18_m19_auto_create, evga_doc_oa_objection, evga_doc_qc_stage1, evga_doc_qc_stage2, evga_doc_qc_stage3, m20_audit_objection
+oa_acknowledged                     n=  9 procs=9: evga_doc_5_poruchenie, evga_doc_additional_order, evga_doc_audit_conclusion, evga_doc_certificate_of_refusement, evga_doc_m21_ako, evga_doc_m43_vk_por, evga_doc_m55_vk_akt_osm, evga_doc_predpisanie, evga_doc_rezultat_vozrazhenii
+confirmed                           n=  6 procs=5: Process_14ytj1q, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_m57_adm_resh, evga_doc_prikaz
+registered_ersop                    n=  5 procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+sent_revision_ersop                 n=  5 procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+pending_for_consideration           n=  5 procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+rejected_ersop                      n=  5 procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+sent_to_ersop                       n=  5 procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+kvga_confirmed                      n=  5 procs=3: evga_doc_5_poruchenie, evga_doc_m43_vk_por, prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+registered                          n=  4 procs=4: evga_doc_m44_vk_uk, evga_doc_m47_vk_tu, evga_doc_notification_slip, evga_doc_prikaz
+open                                n=  3 procs=3: evga_doc_6_qc, evga_doc_qc_stage1, evga_doc_qc_stage2
+pending_kvga                        n=  3 procs=3: evga_doc_5_poruchenie, evga_doc_m43_vk_por, prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+pending_work_group_approval         n=  3 procs=3: evga_doc_4_az, evga_doc_m18_m19_auto_create, evga_doc_m21_ako
+info_refused                        n=  3 procs=2: evga_doc_info_request, evga_doc_m45_vk_treb
+closed                              n=  2 procs=1: evga_doc_6_qc
+signed_oa                           n=  2 procs=2: evga_doc_m18_m19_auto_create, prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+signed_with_objection               n=  2 procs=2: Process_14ytj1q, evga_doc_m18_m19_auto_create
+audit_object_acknowledged           n=  2 procs=2: evga_doc_info_request, evga_doc_violation_order
+overdue                             n=  2 procs=2: evga_doc_info_request, evga_doc_m45_vk_treb
+info_accepted                       n=  2 procs=2: evga_doc_info_request, evga_doc_m45_vk_treb
+pending_oa_confirmation             n=  2 procs=2: evga_doc_measures_response, evga_doc_otvet_mery
+oa_confirmed                        n=  2 procs=2: evga_doc_measures_response, evga_doc_otvet_mery
+sent_to_court                       n=  2 procs=1: evga_doc_lawsuit
+sent_to_law_enforcement             n=  1 procs=1: evga_doc_transfer_law_enforcement
+sent_to_qc                          n=  1 procs=1: evga_doc_qc_stage3
+qc_acknowledged                     n=  1 procs=1: evga_doc_qc_stage3
+expert_assigned                     n=  1 procs=1: evga_doc_qc_stage3
+signed_without_objection_oa         n=  1 procs=1: prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+sent_to_oa                          n=  1 procs=1: Process_14ytj1q
+signed_by_oa                        n=  1 procs=1: Process_14ytj1q
+signed_automatically                n=  1 procs=1: evga_doc_m18_m19_auto_create
+send_to_auditor                     n=  1 procs=1: evga_doc_info_request
+delivered_to_oa                     n=  1 procs=1: evga_doc_violation_order
+accepted                            n=  1 procs=1: evga_doc_otvet_mery
+awaiting_info                       n=  1 procs=1: evga_doc_m45_vk_treb
+sent_by_audit_object                n=  1 procs=1: evga_doc_m45_vk_treb
+under_review                        n=  1 procs=1: evga_doc_m45_vk_treb
+sent                                n=  1 procs=1: evga_doc_vap_notification
+sent_to_auditor                     n=  1 procs=1: evga_doc_measures_response
+
+## DOC ACTION CATALOG
+accept                           | ru=[('Ознакомлен', 1)] | kz=[('Танысқан', 1)] | icon=[('CheckOutlined', 1)] | color=[('green', 1)] | sig={'true': 1} | comment={None: 1} | roles={'oa_responsible': 1} | from_states={'sent_to_oa': 1} | nprocs=1
+accept_info                      | ru=[('Принять сведения', 2)] | kz=[('Мәліметтерді қабылдау', 2)] | icon=[('CheckCircleOutlined', 2)] | color=[('green', 2)] | sig={'true': 1, 'false': 1} | comment={'false': 2} | roles={'auditor': 2} | from_states={'send_to_auditor': 1, 'under_review': 1} | nprocs=2
+accepted                         | ru=[('Принять/Продлить', 1)] | kz=[('Принять/Продлить', 1)] | icon=[('CheckOutlined', 1)] | color=[('green', 1)] | sig={'true': 1} | comment={'false': 1} | roles={'approver': 1} | from_states={'pending_approval': 1} | nprocs=1
+acknowledge                      | ru=[('Ознакомиться', 3)] | kz=[('Танысу', 3)] | icon=[('EyeOutlined', 3)] | color=[('blue', 3)] | sig={'false': 3} | comment={None: 3} | roles={'audit_object_signer': 3} | from_states={'sent_to_audit_object': 2, 'delivered_to_oa': 1} | nprocs=3
+acknowledge_qc                   | ru=[('Ознакомиться с документами', 1)] | kz=[('Құжаттармен танысу', 1)] | icon=[('EyeOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'qc_head': 1} | from_states={'sent_to_qc': 1} | nprocs=1
+activate                         | ru=[('Активировать', 12)] | kz=[(None, 5), ('Қосу', 4)] | icon=[('SendOutlined', 9), ('CheckCircleOutlined', 3)] | color=[('blue', 9), ('green', 3)] | sig={'false': 7, 'true': 5} | comment={'false': 9, None: 3} | roles={'auditor': 12} | from_states={'draft': 12} | nprocs=12
+approve                          | ru=[('Согласовать', 36)] | kz=[('Келісу', 27), (None, 9)] | icon=[('CheckOutlined', 31), ('CheckCircleOutlined', 5)] | color=[('green', 36)] | sig={'true': 36} | comment={None: 17, 'false': 19} | roles={'approver': 36} | from_states={'pending_approval': 36} | nprocs=36
+approve_work_group               | ru=[('Утвердить', 1)] | kz=[('Бекіту', 1)] | icon=[('CheckOutlined', 1)] | color=[('green', 1)] | sig={'true': 1} | comment={None: 1} | roles={'auditor': 1} | from_states={'pending_work_group_approval': 1} | nprocs=1
+assign_expert                    | ru=[('Назначить эксперта', 1)] | kz=[('Сарапшы тағайындау', 1)] | icon=[('UserAddOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'qc_head': 1} | from_states={'qc_acknowledged': 1} | nprocs=1
+audit_object_acknowledged        | ru=[('Ознакомиться', 7)] | kz=[(None, 4), ('Танысу', 3)] | icon=[('SaveOutlined', 6), ('EyeOutlined', 1)] | color=[('default', 6), ('blue', 1)] | sig={'true': 7} | comment={None: 6, 'false': 1} | roles={'audit_object_signer': 7, 'auditor': 1} | from_states={'sent_to_audit_object': 7} | nprocs=7
+change_approver                  | ru=[('Сменить согласующего', 29), ('Сменить согласующее лицо', 7)] | kz=[('Келісушіні ауыстыру', 29), ('Келісуші тұлғаны ауыстыру', 7)] | icon=[('SwapOutlined', 29), ('UserSwitchOutlined', 7)] | color=[('blue', 30), ('default', 6)] | sig={'false': 33, None: 3} | comment={None: 8, 'false': 28} | roles={'auditor': 36} | from_states={'pending_approval': 34, 'draft': 1, 'revision': 1} | nprocs=35
+change_confirmer                 | ru=[('Сменить утверждающего', 22), ('Сменить утверждающее лицо', 13)] | kz=[('Бекітушіні ауыстыру', 22), ('Бекітуші тұлғаны ауыстыру', 13)] | icon=[('SwapOutlined', 22), ('UserSwitchOutlined', 13)] | color=[('blue', 23), ('default', 12)] | sig={None: 8, 'false': 27} | comment={None: 13, 'false': 22} | roles={'appeal_expert': 2, 'auditor': 28, 'qc_expert': 5} | from_states={'pending_confirmation': 29, 'approved': 3, 'signed': 3} | nprocs=33
+change_head                      | ru=[('Сменить Руководителя КК', 2), ('Сменить утверждающего', 1)] | kz=[(None, 3)] | icon=[('SwapOutlined', 3)] | color=[('blue', 3)] | sig={'false': 3} | comment={'false': 3} | roles={'auditor': 3} | from_states={'signed': 1, 'pending_confirmation': 2} | nprocs=3
+change_head_kvga                 | ru=[('Сменить Руководителя КК КВГА', 1)] | kz=[(None, 1)] | icon=[('SwapOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={'false': 1} | roles={'auditor': 1} | from_states={'signed': 1} | nprocs=1
+change_kvga_confirmer            | ru=[('Сменить подтверждающее лицо', 2)] | kz=[('КВГА бекітушіні ауыстыру', 2)] | icon=[('SwapOutlined', 1), ('UserSwitchOutlined', 1)] | color=[('default', 2)] | sig={'false': 2} | comment={'false': 2} | roles={'auditor': 2} | from_states={'pending_kvga': 2} | nprocs=2
+change_qc_approver               | ru=[('Сменить согласующее лицо КК', 1)] | kz=[('КК келісуші тұлғаны ауыстыру', 1)] | icon=[('UserSwitchOutlined', 1)] | color=[('default', 1)] | sig={'false': 1} | comment={None: 1} | roles={'approver': 1} | from_states={'sent_to_qc': 1} | nprocs=1
+change_reestr_confirmer          | ru=[('Сменить подтверждающее лицо', 1)] | kz=[('Тізілім бекітушіні ауыстыру', 1)] | icon=[('UserSwitchOutlined', 1)] | color=[('default', 1)] | sig={'false': 1} | comment={'false': 1} | roles={'auditor': 1} | from_states={'pending_kvga': 1} | nprocs=1
+check_status                     | ru=[('Проверить статус', 10)] | kz=[('Күйін тексеру', 10)] | icon=[('SyncOutlined', 10)] | color=[('default', 10)] | sig={'false': 10} | comment={None: 8, 'false': 2} | roles={'auditor': 10} | from_states={'pending_for_consideration': 5, 'sent_to_ersop': 5} | nprocs=5
+confirm                          | ru=[('Утвердить', 37), ('Утвердить с ЭЦП', 2)] | kz=[('Бекіту', 21), (None, 16)] | icon=[('FileDoneOutlined', 26), ('CheckCircleOutlined', 11)] | color=[('green', 39)] | sig={'true': 39} | comment={None: 32, 'false': 7} | roles={'appeal_head': 2, 'confirmer': 31, 'qc_head': 5, 'kvga_kk_head_approver': 1} | from_states={'pending_confirmation': 37, 'signed': 2} | nprocs=38
+create_objection_doc             | ru=[('Создать возражение', 1)] | kz=[(None, 1)] | icon=[('ExclamationCircleOutlined', 1)] | color=[('orange', 1)] | sig={'false': 1} | comment={None: 1} | roles={'oa_responsible': 1} | from_states={'signed_with_objection': 1} | nprocs=1
+create_zkk                       | ru=[('Создать заключение КК', 2)] | kz=[('КК қорытындысын құру', 2)] | icon=[('FileAddOutlined', 2)] | color=[('blue', 2)] | sig={'false': 2} | comment={None: 2} | roles={'qc_expert': 2} | from_states={'open': 2} | nprocs=2
+kvga_confirm                     | ru=[('Подтвердить', 2)] | kz=[('Растау', 2)] | icon=[('SafetyCertificateOutlined', 2)] | color=[('purple', 2)] | sig={'true': 2} | comment={'false': 2} | roles={'kvga_confirmer': 2} | from_states={'pending_kvga': 2} | nprocs=2
+kvga_reject                      | ru=[('Не подтверждать', 2)] | kz=[('Қабылдамау', 2)] | icon=[('CloseOutlined', 1), ('RollbackOutlined', 1)] | color=[('orange', 2)] | sig={'false': 2} | comment={'true': 2} | roles={'kvga_confirmer': 2} | from_states={'pending_kvga': 2} | nprocs=2
+mark_refused                     | ru=[('Отказано в предоставлении', 1), ('Отметить отказ', 1)] | kz=[('Бас тартуды белгілеу', 2)] | icon=[('CloseCircleOutlined', 2)] | color=[('red', 2)] | sig={'false': 2} | comment={'true': 2} | roles={'auditor': 2} | from_states={'overdue': 2} | nprocs=2
+oa_acknowledge                   | ru=[('Ознакомиться', 2)] | kz=[('Танысу', 2)] | icon=[('EyeOutlined', 2)] | color=[('green', 2)] | sig={'true': 2} | comment={'false': 2} | roles={'audit_object_signer': 2} | from_states={'sent_to_audit_object': 2} | nprocs=2
+oa_cancel                        | ru=[('Отменить', 1)] | kz=[('Болдырмау', 1)] | icon=[('CloseCircleOutlined', 1)] | color=[('red', 1)] | sig={'false': 1} | comment={'false': 1} | roles={'audit_object_signer': 1} | from_states={'pending_oa_confirmation': 1} | nprocs=1
+oa_confirm                       | ru=[('Подтвердить', 1), ('Подтвердить с ЭЦП', 1)] | kz=[('Растау', 1), ('ЭЦҚ арқылы растау', 1)] | icon=[('CheckCircleOutlined', 2)] | color=[('green', 2)] | sig={'true': 2} | comment={'false': 1, None: 1} | roles={'audit_object_signer': 1, 'oa_confirmer': 1} | from_states={'pending_oa_confirmation': 2} | nprocs=2
+objection                        | ru=[('Подать возражение', 1)] | kz=[('Қарсылық білдіру', 1)] | icon=[('ExclamationCircleOutlined', 1)] | color=[('orange', 1)] | sig={'false': 1} | comment={None: 1} | roles={'oa_responsible': 1} | from_states={'sent_to_oa': 1} | nprocs=1
+provide_info                     | ru=[('Направить сведения Аудитору', 1), ('Предоставить сведения', 1)] | kz=[('Аудиторға мәліметтерді жіберу', 1), ('Мәліметтерді беру', 1)] | icon=[('UploadOutlined', 2)] | color=[('green', 2)] | sig={'false': 2} | comment={'false': 2} | roles={'audit_object_signer': 2} | from_states={'audit_object_acknowledged': 1, 'awaiting_info': 1} | nprocs=2
+qc_close                         | ru=[('Закрыть дело КК', 1)] | kz=[('КК ісін жабу', 1)] | icon=[('CheckCircleOutlined', 1)] | color=[('green', 1)] | sig={None: 1} | comment={None: 1} | roles={'qc_head': 1, 'qc_expert': 1} | from_states={'closed': 1} | nprocs=1
+qc_confirm                       | ru=[('Утвердить', 1)] | kz=[('Бекіту', 1)] | icon=[('CheckCircleOutlined', 1)] | color=[('green', 1)] | sig={'true': 1} | comment={None: 1} | roles={'qc_head': 1} | from_states={'pending_confirmation': 1} | nprocs=1
+qc_return                        | ru=[('Вернуть на доработку', 1)] | kz=[('Қайта өңдеуге қайтару', 1)] | icon=[('RollbackOutlined', 1)] | color=[('orange', 1)] | sig={None: 1} | comment={'true': 1} | roles={'qc_head': 1} | from_states={'pending_confirmation': 1} | nprocs=1
+receive                          | ru=[('Получить документы', 1)] | kz=[('Құжаттарды алу', 1)] | icon=[('DownloadOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'audit_object_signer': 1} | from_states={'sent_to_audit_object': 1} | nprocs=1
+reestr_confirm                   | ru=[('Подтвердить', 1)] | kz=[('Растау', 1)] | icon=[('SafetyCertificateOutlined', 1)] | color=[('purple', 1)] | sig={'true': 1} | comment={'false': 1} | roles={'reestr_confirmer': 1} | from_states={'pending_kvga': 1} | nprocs=1
+refuse_info                      | ru=[('Отказать в предоставлении', 2)] | kz=[('Беруден бас тарту', 2)] | icon=[('CloseCircleOutlined', 2)] | color=[('red', 2)] | sig={'false': 2} | comment={'true': 2} | roles={'audit_object_signer': 2} | from_states={'audit_object_acknowledged': 1, 'awaiting_info': 1} | nprocs=2
+register                         | ru=[('Зарегистрировать', 1)] | kz=[('Тіркеу', 1)] | icon=[('FileAddOutlined', 1)] | color=[('green', 1)] | sig={'false': 1} | comment={'false': 1} | roles={'auditor': 1} | from_states={'confirmed': 1} | nprocs=1
+register_ersop                   | ru=[('Зарегистрировать в ЕРСОП', 1)] | kz=[('ЕРСОП-та тіркеу', 1)] | icon=[('CloudUploadOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'auditor': 1} | from_states={'active': 1} | nprocs=1
+registered                       | ru=[('Отправить в ЕРСОП', 2)] | kz=[('ЕРСОП-қа жіберу', 2)] | icon=[('SendOutlined', 2)] | color=[('blue', 2)] | sig={'false': 2} | comment={'false': 2} | roles={'auditor': 2} | from_states={'active': 2} | nprocs=2
+reject                           | ru=[('Вернуть на доработку', 2)] | kz=[('Жетілдіруге қайтару', 1), ('Қайта өңдеуге қайтару', 1)] | icon=[('CloseCircleOutlined', 1), ('RollbackOutlined', 1)] | color=[('orange', 2)] | sig={'false': 2} | comment={'true': 2} | roles={'reestr_confirmer': 1, 'kvga_confirmer': 1} | from_states={'pending_kvga': 2} | nprocs=2
+reject_info                      | ru=[('Отказано в предоставлении', 1), ('Отклонить (отказ)', 1)] | kz=[('Ұсынудан бас тартылды', 1), ('Қабылдамау (бас тарту)', 1)] | icon=[('CloseCircleOutlined', 2)] | color=[('red', 2)] | sig={'true': 1, 'false': 1} | comment={'true': 2} | roles={'auditor': 2} | from_states={'send_to_auditor': 1, 'under_review': 1} | nprocs=2
+resend_to_oa                     | ru=[('Перенаправить ОА', 2), ('Отправить на доработку', 1), ('Направить повторно ОА', 1)] | kz=[('Қайта жіберу', 3), ('Түзетуге қайтару', 1)] | icon=[('RollbackOutlined', 2), ('SendOutlined', 2)] | color=[('orange', 2), ('blue', 2)] | sig={'false': 4} | comment={'true': 2, 'false': 2} | roles={'auditor': 4} | from_states={'send_to_auditor': 1, 'overdue': 2, 'under_review': 1} | nprocs=2
+resubmit                         | ru=[('Повторно направить на утверждение', 3), ('Повторно направить на согласование', 3), ('Направить на согласование', 1)] | kz=[('Бекітуге қайта жіберу', 3), ('Келісуге қайта жіберу', 3)] | icon=[('SendOutlined', 8)] | color=[('blue', 8)] | sig={'false': 5, 'true': 3} | comment={None: 7, 'false': 1} | roles={'appeal_expert': 1, 'auditor': 5, 'qc_expert': 2} | from_states={'revision': 8} | nprocs=8
+return                           | ru=[('Вернуть на доработку', 74)] | kz=[('Қайта өңдеуге қайтару', 35), (None, 26)] | icon=[('RollbackOutlined', 74)] | color=[('orange', 74)] | sig={None: 47, 'false': 27} | comment={'true': 74} | roles={'appeal_head': 2, 'approver': 36, 'confirmer': 29, 'kvga_confirmer': 1, 'qc_head': 5, 'kvga_kk_head_approver': 1} | from_states={'pending_confirmation': 35, 'pending_approval': 36, 'pending_kvga': 1, 'signed': 2} | nprocs=43
+return_for_revision              | ru=[('Вернуть на доработку', 1)] | kz=[('Пысықтауға қайтару', 1)] | icon=[('RollbackOutlined', 1)] | color=[('orange', 1)] | sig={'false': 1} | comment={'true': 1} | roles={'confirmer': 1} | from_states={'pending_confirmation': 1} | nprocs=1
+return_from_approval             | ru=[('Вернуть на доработку', 1)] | kz=[('Пысықтауға қайтару', 1)] | icon=[('RollbackOutlined', 1)] | color=[('orange', 1)] | sig={'false': 1} | comment={'true': 1} | roles={'approver': 1} | from_states={'pending_approval': 1} | nprocs=1
+return_from_confirmation         | ru=[('Вернуть на доработку', 1)] | kz=[('Пысықтауға қайтару', 1)] | icon=[('RollbackOutlined', 1)] | color=[('orange', 1)] | sig={'false': 1} | comment={'true': 1} | roles={'confirmer': 1} | from_states={'pending_confirmation': 1} | nprocs=1
+return_to_draft                  | ru=[('Вернуть в проект', 1)] | kz=[('Проектке қайтару', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'approver': 1} | from_states={'active': 1} | nprocs=1
+review_decision                  | ru=[('Прописать решение и направить на согласование', 1)] | kz=[('Шешімді жазып, келісуге жіберу', 1)] | icon=[('FileSearchOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'auditor': 1} | from_states={'sent_to_auditor': 1} | nprocs=1
+review_info                      | ru=[('Проверить сведения', 1)] | kz=[('Мәліметтерді тексеру', 1)] | icon=[('FileSearchOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={'false': 1} | roles={'auditor': 1} | from_states={'sent_by_audit_object': 1} | nprocs=1
+save                             | ru=[('Сохранить', 175), ('Проверка статуса', 1)] | kz=[('Сақтау', 136), (None, 40)] | icon=[('SaveOutlined', 176)] | color=[('default', 176)] | sig={'false': 163, None: 13} | comment={None: 121, 'false': 55} | roles={'audit_object': 1, 'appeal_expert': 5, 'auditor': 150, 'qc_expert': 14, 'qc_head': 1, 'audit_object_signer': 3, 'oa_responsible': 1, 'kvga_kk_expert': 2} | from_states={'draft': 77, 'revision': 54, 'sent_revision_ersop': 5, 'approved': 17, 'return': 15, 'expert_assigned': 1, 'send_to_auditor': 1, 'kvga_confirmed': 1, 'confirmed': 2, 'open': 2, None: 1} | nprocs=69
+send_to_ak                       | ru=[('Отправить в Апелляционную комиссию', 1), ('Отправить АК', 1)] | kz=[('Апелляциялық комиссияға жіберу', 1), ('Қарауға жіберу', 1)] | icon=[('SendOutlined', 2)] | color=[('blue', 2)] | sig={'false': 2} | comment={None: 2} | roles={'audit_object_signer': 1, 'oa_responsible': 1} | from_states={'signed': 2} | nprocs=2
+send_to_approval                 | ru=[('Направить на согласование', 3)] | kz=[('Келісуге жіберу', 3)] | icon=[('SendOutlined', 3)] | color=[('blue', 3)] | sig={'false': 3} | comment={None: 3} | roles={'auditor': 3} | from_states={'draft': 3} | nprocs=3
+send_to_audit_object             | ru=[('Направить ОА', 8), ('Отправить объекту аудита', 4), ('Направить на ознакомление ОА', 2)] | kz=[('Аудит объектісіне жіберу', 5), ('ОА-ға жіберу', 4)] | icon=[('SendOutlined', 15)] | color=[('blue', 15)] | sig={'false': 12, 'true': 3} | comment={None: 8, 'false': 7} | roles={'appeal_head': 1, 'auditor': 14, 'approver': 1, 'confirmer': 1} | from_states={'active': 13, 'confirmed': 1, 'draft': 1} | nprocs=15
+send_to_auditor                  | ru=[('Направить аудитору', 1)] | kz=[('Аудиторға жіберу', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'audit_object_signer': 1} | from_states={'oa_confirmed': 1} | nprocs=1
+send_to_confirm                  | ru=[('Направить на утверждение', 1)] | kz=[('Бекітуге жіберу', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'auditor': 1} | from_states={'approved': 1} | nprocs=1
+send_to_confirmation             | ru=[('Отправить на утверждение', 54), ('Направить на утверждение', 9)] | kz=[('Бекітуге жіберу', 63)] | icon=[('SendOutlined', 63)] | color=[('blue', 63)] | sig={'false': 60, 'true': 3} | comment={None: 38, 'false': 25} | roles={'appeal_expert': 2, 'auditor': 53, 'qc_expert': 7, 'kvga_kk_expert': 1} | from_states={'draft': 3, 'approved': 28, 'return': 15, 'kvga_confirmed': 3, 'revision': 7, 'signed': 7} | nprocs=40
+send_to_court                    | ru=[('ИС Судебный кабинет', 1), ('Направить в ИС Судебный кабинет', 1)] | kz=[('ИС Судебный кабинет', 1), ('Сот кабинетіне жіберу', 1)] | icon=[('SendOutlined', 2)] | color=[('blue', 2)] | sig={'false': 2} | comment={None: 2} | roles={'auditor': 2} | from_states={'draft': 1, 'active': 1} | nprocs=1
+send_to_ersop                    | ru=[('Повторно отправить в ЕРСОП', 5), ('Подписать и отправить в ЕРСОП', 4), ('Отправить в ЕРСОП', 1)] | kz=[('ЕРСОП-қа қайта жіберу', 5), ('Қол қойып ЕРСОП-қа жіберу', 4)] | icon=[('SendOutlined', 10)] | color=[('blue', 10)] | sig={'true': 10} | comment={None: 8, 'false': 2} | roles={'auditor': 10} | from_states={'sent_revision_ersop': 5, 'draft': 2, 'active': 1, 'confirmed': 2} | nprocs=5
+send_to_kvga                     | ru=[('Отправить на подтверждение', 3)] | kz=[('Бекітуге жіберу', 3)] | icon=[('SendOutlined', 3)] | color=[('blue', 3)] | sig={'false': 2, 'true': 1} | comment={None: 3} | roles={'auditor': 3} | from_states={'approved': 2, 'revision': 1} | nprocs=2
+send_to_law_enforcement          | ru=[('Направить в ИС ПО', 1)] | kz=[('ҚҚО АЖ-ға жіберу', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'auditor': 1} | from_states={'active': 1} | nprocs=1
+send_to_oa                       | ru=[('Отправить ОА', 1), ('Направить объекту аудита', 1)] | kz=[('АО-ға жіберу', 1), ('Аудит объектісіне жіберу', 1)] | icon=[('SendOutlined', 2)] | color=[('blue', 2)] | sig={'false': 2} | comment={None: 2} | roles={'auditor': 2} | from_states={'confirmed': 1, 'active': 1} | nprocs=2
+send_to_oa_confirmation          | ru=[('Направить на подтверждение ОА', 1)] | kz=[('АО растауға жіберу', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'audit_object_signer': 1} | from_states={'draft': 1} | nprocs=1
+send_to_qc                       | ru=[('Направить на КК', 1)] | kz=[('КК-ға жіберу', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'auditor': 1} | from_states={'approved': 1} | nprocs=1
+send_to_reestr_confirmer         | ru=[('Отправить на подтверждение', 1)] | kz=[(None, 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'auditor': 1} | from_states={'approved': 1} | nprocs=1
+send_to_vap                      | ru=[('Направить в ИС ВАП', 1)] | kz=[('ИС ВАП-қа жіберу', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'true': 1} | comment={None: 1} | roles={'auditor': 1} | from_states={'draft': 1} | nprocs=1
+send_to_work_group               | ru=[('Направить на ознакомление Рабочей группе', 3), ('Направить на подписание рабочей группой', 1)] | kz=[('Жұмыс тобына таныстыруға жіберу', 2), ('Жұмыс тобына танысуға жіберу', 1)] | icon=[('SendOutlined', 4)] | color=[('blue', 4)] | sig={'false': 4} | comment={None: 4} | roles={'auditor': 4} | from_states={'revision': 1, 'draft': 2, 'approved': 1} | nprocs=3
+sign                             | ru=[('Подписать', 13), ('Подписать с ЭЦП', 3)] | kz=[('Қол қою', 11), ('ЭЦҚ арқылы қол қою', 3)] | icon=[('EditOutlined', 7), ('SendOutlined', 6)] | color=[('blue', 9), ('green', 7)] | sig={'true': 16} | comment={None: 9, 'false': 7} | roles={'appeal_expert': 2, 'auditor': 6, 'audit_object_signer': 1, 'qc_expert': 6, 'kvga_kk_expert': 1} | from_states={'draft': 11, 'revision': 4, 'approved': 1} | nprocs=11
+sign_with_objection              | ru=[('Подписать с возражением', 2)] | kz=[(None, 2)] | icon=[('SaveOutlined', 2)] | color=[('default', 2)] | sig={'true': 2} | comment={None: 2} | roles={'audit_object_signer': 2} | from_states={'sent_to_audit_object': 2} | nprocs=2
+sign_without_objection           | ru=[('Подписать без возражения', 2)] | kz=[(None, 2)] | icon=[('SaveOutlined', 2)] | color=[('default', 2)] | sig={'true': 2} | comment={None: 2} | roles={'audit_object_signer': 2} | from_states={'sent_to_audit_object': 2} | nprocs=2
+sign_work_group                  | ru=[('Подписать', 5)] | kz=[('Қол қою', 5)] | icon=[('EditOutlined', 5)] | color=[('blue', 5)] | sig={'true': 5} | comment={None: 5} | roles={'auditor': 5, 'invited_specialist': 2} | from_states={'pending_work_group_approval': 5} | nprocs=3
+sign_zkk                         | ru=[('Подписать ЗКК', 2)] | kz=[('ЗКК қол қою', 2)] | icon=[('EditOutlined', 2)] | color=[('blue', 2)] | sig={'true': 2} | comment={None: 2} | roles={'qc_expert': 2} | from_states={'expert_assigned': 1, 'revision': 1} | nprocs=1
+signed                           | ru=[('Подписать', 1)] | kz=[('Қол қою', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'true': 1} | comment={None: 1} | roles={'audit_object': 1} | from_states={'draft': 1} | nprocs=1
+submit                           | ru=[('Отправить на согласование', 59), ('Направить на согласование', 6), ('Подписать с ЭЦП', 1)] | kz=[('Келісуге жіберу', 41), (None, 25)] | icon=[('SendOutlined', 66), ('EditOutlined', 1)] | color=[('blue', 66), ('green', 1)] | sig={'true': 16, 'false': 51} | comment={None: 53, 'false': 14} | roles={'auditor': 66, 'oa_responsible': 1} | from_states={'draft': 33, 'revision': 32, 'signed': 1, 'accepted': 1} | nprocs=34
+submit_confirm                   | ru=[('Направить на утверждение', 1)] | kz=[('Бекітуге жіберу', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'qc_expert': 1} | from_states={'signed': 1} | nprocs=1
+verification                     | ru=[('Отправить на подтверждение', 1)] | kz=[('Келісуге жіберу', 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={'false': 1} | roles={'audit_object_signer': 1} | from_states={'draft': 1} | nprocs=1
+with_auditor                     | ru=[('Отправить на принятия', 1)] | kz=[(None, 1)] | icon=[('SendOutlined', 1)] | color=[('blue', 1)] | sig={'false': 1} | comment={None: 1} | roles={'auditor': 1} | from_states={'oa_confirmed': 1} | nprocs=1
+
+## CASE ACTION CATALOG (case-workflow-update availableActions)
+add_document                     | ru=[('Добавить документ', 18)] | kz=[('Құжат қосу', 18)] | icon=[('PlusOutlined', 18)] | roles={'auditor': 18, 'audit_object_signer': 3} | nprocs=2 procs=['CaseProcessV1', 'evga_doc_m18_m19_auto_create']
+assign_qc_expert                 | ru=[('Назначить эксперта КК', 1)] | kz=[('КК сарапшысын тағайындау', 1)] | icon=[('UserAddOutlined', 1)] | roles={'qc_head': 1} | nprocs=1 procs=['CaseProcessV1']
+assign_qc_expert_appeal          | ru=[('Назначить эксперта', 1)] | kz=[('сарапшыны тағайындау', 1)] | icon=[('UserAddOutlined', 1)] | roles={'appeal_head': 1} | nprocs=1 procs=['CaseProcessV1']
+assign_qc_expert_kvga            | ru=[('Назначить эксперта КК (КВГА)', 1)] | kz=[('КК сарапшысын тағайындау (ҚВГА)', 1)] | icon=[(None, 1)] | roles={'kvga_kk_head_approver': 1} | nprocs=1 procs=['CaseProcessV1']
+assign_qc_expert_stage2          | ru=[('Назначить эксперта КК', 1)] | kz=[('КК сарапшысын тағайындау', 1)] | icon=[('UserAddOutlined', 1)] | roles={'qc_head': 1} | nprocs=1 procs=['CaseProcessV1']
+assign_qc_expert_stage3          | ru=[('Назначить эксперта КК', 1)] | kz=[('КК сарапшысын тағайындау', 1)] | icon=[('UserAddOutlined', 1)] | roles={'qc_head': 1} | nprocs=1 procs=['CaseProcessV1']
+change_qc_expert                 | ru=[('Сменить эксперта КК', 1), ('Сменить Эксперта КК', 1)] | kz=[('Эксперт сарапшысын ауыстыру', 3)] | icon=[('SwapOutlined', 3)] | roles={'qc_head': 2, 'kvga_kk_head_approver': 1} | nprocs=1 procs=['CaseProcessV1']
+change_qc_head                   | ru=[('Сменить руководителя КК', 3), ('Сменить руководителя КК(КВГА)', 1)] | kz=[('Бекітушіні ауыстыру', 3)] | icon=[('UserSwitchOutlined', 3)] | roles={'auditor': 4} | nprocs=1 procs=['CaseProcessV1']
+create_qc_conclusion             | ru=[('Создать ЗКК', 1)] | kz=[('СБҚ құру', 1)] | icon=[('FolderAddOutlined', 1)] | roles={'qc_expert': 1} | nprocs=1 procs=['CaseProcessV1']
+create_qc_conclusion_kvga        | ru=[('Создать ЗКК', 1)] | kz=[('СБҚ құру', 1)] | icon=[('FolderAddOutlined', 1)] | roles={'kvga_kk_expert': 1} | nprocs=1 procs=['CaseProcessV1']
+create_qc_conclusion_stage2      | ru=[('Создать ЗКК', 1)] | kz=[('СБҚ құру', 1)] | icon=[('FolderAddOutlined', 1)] | roles={'qc_expert': 1} | nprocs=1 procs=['CaseProcessV1']
+create_qc_conclusion_stage3      | ru=[('Создать ЗКК', 1)] | kz=[('СБҚ құру', 1)] | icon=[('FolderAddOutlined', 1)] | roles={'qc_expert': 1} | nprocs=1 procs=['CaseProcessV1']
+create_resultat_vozrazhenie      | ru=[('Создать Результаты возражений', 1)] | kz=[('Создать Результат возражени', 1)] | icon=[('FolderAddOutlined', 1)] | roles={'appeal_expert': 1} | nprocs=1 procs=['CaseProcessV1']
+resubmit_to_qc_stage2            | ru=[('Направить на КК 2 этапа повторно', 1)] | kz=[('КК 2 кезеңіне қайта жіберу', 1)] | icon=[('SendOutlined', 1)] | roles={'auditor': 1} | nprocs=1 procs=['CaseProcessV1']
+send_to_qc                       | ru=[('Отправить на КК', 1)] | kz=[('КК-ға жіберу', 1)] | icon=[('SendOutlined', 1)] | roles={'auditor': 1} | nprocs=1 procs=['CaseProcessV1']
+send_to_qc_kvga                  | ru=[('Отправить на КК (КВГА)', 1)] | kz=[('КК-ға жіберу (ҚВГА)', 1)] | icon=[('SendOutlined', 1)] | roles={'auditor': 1} | nprocs=1 procs=['CaseProcessV1']
+send_to_qc_stage2                | ru=[('Отправить на КК (2 этап)', 1)] | kz=[('КК-ға жіберу (2 кезең)', 1)] | icon=[('SendOutlined', 1)] | roles={'auditor': 1} | nprocs=1 procs=['CaseProcessV1']
+send_to_qc_stage3                | ru=[('Отправить на КК (3 этап)', 1)] | kz=[('КК-ға жіберу (3 кезең)', 1)] | icon=[('SendOutlined', 1)] | roles={'auditor': 1} | nprocs=1 procs=['CaseProcessV1']
+
+## ROLE CATALOG
+appeal_expert                | {'save': 5, 'send_to_confirmation': 2, 'change_confirmer': 2, 'sign': 2, 'resubmit': 1, 'CASE:create_resultat_vozrazhenie': 1}
+appeal_head                  | {'confirm': 2, 'return': 2, 'send_to_audit_object': 1, 'CASE:assign_qc_expert_appeal': 1}
+approver                     | {'approve': 36, 'return': 36, 'return_from_approval': 1, 'change_qc_approver': 1, 'send_to_audit_object': 1, 'accepted': 1, 'return_to_draft': 1}
+audit_object                 | {'save': 1, 'signed': 1}
+audit_object_signer          | {'audit_object_acknowledged': 7, 'save': 3, 'CASE:add_document': 3, 'acknowledge': 3, 'sign_without_objection': 2, 'sign_with_objection': 2, 'provide_info': 2, 'refuse_info': 2, 'oa_acknowledge': 2, 'sign': 1, 'send_to_ak': 1, 'receive': 1, 'verification': 1, 'oa_confirm': 1, 'oa_cancel': 1, 'send_to_oa_confirmation': 1, 'send_to_auditor': 1}
+auditor                      | {'save': 150, 'submit': 66, 'send_to_confirmation': 53, 'change_approver': 36, 'change_confirmer': 28, 'CASE:add_document': 18, 'send_to_audit_object': 14, 'activate': 12, 'send_to_ersop': 10, 'check_status': 10, 'sign': 6, 'resubmit': 5, 'sign_work_group': 5, 'CASE:change_qc_head': 4, 'send_to_work_group': 4, 'resend_to_oa': 4, 'send_to_approval': 3, 'send_to_kvga': 3, 'change_head': 3, 'registered': 2, 'change_kvga_confirmer': 2, 'send_to_oa': 2, 'accept_info': 2, 'reject_info': 2, 'mark_refused': 2, 'send_to_court': 2, 'send_to_confirm': 1, 'send_to_law_enforcement': 1, 'audit_object_acknowledged': 1, 'change_reestr_confirmer': 1, 'send_to_reestr_confirmer': 1, 'CASE:send_to_qc': 1, 'CASE:send_to_qc_stage2': 1, 'CASE:send_to_qc_kvga': 1, 'CASE:send_to_qc_stage3': 1, 'CASE:resubmit_to_qc_stage2': 1, 'send_to_qc': 1, 'with_auditor': 1, 'register': 1, 'register_ersop': 1, 'review_info': 1, 'send_to_vap': 1, 'change_head_kvga': 1, 'review_decision': 1, 'approve_work_group': 1}
+confirmer                    | {'confirm': 31, 'return': 29, 'return_from_confirmation': 1, 'return_for_revision': 1, 'send_to_audit_object': 1}
+invited_specialist           | {'sign_work_group': 2}
+kvga_confirmer               | {'kvga_confirm': 2, 'kvga_reject': 2, 'return': 1, 'reject': 1}
+kvga_kk_expert               | {'save': 2, 'CASE:create_qc_conclusion_kvga': 1, 'sign': 1, 'send_to_confirmation': 1}
+kvga_kk_head_approver        | {'CASE:assign_qc_expert_kvga': 1, 'CASE:change_qc_expert': 1, 'confirm': 1, 'return': 1}
+oa_confirmer                 | {'oa_confirm': 1}
+oa_responsible               | {'accept': 1, 'objection': 1, 'create_objection_doc': 1, 'save': 1, 'submit': 1, 'send_to_ak': 1}
+qc_expert                    | {'save': 14, 'send_to_confirmation': 7, 'sign': 6, 'change_confirmer': 5, 'sign_zkk': 2, 'create_zkk': 2, 'resubmit': 2, 'qc_close': 1, 'submit_confirm': 1, 'CASE:create_qc_conclusion': 1, 'CASE:create_qc_conclusion_stage2': 1, 'CASE:create_qc_conclusion_stage3': 1}
+qc_head                      | {'confirm': 5, 'return': 5, 'CASE:change_qc_expert': 2, 'qc_close': 1, 'acknowledge_qc': 1, 'assign_expert': 1, 'qc_confirm': 1, 'qc_return': 1, 'save': 1, 'CASE:assign_qc_expert': 1, 'CASE:assign_qc_expert_stage2': 1, 'CASE:assign_qc_expert_stage3': 1}
+reestr_confirmer             | {'reestr_confirm': 1, 'reject': 1}
+
+## ZEEBE WEBHOOK CALLS
+  6 zeebe:trigger_doc_message/prev_approved/"M7-POR"
+  4 zeebe:trigger_doc_message/prev_approved/"M9-AZ"
+  3 zeebe:publish_case_message/default
+  2 zeebe:publish_case_message/ready_send_to_appeal
+  2 zeebe:trigger_doc_message/ersop_registered/"M7-POR"
+  2 zeebe:trigger_doc_message/prev_approved/"M6-PA-S"
+  2 zeebe:trigger_doc_message/prev_approved/"M6-PA-F"
+  2 zeebe:trigger_doc_message/prev_approved/"M19-AD"
+  2 zeebe:trigger_doc_message/doc_approved/if processData.auditTypeCode = "16" then "M17-AO-F" else "M17-AO-S"
+  2 zeebe:trigger_doc_message/prev_approved/"M18-RNS"
+  2 zeebe:trigger_doc_message/prev_approved/"M18-RNAFO"
+  2 zeebe:publish_case_message/ready_send_to_qc_3
+  2 zeebe:trigger_doc_message/prev_approved/"M8-PLAN"
+  1 zeebe:trigger_doc_message/signed_automatically/if processData.auditTypeCode = "16" then "M17-AO-F" else "M17-AO-S"
+  1 zeebe:trigger_doc_message/ready_kvga_confirmed/"M7-POR"
+  1 zeebe:publish_case_message/audit_object_acknowledged
+  1 zeebe:publish_case_message/qc_3_completed
+  1 zeebe:publish_case_message/closed
+  1 zeebe:publish_case_message/ready_send_to_qc
+  1 zeebe:publish_case_message/ready_send_to_qc_kvga
+  1 zeebe:publish_case_message/ready_send_to_qc_2
+  1 zeebe:trigger_doc_message/create_qc_conclusion_stage3/"M24-AZK"
+  1 zeebe:trigger_doc_message/create_qc_conclusion_stage3/"M25-PRED"
+  1 zeebe:trigger_doc_message/ready_kvga_confirmed/"M5-IPI"
+  1 zeebe:trigger_doc_message/zkk_confirmed/"M10-QC1"
+  1 zeebe:trigger_doc_message/ready_send_confirmation/if processData.auditTypeCode = "16" then "M18-RNAFO" else "M18-RNS"
+
+## URL CATALOG
+ 461 /webhook/evga/workflow-update
+  46 /webhook/evga/zeebe
+  28 /webhook/evga/case-workflow-update
+  15 /webhook/evga/check-docs-status
+   5 /webhook/evga/documents
+   3 /webhook/work-group-approval
+   2 /webhook/evga/cases/bases
+   1 /webhook/evga/check-audit-type
+   1 =appBaseUrl + "/api/model-objects/objects/"+ processData.process.appName
+   1 =appBaseUrl + "/api/notifications/notifications"
+   1 =appBaseUrl + "/api/model-objects/objects/" + processData.process.appName
+
+## NON-ACTIONCODE CONDITIONS
+evga_doc_accounting_card                 Gateway_AuditTypeCheck -> Task_NotifyPoruchenie: =auditTypeCheckResult.body.isPlanned = true
+evga_doc_1_irpi                          Gateway_15tbsdq -> Activity_0obxfx7: =processData.auditTypeCode = "15"
+evga_doc_1_irpi                          Gateway_1uhr5ud -> Activity_1aiy8az: =processData.auditTypeCode = "15"
+evga_doc_1_irpi                          Gateway_0gkhmp6 -> Activity_0imyjne: =isReactivation = true
+evga_doc_5_poruchenie                    Gateway_0h8717f -> Activity_0dg42rd: =isReactivation = true
+evga_doc_5_poruchenie                    Gateway_0hh61v6 -> Activity_12hth15: =checkObjResult.body.data.allExistingMatched = true
+prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2          Gateway_BothApproved -> Activity_11sh0x8: =checkBothResult.body.data.allExistingMatched = true
+prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2          Gateway_0x97x3t -> Activity_1f2t7dz: =caseBasesResult.body.qc_route = "KK KVGA"
+prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2          Gateway_0l4i36v -> Activity_0bdck6m: =checkObjResult.body.data.foundCount = 1
+prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2          Gateway_0377vpu -> Gateway_05utn2l: =isReactivation = true
+prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2          Gateway_1urpx70 -> Activity_1drs7wu: =isReactivation = true
+prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2          Gateway_1xlyz3b -> Activity_0obxfx7: =checkObjResult.body.data.foundCount = 1
+evga_doc_m18_m19_auto_create             Gateway_AuditType -> Task_CreateM18RNS: =processData.auditTypeCode = "15"
+evga_doc_m18_m19_auto_create             Gateway_AuditType -> Task_CreateM18RNAFO: =processData.auditTypeCode = "16"
+evga_doc_m18_m19_auto_create             Gateway_0wqymsx -> Gateway_1w5yifm: =checkObjResult.body.data.foundCount = 2
+evga_doc_m18_m19_auto_create             Gateway_15tbsdq -> Activity_0obxfx7: =processData.auditTypeCode = "15"
+evga_doc_ad                              Gateway_15tbsdq -> Activity_0obxfx7: =processData.auditTypeCode = "15"
+evga_doc_3_plan                          Gateway_CheckRecreated1 -> Activity_12hth15: =processData.isRecreated = true
+evga_doc_3_plan                          Gateway_CheckRecreated2 -> Gateway_13os052: =processData.isRecreated = true
+evga_doc_3_plan                          Gateway_CheckRecreated2 -> Gateway_13os052: =isReactivation = true
+evga_doc_3_plan                          Gateway_00zdurn -> Activity_15nt8y0: =checkZadResult.body.data.foundCount = 1
+evga_doc_3_plan                          Gateway_13p1lji -> Activity_15wr19h: =checkZadResult.body.data.foundCount = 1
+evga_doc_37_kk2                          Gateway_1he9h3t -> Activity_1hd3rxv: =caseBasesResult.body.qc_route = "KK KVGA"
+evga_doc_audit_conclusion                Gateway_PredDeleted -> Task_PublishQc3Ready: =checkPredResult.body.data.foundCount = 0
+evga_doc_audit_conclusion                Gateway_1ob6gh7 -> Activity_0md5ihe: =checkObjResult.body.data.foundCount = 1
+evga_doc_2_pa                            Gateway_SkipUnlock -> Activity_0imyjne: =isReactivation = true
+evga_doc_2_pa                            Gateway_00tejzh -> Activity_0obxfx7: =checkPlanResult.body.data.foundCount = 1
+evga_doc_2_pa                            Gateway_00zdurn -> Activity_1c6dr7f: =checkZadResult.body.data.foundCount = 1
+evga_doc_2_pa                            Gateway_SkipCheckDocs -> Gateway_0wmhhpm: =isReactivation = true
+evga_doc_2_pa                            Gateway_0abhjgf -> Activity_0js6ljb: =checkPlanResult.body.data.foundCount = 1
+evga_doc_2_pa                            Gateway_026d5yp -> Activity_1lttdqq: =checkZadResult.body.data.foundCount = 1
+evga_doc_4_az                            Gateway_0t32kpc -> Gateway_1ogrj60: =isReactivation = true
+evga_doc_4_az                            Gateway_0hh61v6 -> Task_SetDraftButtons: =checkObjResult.body.data.allExistingMatched = true
+
+## ACTIONCODE VALUES IN CONDITIONS
+accept_info                      in_availableActions=Y procs=2: evga_doc_info_request, evga_doc_m45_vk_treb
+accepted                         in_availableActions=Y procs=1: evga_doc_otvet_mery
+acknowledge                      in_availableActions=Y procs=3: evga_doc_info_request, evga_doc_m18_m19_auto_create, evga_doc_violation_order
+acknowledge_qc                   in_availableActions=Y procs=1: evga_doc_qc_stage3
+activate                         in_availableActions=Y procs=12: evga_doc_law_enforcement_response, evga_doc_lawsuit_decision, evga_doc_m38_adm_osn, evga_doc_m42_adm_kvit, evga_doc_m44_vk_uk, evga_doc_m47_vk_tu, evga_doc_m50_adm_prot_uo, evga_doc_m52_adm_oplata, evga_doc_m53_adm_1ap, evga_doc_notification_slip, ev
+approve                          in_availableActions=Y procs=35: evga_doc_1_irpi, evga_doc_2_pa, evga_doc_3_plan, evga_doc_4_az, evga_doc_5_poruchenie, evga_doc_ad, evga_doc_additional_order, evga_doc_audit_completion_cert, evga_doc_audit_conclusion, evga_doc_audit_evidence, evga_doc_iskovye_zayavleniya, evga_doc_
+approve_work_group               in_availableActions=Y procs=1: evga_doc_4_az
+assign_expert                    in_availableActions=Y procs=1: evga_doc_qc_stage3
+assign_qc_expert                 in_availableActions=Y procs=1: CaseProcessV1
+assign_qc_expert_appeal          in_availableActions=Y procs=1: CaseProcessV1
+assign_qc_expert_kvga            in_availableActions=Y procs=1: CaseProcessV1
+assign_qc_expert_stage2          in_availableActions=Y procs=1: CaseProcessV1
+assign_qc_expert_stage3          in_availableActions=Y procs=1: CaseProcessV1
+audit_object_acknowledged        in_availableActions=Y procs=5: CaseProcessV1, evga_doc_5_poruchenie, evga_doc_additional_order, evga_doc_m43_vk_por, evga_doc_m55_vk_akt_osm
+audit_otchet_sent_to_oa          in_availableActions=N procs=1: evga_doc_2_pa
+change_approver                  in_availableActions=Y procs=4: evga_doc_measures_response, evga_doc_transfer_authority, evga_doc_transfer_law_enforcement, evga_doc_violation_order
+change_confirmer                 in_availableActions=Y procs=7: evga_doc_access_denial_act, evga_doc_measures_response, evga_doc_objection_results, evga_doc_qc_stage1, evga_doc_qc_stage2, evga_doc_transfer_authority, evga_doc_violation_order
+confirm                          in_availableActions=Y procs=42: Process_14ytj1q, evga_doc_1_irpi, evga_doc_2_pa, evga_doc_37_kk2, evga_doc_3_plan, evga_doc_46_kk3, evga_doc_5_poruchenie, evga_doc_7_zkk, evga_doc_access_denial_act, evga_doc_ad, evga_doc_additional_order, evga_doc_audit_completion_cert, evga_doc_au
+create_qc_conclusion             in_availableActions=Y procs=1: CaseProcessV1
+create_qc_conclusion_kvga        in_availableActions=Y procs=1: CaseProcessV1
+create_qc_conclusion_stage2      in_availableActions=Y procs=1: CaseProcessV1
+create_qc_conclusion_stage3      in_availableActions=Y procs=3: CaseProcessV1, evga_doc_audit_conclusion, evga_doc_predpisanie
+create_resultat_vozrazhenie      in_availableActions=Y procs=1: CaseProcessV1
+create_zkk                       in_availableActions=Y procs=2: evga_doc_qc_stage1, evga_doc_qc_stage2
+doc_approved                     in_availableActions=N procs=2: evga_doc_m18_m19_auto_create, prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+ersop_accepted                   in_availableActions=N procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+ersop_error                      in_availableActions=N procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+ersop_registered                 in_availableActions=N procs=6: evga_doc_5_poruchenie, evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+ersop_rejected                   in_availableActions=N procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+ersop_revision                   in_availableActions=N procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+kvga_confirm                     in_availableActions=Y procs=2: evga_doc_5_poruchenie, evga_doc_m43_vk_por
+kvga_return                      in_availableActions=N procs=1: evga_doc_5_poruchenie
+mark_refused                     in_availableActions=Y procs=2: evga_doc_info_request, evga_doc_m45_vk_treb
+oa_acknowledge                   in_availableActions=Y procs=2: evga_doc_audit_conclusion, evga_doc_predpisanie
+oa_cancel                        in_availableActions=Y procs=1: evga_doc_otvet_mery
+oa_confirm                       in_availableActions=Y procs=2: evga_doc_measures_response, evga_doc_otvet_mery
+objection                        in_availableActions=Y procs=1: Process_14ytj1q
+overdue                          in_availableActions=N procs=1: evga_doc_m45_vk_treb
+prev_approved                    in_availableActions=N procs=6: evga_doc_2_pa, evga_doc_3_plan, evga_doc_4_az, evga_doc_5_poruchenie, evga_doc_ad, prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+provide_info                     in_availableActions=Y procs=2: evga_doc_info_request, evga_doc_m45_vk_treb
+qc_confirm                       in_availableActions=Y procs=1: evga_doc_qc_stage3
+qc_return                        in_availableActions=Y procs=1: evga_doc_qc_stage3
+ready_kvga_confirmed             in_availableActions=N procs=1: evga_doc_1_irpi
+ready_send_confirmation          in_availableActions=N procs=1: prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+ready_send_to_appeal             in_availableActions=N procs=1: CaseProcessV1
+ready_send_to_qc                 in_availableActions=N procs=1: CaseProcessV1
+ready_send_to_qc_2               in_availableActions=N procs=1: CaseProcessV1
+ready_send_to_qc_3               in_availableActions=N procs=1: CaseProcessV1
+ready_send_to_qc_kvga            in_availableActions=N procs=1: CaseProcessV1
+receive                          in_availableActions=Y procs=1: evga_doc_violation_order
+reestr_confirm                   in_availableActions=Y procs=1: prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+refuse_info                      in_availableActions=Y procs=2: evga_doc_info_request, evga_doc_m45_vk_treb
+register                         in_availableActions=Y procs=1: evga_doc_prikaz
+register_ersop                   in_availableActions=Y procs=1: evga_doc_notification_slip
+registered                       in_availableActions=Y procs=2: evga_doc_m44_vk_uk, evga_doc_m47_vk_tu
+reject_info                      in_availableActions=Y procs=2: evga_doc_info_request, evga_doc_m45_vk_treb
+resend_to_oa                     in_availableActions=Y procs=2: evga_doc_info_request, evga_doc_m45_vk_treb
+resubmit                         in_availableActions=Y procs=8: evga_doc_access_denial_act, evga_doc_audit_evidence, evga_doc_measures_response, evga_doc_objection_results, evga_doc_qc_stage1, evga_doc_qc_stage2, evga_doc_transfer_authority, evga_doc_violation_order
+resubmit_to_qc_stage2            in_availableActions=Y procs=1: CaseProcessV1
+return                           in_availableActions=Y procs=12: Process_14ytj1q, evga_doc_audit_completion_cert, evga_doc_lawsuit, evga_doc_m56_vk_akt_vos, evga_doc_measures_response, evga_doc_objection_results, evga_doc_qc_stage1, evga_doc_qc_stage2, evga_doc_rezultat_vozrazhenii, evga_doc_transfer_authority, ev
+return_for_revision              in_availableActions=Y procs=1: evga_doc_access_denial_act
+return_from_approval             in_availableActions=Y procs=1: evga_doc_audit_evidence
+return_from_confirmation         in_availableActions=Y procs=1: evga_doc_audit_evidence
+return_to_draft                  in_availableActions=Y procs=1: evga_doc_2_pa
+review_decision                  in_availableActions=Y procs=1: evga_doc_measures_response
+review_info                      in_availableActions=Y procs=1: evga_doc_m45_vk_treb
+send_to_ak                       in_availableActions=Y procs=2: evga_doc_oa_objection, m20_audit_objection
+send_to_approval                 in_availableActions=Y procs=3: evga_doc_audit_evidence, evga_doc_transfer_authority, evga_doc_violation_order
+send_to_audit_object             in_availableActions=Y procs=7: evga_doc_additional_order, evga_doc_audit_conclusion, evga_doc_m43_vk_por, evga_doc_m45_vk_treb, evga_doc_m55_vk_akt_osm, evga_doc_predpisanie, prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+send_to_auditor                  in_availableActions=Y procs=1: evga_doc_measures_response
+send_to_confirm                  in_availableActions=Y procs=1: evga_doc_transfer_law_enforcement
+send_to_confirmation             in_availableActions=Y procs=26: evga_doc_1_irpi, evga_doc_2_pa, evga_doc_37_kk2, evga_doc_3_plan, evga_doc_46_kk3, evga_doc_7_zkk, evga_doc_access_denial_act, evga_doc_audit_completion_cert, evga_doc_audit_conclusion, evga_doc_lawsuit, evga_doc_m43_vk_por, evga_doc_m48_adm_1av, evg
+send_to_court                    in_availableActions=Y procs=1: evga_doc_lawsuit
+send_to_ersop                    in_availableActions=Y procs=5: evga_doc_accounting_card, evga_doc_additional_order, evga_doc_m48_adm_1av, evga_doc_m54_vk_dop_por, evga_doc_talon_uvedomlenie
+send_to_kvga                     in_availableActions=Y procs=1: evga_doc_m43_vk_por
+send_to_law_enforcement          in_availableActions=Y procs=1: evga_doc_transfer_law_enforcement
+send_to_oa                       in_availableActions=Y procs=1: evga_doc_violation_order
+send_to_oa_confirmation          in_availableActions=Y procs=1: evga_doc_measures_response
+send_to_qc                       in_availableActions=Y procs=2: CaseProcessV1, evga_doc_violation_order
+send_to_qc_kvga                  in_availableActions=Y procs=1: CaseProcessV1
+send_to_qc_stage2                in_availableActions=Y procs=1: CaseProcessV1
+send_to_qc_stage3                in_availableActions=Y procs=1: CaseProcessV1
+send_to_reestr_confirmer         in_availableActions=Y procs=1: prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+send_to_vap                      in_availableActions=Y procs=1: evga_doc_vap_notification
+send_to_work_group               in_availableActions=Y procs=3: evga_doc_4_az, evga_doc_m18_m19_auto_create, evga_doc_m21_ako
+sign                             in_availableActions=Y procs=10: evga_doc_37_kk2, evga_doc_7_zkk, evga_doc_access_denial_act, evga_doc_certificate_of_refusement, evga_doc_m55_vk_akt_osm, evga_doc_oa_objection, evga_doc_qc_stage1, evga_doc_qc_stage2, evga_doc_rezultat_vozrazhenii, evga_doc_weekly_report
+sign_with_objection              in_availableActions=Y procs=2: evga_doc_m18_m19_auto_create, prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+sign_without_objection           in_availableActions=Y procs=2: evga_doc_m18_m19_auto_create, prc_JwETUJ5Idw7y4AnvNvhyFxuRrB2
+sign_zkk                         in_availableActions=Y procs=1: evga_doc_qc_stage3
+signed_automatically             in_availableActions=N procs=1: evga_doc_m18_m19_auto_create
+submit                           in_availableActions=Y procs=33: Process_14ytj1q, evga_doc_1_irpi, evga_doc_2_pa, evga_doc_3_plan, evga_doc_4_az, evga_doc_5_poruchenie, evga_doc_ad, evga_doc_additional_order, evga_doc_audit_completion_cert, evga_doc_audit_conclusion, evga_doc_iskovye_zayavleniya, evga_doc_lawsuit,
+submit_confirm                   in_availableActions=Y procs=1: evga_doc_qc_stage3
+verification                     in_availableActions=Y procs=1: evga_doc_otvet_mery
+with_auditor                     in_availableActions=Y procs=1: evga_doc_otvet_mery
+work_group_complete              in_availableActions=N procs=2: evga_doc_m18_m19_auto_create, evga_doc_m21_ako
+zkk_confirmed                    in_availableActions=N procs=1: evga_doc_6_qc

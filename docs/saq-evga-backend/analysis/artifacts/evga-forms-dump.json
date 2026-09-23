@@ -1,0 +1,5369 @@
+{
+ "irpi|Соответствие": null,
+ "irpi|Фин. отчетность": null,
+ "program|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage1-123",
+   "stage1-124",
+   "stage1-283"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 16,
+  "nRequired": 7,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общая информация",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "purpose:bilingual",
+     "norms:bilingual?"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Детальный перечень вопросов",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "total": "amount",
+    "fields": [
+     "question:text",
+     "registration:text?",
+     "topic:text?",
+     "subtopic:text?",
+     "norms:bilingual",
+     "indicator:select[4]",
+     "budget:text?",
+     "from:date",
+     "to:date",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?",
+     "method:select?[2]"
+    ]
+   }
+  ]
+ },
+ "program|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage1-124"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 13,
+  "nRequired": 9,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общая информация",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "purpose:bilingual",
+     "norms:bilingual?"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Детальный перечень вопросов",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "total": "amount",
+    "fields": [
+     "question:text",
+     "registration:text?",
+     "topic:text?",
+     "subtopic:text?",
+     "norms:bilingual",
+     "indicator:select[4]",
+     "from:date",
+     "to:date",
+     "method:select[2]",
+     "balanceCurrency:text",
+     "amount:number"
+    ]
+   }
+  ]
+ },
+ "plan|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage1-125"
+  ],
+  "nSections": 4,
+  "nCollections": 2,
+  "nFields": 19,
+  "nRequired": 18,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Аудиторское мероприятие",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date",
+     "resources:bilingual"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Объекты государственного аудита и маршруты следования",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "start:date",
+     "end:date",
+     "location:bilingual",
+     "route:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "counterObjects",
+    "title": "Объекты встречной проверки и маршруты следования",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "start:date",
+     "end:date",
+     "location:bilingual",
+     "route:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "coverage",
+    "title": "Объем средств и (или) активов, охватываемый аудиторским мероприятием",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "amount:number",
+     "materiality:number?"
+    ]
+   }
+  ]
+ },
+ "plan|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage1-125"
+  ],
+  "nSections": 4,
+  "nCollections": 2,
+  "nFields": 19,
+  "nRequired": 18,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Аудиторское мероприятие",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date",
+     "resources:bilingual"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Объекты государственного аудита и маршруты следования",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "start:date",
+     "end:date",
+     "location:bilingual",
+     "route:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "counterObjects",
+    "title": "Объекты встречной проверки и маршруты следования",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "start:date",
+     "end:date",
+     "location:bilingual",
+     "route:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "coverage",
+    "title": "Объем средств и (или) активов, охватываемый аудиторским мероприятием",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "amount:number",
+     "materiality:number?"
+    ]
+   }
+  ]
+ },
+ "assignment|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage1-126",
+   "stage1-132"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 16,
+  "nRequired": 10,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Срок аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date",
+     "days:number"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Вопрос аудиторского мероприятия",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "from:date",
+     "to:date",
+     "auditor:person",
+     "reviewFrom:date",
+     "reviewTo:date",
+     "days:number",
+     "submissionDate:date?",
+     "registration:text?",
+     "topic:long?",
+     "subtopic:long?",
+     "norms:bilingual?",
+     "method:select?[2]"
+    ]
+   }
+  ]
+ },
+ "assignment|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage1-126",
+   "stage1-132"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 17,
+  "nRequired": 10,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Срок аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date",
+     "days:number"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Вопрос аудиторского мероприятия",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "from:date",
+     "to:date",
+     "auditor:person",
+     "reviewFrom:date",
+     "reviewTo:date",
+     "days:number",
+     "submissionDate:date?",
+     "registration:text?",
+     "topic:long?",
+     "subtopic:long?",
+     "norms:bilingual?",
+     "method:select?[2]",
+     "balanceCurrency:number?"
+    ]
+   }
+  ]
+ },
+ "instruction|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage1-127"
+  ],
+  "nSections": 6,
+  "nCollections": 1,
+  "nFields": 16,
+  "nRequired": 12,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Аудиторское мероприятие по вопросу",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "purpose:bilingual"
+    ]
+   },
+   {
+    "key": "duration",
+    "title": "Срок аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date"
+    ]
+   },
+   {
+    "key": "period",
+    "title": "Период охвата аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "responsible",
+    "title": "Лицо, ответственное за аудиторское мероприятие",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "person:person"
+    ]
+   },
+   {
+    "key": "risks",
+    "title": "Объект риска",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "total": "amount",
+    "fields": [
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "year:number",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?",
+     "questionReferences:long?"
+    ]
+   },
+   {
+    "key": "head",
+    "title": "Руководитель уполномоченного органа по внутреннему государственному аудиту / его территориального подразделения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "person:person"
+    ]
+   }
+  ]
+ },
+ "instruction|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage1-127"
+  ],
+  "nSections": 6,
+  "nCollections": 1,
+  "nFields": 16,
+  "nRequired": 12,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Аудиторское мероприятие по вопросу",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "purpose:bilingual"
+    ]
+   },
+   {
+    "key": "duration",
+    "title": "Срок аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date"
+    ]
+   },
+   {
+    "key": "period",
+    "title": "Период охвата аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "responsible",
+    "title": "Лицо, ответственное за аудиторское мероприятие",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "person:person"
+    ]
+   },
+   {
+    "key": "risks",
+    "title": "Объект риска",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "total": "amount",
+    "fields": [
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "year:number",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?",
+     "questionReferences:long?"
+    ]
+   },
+   {
+    "key": "head",
+    "title": "Руководитель уполномоченного органа по внутреннему государственному аудиту / его территориального подразделения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "person:person"
+    ]
+   }
+  ]
+ },
+ "quality1|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage1-161"
+  ],
+  "nSections": 5,
+  "nCollections": 1,
+  "nFields": 31,
+  "nRequired": 20,
+  "sections": [
+   {
+    "key": "quality",
+    "title": "Реквизиты контроля качества",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:long",
+     "date:date",
+     "receivedAt:date",
+     "level:select[2]",
+     "departmentReview:boolean?",
+     "approverPosition:text?",
+     "basisKz:long?"
+    ]
+   },
+   {
+    "key": "context",
+    "title": "Сведения об аудиторском мероприятии · пункты 1–8",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "object:long",
+     "legalBasis:long",
+     "purpose:long",
+     "type:text",
+     "period:text",
+     "duration:text",
+     "group:long",
+     "responsible:text",
+     "objects:long"
+    ]
+   },
+   {
+    "key": "requirements",
+    "title": "Оценка соблюдения требований",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "complianceRu:long",
+     "complianceKz:long?",
+     "formComplianceRu:long",
+     "formComplianceKz:long?",
+     "counterRu:long?",
+     "counterKz:long?"
+    ]
+   },
+   {
+    "key": "remarks",
+    "title": "Замечания к документам (при наличии)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "document:text",
+     "version:text",
+     "remarkRu:long",
+     "remarkKz:long?",
+     "recommendationRu:long?",
+     "recommendationKz:long?"
+    ]
+   },
+   {
+    "key": "conclusion",
+    "title": "16. Выводы и рекомендации",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "decision:select[2]",
+     "textRu:long",
+     "textKz:long?"
+    ]
+   }
+  ]
+ },
+ "quality1|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage1-161"
+  ],
+  "nSections": 5,
+  "nCollections": 1,
+  "nFields": 31,
+  "nRequired": 20,
+  "sections": [
+   {
+    "key": "quality",
+    "title": "Реквизиты контроля качества",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:long",
+     "date:date",
+     "receivedAt:date",
+     "level:select[2]",
+     "departmentReview:boolean?",
+     "approverPosition:text?",
+     "basisKz:long?"
+    ]
+   },
+   {
+    "key": "context",
+    "title": "Сведения об аудиторском мероприятии · пункты 1–8",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "object:long",
+     "legalBasis:long",
+     "purpose:long",
+     "type:text",
+     "period:text",
+     "duration:text",
+     "group:long",
+     "responsible:text",
+     "objects:long"
+    ]
+   },
+   {
+    "key": "requirements",
+    "title": "Оценка соблюдения требований",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "complianceRu:long",
+     "complianceKz:long?",
+     "formComplianceRu:long",
+     "formComplianceKz:long?",
+     "counterRu:long?",
+     "counterKz:long?"
+    ]
+   },
+   {
+    "key": "remarks",
+    "title": "Замечания к документам (при наличии)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "document:text",
+     "version:text",
+     "remarkRu:long",
+     "remarkKz:long?",
+     "recommendationRu:long?",
+     "recommendationKz:long?"
+    ]
+   },
+   {
+    "key": "conclusion",
+    "title": "16. Выводы и рекомендации",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "decision:select[2]",
+     "textRu:long",
+     "textKz:long?"
+    ]
+   }
+  ]
+ },
+ "account|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage1-152"
+  ],
+  "nSections": 8,
+  "nCollections": 2,
+  "nFields": 47,
+  "nRequired": 37,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "number:text",
+     "registeredAt:date",
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date",
+     "scope:text",
+     "exceptional:boolean?",
+     "objectType:text"
+    ]
+   },
+   {
+    "key": "registration",
+    "title": "Прочее",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "goDate:date",
+     "department:text",
+     "basis:text",
+     "authority:text",
+     "investor:boolean?",
+     "prosecutor:text{when investor}",
+     "registrar:text",
+     "moratorium:text?"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Вопросы проверки",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:bilingual",
+     "subjectCode:text",
+     "subject:bilingual"
+    ]
+   },
+   {
+    "key": "subject",
+    "title": "Данные о субъекте",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?",
+     "ip:boolean?",
+     "opf:text",
+     "ownership:text",
+     "commercial:boolean?",
+     "address:bilingual",
+     "businessType:text",
+     "size:text",
+     "oked:text"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Данные об объектах",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "address:bilingual"
+    ]
+   },
+   {
+    "key": "unplanned",
+    "title": "Для внеплановой проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:text?",
+     "appealNumber:text?",
+     "iin:text?",
+     "applicant:text?"
+    ]
+   },
+   {
+    "key": "author",
+    "title": "Сотрудник, создавший акт о назначении проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual",
+     "authority:text",
+     "phone:text"
+    ]
+   },
+   {
+    "key": "signer",
+    "title": "Сотрудник, подписавший акт о назначении проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual",
+     "authority:text",
+     "phone:text"
+    ]
+   }
+  ]
+ },
+ "account|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage1-152"
+  ],
+  "nSections": 8,
+  "nCollections": 2,
+  "nFields": 47,
+  "nRequired": 37,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "number:text",
+     "registeredAt:date",
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date",
+     "scope:text",
+     "exceptional:boolean?",
+     "objectType:text"
+    ]
+   },
+   {
+    "key": "registration",
+    "title": "Прочее",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "goDate:date",
+     "department:text",
+     "basis:text",
+     "authority:text",
+     "investor:boolean?",
+     "prosecutor:text{when investor}",
+     "registrar:text",
+     "moratorium:text?"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Вопросы проверки",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:bilingual",
+     "subjectCode:text",
+     "subject:bilingual"
+    ]
+   },
+   {
+    "key": "subject",
+    "title": "Данные о субъекте",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?",
+     "ip:boolean?",
+     "opf:text",
+     "ownership:text",
+     "commercial:boolean?",
+     "address:bilingual",
+     "businessType:text",
+     "size:text",
+     "oked:text"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Данные об объектах",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "address:bilingual"
+    ]
+   },
+   {
+    "key": "unplanned",
+    "title": "Для внеплановой проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:text?",
+     "appealNumber:text?",
+     "iin:text?",
+     "applicant:text?"
+    ]
+   },
+   {
+    "key": "author",
+    "title": "Сотрудник, создавший акт о назначении проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual",
+     "authority:text",
+     "phone:text"
+    ]
+   },
+   {
+    "key": "signer",
+    "title": "Сотрудник, подписавший акт о назначении проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual",
+     "authority:text",
+     "phone:text"
+    ]
+   }
+  ]
+ },
+ "vap|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage1-168"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 4,
+  "sections": [
+   {
+    "key": "recipient",
+    "title": "Сведения получателя",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "vapBin:object",
+     "commissionBin:object?",
+     "number:text",
+     "date:date",
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "vap|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage1-168"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 4,
+  "sections": [
+   {
+    "key": "recipient",
+    "title": "Сведения получателя",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "vapBin:object",
+     "commissionBin:object?",
+     "number:text",
+     "date:date",
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "additional|Соответствие": {
+  "group": true,
+  "tabs": [
+   "Общая информация",
+   "Программа аудита",
+   "План аудита",
+   "Поручение"
+  ],
+  "sources": [
+   "stage1-153",
+   "stage1-154",
+   "stage1-155",
+   "stage1-156",
+   "stage1-157",
+   "stage1-158",
+   "stage1-160"
+  ],
+  "nSections": 6,
+  "nCollections": 3,
+  "nFields": 44,
+  "nRequired": 33,
+  "sections": [
+   {
+    "key": "order",
+    "title": "Сведения о приказе",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Общая информация",
+    "fields": [
+     "type:select[5]",
+     "suspendDate:date{when type}",
+     "resumeDate:date{when type}",
+     "extendDate:date{when type}",
+     "reason:long",
+     "responsible:person",
+     "effective:text",
+     "information:bilingual",
+     "law:bilingual",
+     "basis:bilingual",
+     "notes:bilingual?"
+    ]
+   },
+   {
+    "key": "program",
+    "title": "Цель аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Программа аудита",
+    "fields": [
+     "purpose:bilingual"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Сроки (этапы) проведения",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Программа аудита",
+    "fields": [
+     "question:text",
+     "registration:text?",
+     "topic:text?",
+     "subtopic:text?",
+     "norms:bilingual",
+     "indicator:select[4]",
+     "budget:text?",
+     "from:date",
+     "to:date",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Объекты аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "План аудита",
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "start:date",
+     "end:date",
+     "location:bilingual",
+     "route:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "duration",
+    "title": "Срок аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Поручение",
+    "fields": [
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "risks",
+    "title": "Объект риска",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Поручение",
+    "fields": [
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "year:number",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?"
+    ]
+   }
+  ]
+ },
+ "additional|Фин. отчетность": {
+  "group": true,
+  "tabs": [
+   "Общая информация",
+   "Программа аудита",
+   "План аудита",
+   "Поручение"
+  ],
+  "sources": [
+   "stage1-153",
+   "stage1-154",
+   "stage1-155",
+   "stage1-156",
+   "stage1-157",
+   "stage1-158",
+   "stage1-160"
+  ],
+  "nSections": 6,
+  "nCollections": 3,
+  "nFields": 44,
+  "nRequired": 33,
+  "sections": [
+   {
+    "key": "order",
+    "title": "Сведения о приказе",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Общая информация",
+    "fields": [
+     "type:select[5]",
+     "suspendDate:date{when type}",
+     "resumeDate:date{when type}",
+     "extendDate:date{when type}",
+     "reason:long",
+     "responsible:person",
+     "effective:text",
+     "information:bilingual",
+     "law:bilingual",
+     "basis:bilingual",
+     "notes:bilingual?"
+    ]
+   },
+   {
+    "key": "program",
+    "title": "Цель аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Программа аудита",
+    "fields": [
+     "purpose:bilingual"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Сроки (этапы) проведения",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Программа аудита",
+    "fields": [
+     "question:text",
+     "registration:text?",
+     "topic:text?",
+     "subtopic:text?",
+     "norms:bilingual",
+     "indicator:select[4]",
+     "budget:text?",
+     "from:date",
+     "to:date",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Объекты аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "План аудита",
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "start:date",
+     "end:date",
+     "location:bilingual",
+     "route:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "duration",
+    "title": "Срок аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Поручение",
+    "fields": [
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "risks",
+    "title": "Объект риска",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Поручение",
+    "fields": [
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "year:number",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?"
+    ]
+   }
+  ]
+ },
+ "request|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage1-165",
+   "stage1-174"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 5,
+  "nRequired": 3,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Срок сдачи",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "deadline:datetime-local",
+     "date:date"
+    ]
+   },
+   {
+    "key": "requested",
+    "title": "Перечень необходимых документов",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "name:bilingual",
+     "period:text?",
+     "description:bilingual?"
+    ]
+   }
+  ]
+ },
+ "request|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage1-165",
+   "stage1-174"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 5,
+  "nRequired": 3,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Срок сдачи",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "deadline:datetime-local",
+     "date:date"
+    ]
+   },
+   {
+    "key": "requested",
+    "title": "Перечень необходимых документов",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "name:bilingual",
+     "period:text?",
+     "description:bilingual?"
+    ]
+   }
+  ]
+ },
+ "obstruction|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage1-169",
+   "stage1-176"
+  ],
+  "nSections": 4,
+  "nCollections": 2,
+  "nFields": 9,
+  "nRequired": 9,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общая информация",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date",
+     "place:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "obstructions",
+    "title": "Воспрепятствования",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "form:text",
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "representatives",
+    "title": "Представители объекта аудита",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Принятые меры",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "obstruction|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage1-169",
+   "stage1-176"
+  ],
+  "nSections": 4,
+  "nCollections": 2,
+  "nFields": 9,
+  "nRequired": 9,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общая информация",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date",
+     "place:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "obstructions",
+    "title": "Воспрепятствования",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "form:text",
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "representatives",
+    "title": "Представители объекта аудита",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Принятые меры",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "report|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage2-001",
+   "stage2-002"
+  ],
+  "nSections": 7,
+  "nCollections": 3,
+  "nFields": 27,
+  "nRequired": 17,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Срок, период и реквизиты аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date",
+     "date:date?",
+     "place:bilingual?",
+     "copies:number?",
+     "attachmentPages:number?"
+    ]
+   },
+   {
+    "key": "officials",
+    "title": "Должностные лица объекта государственного аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "previous",
+    "title": "Результаты предыдущего аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   },
+   {
+    "key": "results",
+    "title": "Результаты аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Список вопросов",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "from:date",
+     "to:date",
+     "answer:bilingual",
+     "documentDetails:long",
+     "noViolations:boolean?",
+     "registration:text?",
+     "topic:long?",
+     "subtopic:long?",
+     "norms:bilingual?",
+     "method:select?[2]"
+    ]
+   },
+   {
+    "key": "obstructions",
+    "title": "Воспрепятствования",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "form:text",
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Принятые меры",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "report|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage2-002"
+  ],
+  "nSections": 9,
+  "nCollections": 3,
+  "nFields": 34,
+  "nRequired": 22,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Срок, период и реквизиты аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date",
+     "date:date?",
+     "place:bilingual?",
+     "copies:number?",
+     "attachmentPages:number?"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Список вопросов",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "from:date",
+     "to:date",
+     "answer:bilingual",
+     "documentDetails:long",
+     "noViolations:boolean?",
+     "registration:text?",
+     "topic:long?",
+     "subtopic:long?",
+     "norms:bilingual?",
+     "method:select?[2]",
+     "balanceCurrency:number?"
+    ]
+   },
+   {
+    "key": "circumstances",
+    "title": "Изложение обстоятельств",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   },
+   {
+    "key": "officials",
+    "title": "Должностные лица объекта государственного аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "auditResult",
+    "title": "Сведения о результатах аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "result:select[4]",
+     "management:bilingual",
+     "auditor:bilingual",
+     "obstructionPresent:boolean?"
+    ]
+   },
+   {
+    "key": "previous",
+    "title": "Результаты предыдущего аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   },
+   {
+    "key": "obstructions",
+    "title": "Воспрепятствования",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "form:text",
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "opinion",
+    "title": "Мнение аудитора",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:bilingual",
+     "text:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Принятые меры",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "violations|Соответствие": {
+  "group": false,
+  "tabs": [
+   "Объекты риска",
+   "Результаты аудита"
+  ],
+  "sources": [
+   "stage2-003",
+   "stage2-004",
+   "stage2-024",
+   "stage2-030"
+  ],
+  "nSections": 5,
+  "nCollections": 4,
+  "nFields": 42,
+  "nRequired": 17,
+  "sections": [
+   {
+    "key": "risks",
+    "title": "Объекты риска",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "total": "amount",
+    "tab": "Объекты риска",
+    "fields": [
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "year:number",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?",
+     "questionReferences:long?"
+    ]
+   },
+   {
+    "key": "riskQuestions",
+    "title": "Связь объектов риска с вопросами программы аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Объекты риска",
+    "fields": [
+     "riskId:text?",
+     "questionId:text?",
+     "question:long?"
+    ]
+   },
+   {
+    "key": "result",
+    "title": "Результаты аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Результаты аудита",
+    "fields": [
+     "noViolations:boolean?"
+    ]
+   },
+   {
+    "key": "results",
+    "title": "Результаты рассмотрения вопросов аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Результаты аудита",
+    "fields": [
+     "questionId:text?",
+     "question:long?",
+     "riskId:text?",
+     "topic:long?",
+     "hours:number?",
+     "result:select?[2]",
+     "comment:bilingual?"
+    ]
+   },
+   {
+    "key": "violations",
+    "title": "Нарушения",
+    "collection": true,
+    "min": 0,
+    "attachments": true,
+    "total": "amount",
+    "tab": "Результаты аудита",
+    "fields": [
+     "question:text",
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "kind:select[2]",
+     "violationType:text",
+     "consequence:select[7]",
+     "principles:text?",
+     "amount:number",
+     "recovered:number?",
+     "restored:number?",
+     "accounted:number?",
+     "conformed:number?",
+     "paragraph:text",
+     "npa:bilingual",
+     "remediation:select[5]",
+     "description:bilingual",
+     "questionId:text?",
+     "riskId:text?",
+     "resultId:text?",
+     "remaining:number?",
+     "inefficientAmount:number?"
+    ]
+   }
+  ]
+ },
+ "violations|Фин. отчетность": {
+  "group": false,
+  "tabs": [
+   "Объекты риска",
+   "Результаты аудита"
+  ],
+  "sources": [
+   "stage2-003",
+   "stage2-004",
+   "stage2-024",
+   "stage2-030"
+  ],
+  "nSections": 5,
+  "nCollections": 4,
+  "nFields": 49,
+  "nRequired": 17,
+  "sections": [
+   {
+    "key": "risks",
+    "title": "Объекты риска",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "total": "amount",
+    "tab": "Объекты риска",
+    "fields": [
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "year:number",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?",
+     "questionReferences:long?"
+    ]
+   },
+   {
+    "key": "riskQuestions",
+    "title": "Связь объектов риска с вопросами программы аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Объекты риска",
+    "fields": [
+     "riskId:text?",
+     "questionId:text?",
+     "question:long?"
+    ]
+   },
+   {
+    "key": "result",
+    "title": "Результаты аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Результаты аудита",
+    "fields": [
+     "noViolations:boolean?"
+    ]
+   },
+   {
+    "key": "results",
+    "title": "Результаты рассмотрения вопросов аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Результаты аудита",
+    "fields": [
+     "questionId:text?",
+     "question:long?",
+     "riskId:text?",
+     "topic:long?",
+     "hours:number?",
+     "result:select?[2]",
+     "comment:bilingual?"
+    ]
+   },
+   {
+    "key": "violations",
+    "title": "Нарушения",
+    "collection": true,
+    "min": 0,
+    "attachments": true,
+    "total": "amount",
+    "tab": "Результаты аудита",
+    "fields": [
+     "question:text",
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "kind:select[2]",
+     "violationType:text",
+     "consequence:select[7]",
+     "principles:text?",
+     "amount:number",
+     "recovered:number?",
+     "restored:number?",
+     "accounted:number?",
+     "conformed:number?",
+     "paragraph:text",
+     "npa:bilingual",
+     "remediation:select[6]",
+     "description:bilingual",
+     "questionId:text?",
+     "riskId:text?",
+     "resultId:text?",
+     "remaining:number?",
+     "inefficientAmount:number?",
+     "balanceLine:text?",
+     "balanceAmount:number?",
+     "materiality:number?",
+     "distorted:number?",
+     "notDistorted:number?",
+     "reportingType:select?[2]",
+     "materialityExcess:number?"
+    ]
+   }
+  ]
+ },
+ "evidence|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage2-005"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 8,
+  "nRequired": 8,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о дате составления аудиторского доказательства",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date"
+    ]
+   },
+   {
+    "key": "evidence",
+    "title": "Нарушение и доказательство",
+    "collection": true,
+    "min": 0,
+    "attachments": true,
+    "fields": [
+     "violationId:text",
+     "violationType:text",
+     "consequence:text",
+     "amount:number",
+     "evidence:bilingual",
+     "documentDetails:long",
+     "source:long"
+    ]
+   }
+  ]
+ },
+ "evidence|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage2-005"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 8,
+  "nRequired": 8,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о дате составления аудиторского доказательства",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date"
+    ]
+   },
+   {
+    "key": "evidence",
+    "title": "Нарушение и доказательство",
+    "collection": true,
+    "min": 0,
+    "attachments": true,
+    "fields": [
+     "violationId:text",
+     "violationType:text",
+     "consequence:text",
+     "amount:number",
+     "evidence:bilingual",
+     "documentDetails:long",
+     "source:long"
+    ]
+   }
+  ]
+ },
+ "quality2|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage2-052"
+  ],
+  "nSections": 8,
+  "nCollections": 3,
+  "nFields": 64,
+  "nRequired": 28,
+  "sections": [
+   {
+    "key": "quality",
+    "title": "Реквизиты контроля качества",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:long",
+     "date:date",
+     "receivedAt:date",
+     "level:select[2]",
+     "departmentReview:boolean?",
+     "approverPosition:text?",
+     "basisKz:long?"
+    ]
+   },
+   {
+    "key": "context",
+    "title": "Сведения об аудиторском мероприятии · пункты 1–8",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "object:long",
+     "legalBasis:long",
+     "purpose:long",
+     "type:text",
+     "period:text",
+     "duration:text",
+     "group:long",
+     "responsible:text",
+     "objects:long"
+    ]
+   },
+   {
+    "key": "requirements",
+    "title": "Оценка соблюдения требований",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "complianceRu:long?",
+     "complianceKz:long?",
+     "formComplianceRu:long",
+     "formComplianceKz:long?",
+     "counterRu:long?",
+     "counterKz:long?",
+     "timelinessRu:long",
+     "timelinessKz:long?",
+     "measuresRu:long?",
+     "measuresKz:long?",
+     "recognition:bilingual?",
+     "document1:bilingual?",
+     "document2:bilingual?",
+     "document3:bilingual?"
+    ]
+   },
+   {
+    "key": "coverage",
+    "title": "10. Полнота охвата и раскрытия вопросов программы аудита, оценка достижения цели аудиторского мероприятия",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "indicator:text?",
+     "question:long",
+     "reimbursement:number?",
+     "restoration:number?",
+     "procedural:number?",
+     "paragraph:text?",
+     "assessmentRu:long",
+     "assessmentKz:long?",
+     "violationId:text?",
+     "npa:bilingual?"
+    ]
+   },
+   {
+    "key": "coverageSummary",
+    "title": "Выводы по полноте охвата вопросов программы",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "textRu:long",
+     "textKz:long?"
+    ]
+   },
+   {
+    "key": "remarks",
+    "title": "Замечания к документам (при наличии)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "document:text",
+     "version:text",
+     "remarkRu:long",
+     "remarkKz:long?",
+     "recommendationRu:long?",
+     "recommendationKz:long?"
+    ]
+   },
+   {
+    "key": "corrections",
+    "title": "Корректировки реестра нарушений (при необходимости)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "violationId:text",
+     "field:text",
+     "current:long",
+     "next:long",
+     "assessmentRu:long",
+     "assessmentKz:long?",
+     "question:long?",
+     "riskType:text?",
+     "riskObject:text?",
+     "paragraph:text?",
+     "npa:bilingual?",
+     "objectionAmount:number?",
+     "acceptedMeasures:number?"
+    ]
+   },
+   {
+    "key": "conclusion",
+    "title": "16. Выводы и рекомендации",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "decision:select[2]",
+     "textRu:long",
+     "textKz:long?"
+    ]
+   }
+  ]
+ },
+ "quality2|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage2-052"
+  ],
+  "nSections": 8,
+  "nCollections": 3,
+  "nFields": 64,
+  "nRequired": 28,
+  "sections": [
+   {
+    "key": "quality",
+    "title": "Реквизиты контроля качества",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:long",
+     "date:date",
+     "receivedAt:date",
+     "level:select[2]",
+     "departmentReview:boolean?",
+     "approverPosition:text?",
+     "basisKz:long?"
+    ]
+   },
+   {
+    "key": "context",
+    "title": "Сведения об аудиторском мероприятии · пункты 1–8",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "object:long",
+     "legalBasis:long",
+     "purpose:long",
+     "type:text",
+     "period:text",
+     "duration:text",
+     "group:long",
+     "responsible:text",
+     "objects:long"
+    ]
+   },
+   {
+    "key": "requirements",
+    "title": "Оценка соблюдения требований",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "complianceRu:long?",
+     "complianceKz:long?",
+     "formComplianceRu:long",
+     "formComplianceKz:long?",
+     "counterRu:long?",
+     "counterKz:long?",
+     "timelinessRu:long",
+     "timelinessKz:long?",
+     "measuresRu:long?",
+     "measuresKz:long?",
+     "recognition:bilingual?",
+     "document1:bilingual?",
+     "document2:bilingual?",
+     "document3:bilingual?"
+    ]
+   },
+   {
+    "key": "coverage",
+    "title": "10. Полнота охвата и раскрытия вопросов программы аудита, оценка достижения цели аудиторского мероприятия",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "indicator:text?",
+     "question:long",
+     "reimbursement:number?",
+     "restoration:number?",
+     "procedural:number?",
+     "paragraph:text?",
+     "assessmentRu:long",
+     "assessmentKz:long?",
+     "violationId:text?",
+     "npa:bilingual?"
+    ]
+   },
+   {
+    "key": "coverageSummary",
+    "title": "Выводы по полноте охвата вопросов программы",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "textRu:long",
+     "textKz:long?"
+    ]
+   },
+   {
+    "key": "remarks",
+    "title": "Замечания к документам (при наличии)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "document:text",
+     "version:text",
+     "remarkRu:long",
+     "remarkKz:long?",
+     "recommendationRu:long?",
+     "recommendationKz:long?"
+    ]
+   },
+   {
+    "key": "corrections",
+    "title": "Корректировки реестра нарушений (при необходимости)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "violationId:text",
+     "field:text",
+     "current:long",
+     "next:long",
+     "assessmentRu:long",
+     "assessmentKz:long?",
+     "question:long?",
+     "riskType:text?",
+     "riskObject:text?",
+     "paragraph:text?",
+     "npa:bilingual?",
+     "objectionAmount:number?",
+     "acceptedMeasures:number?"
+    ]
+   },
+   {
+    "key": "conclusion",
+    "title": "16. Выводы и рекомендации",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "decision:select[2]",
+     "textRu:long",
+     "textKz:long?"
+    ]
+   }
+  ]
+ },
+ "weekly|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage2-006"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 10,
+  "nRequired": 9,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Заголовок",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "from:date",
+     "to:date"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Ход исполнения программы аудита",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "from:date",
+     "to:date",
+     "auditor:person",
+     "result:bilingual",
+     "plannedDays:number",
+     "actualDays:number",
+     "deviation:bilingual?"
+    ]
+   }
+  ]
+ },
+ "weekly|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage2-006"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 10,
+  "nRequired": 9,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Заголовок",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "from:date",
+     "to:date"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Ход исполнения программы аудита",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "from:date",
+     "to:date",
+     "auditor:person",
+     "result:bilingual",
+     "plannedDays:number",
+     "actualDays:number",
+     "deviation:bilingual?"
+    ]
+   }
+  ]
+ },
+ "measurement|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage2-007",
+   "stage2-047"
+  ],
+  "nSections": 3,
+  "nCollections": 2,
+  "nFields": 10,
+  "nRequired": 10,
+  "sections": [
+   {
+    "key": "representatives",
+    "title": "Представители объекта аудита",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "general",
+    "title": "Место и дата проведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "place:bilingual",
+     "date:date"
+    ]
+   },
+   {
+    "key": "items",
+    "title": "Предмет контрольного обмера",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "name:text",
+     "unit:text",
+     "reported:number",
+     "actual:number",
+     "price:number"
+    ]
+   }
+  ]
+ },
+ "measurement|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage2-007",
+   "stage2-047"
+  ],
+  "nSections": 3,
+  "nCollections": 2,
+  "nFields": 10,
+  "nRequired": 10,
+  "sections": [
+   {
+    "key": "representatives",
+    "title": "Представители объекта аудита",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "general",
+    "title": "Место и дата проведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "place:bilingual",
+     "date:date"
+    ]
+   },
+   {
+    "key": "items",
+    "title": "Предмет контрольного обмера",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "name:text",
+     "unit:text",
+     "reported:number",
+     "actual:number",
+     "price:number"
+    ]
+   }
+  ]
+ },
+ "objections|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage2-053"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 11,
+  "nRequired": 11,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Возражения объекта аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "submittedAt:date",
+     "method:select[3]",
+     "place:bilingual",
+     "applicant:text",
+     "identification:text",
+     "grounds:bilingual",
+     "documents:bilingual"
+    ]
+   },
+   {
+    "key": "violations",
+    "title": "Список нарушений, к которым есть возражения",
+    "collection": true,
+    "min": 1,
+    "attachments": true,
+    "fields": [
+     "violationId:text",
+     "violationType:text",
+     "amount:number",
+     "objection:bilingual"
+    ]
+   }
+  ]
+ },
+ "objections|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage2-053"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 11,
+  "nRequired": 11,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Возражения объекта аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "submittedAt:date",
+     "method:select[3]",
+     "place:bilingual",
+     "applicant:text",
+     "identification:text",
+     "grounds:bilingual",
+     "documents:bilingual"
+    ]
+   },
+   {
+    "key": "violations",
+    "title": "Список нарушений, к которым есть возражения",
+    "collection": true,
+    "min": 1,
+    "attachments": true,
+    "fields": [
+     "violationId:text",
+     "violationType:text",
+     "amount:number",
+     "objection:bilingual"
+    ]
+   }
+  ]
+ },
+ "objection-result|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage2-054"
+  ],
+  "nSections": 3,
+  "nCollections": 1,
+  "nFields": 8,
+  "nRequired": 8,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о результате рассмотрения нарушений",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date",
+     "result:select[3]"
+    ]
+   },
+   {
+    "key": "decisions",
+    "title": "Результаты возражения к аудиторскому отчету",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "violationId:text",
+     "amount:number",
+     "status:select[3]",
+     "cancelled:number",
+     "note:bilingual"
+    ]
+   },
+   {
+    "key": "decision",
+    "title": "Решение, принятое по рассмотрению возражения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "objection-result|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage2-054"
+  ],
+  "nSections": 3,
+  "nCollections": 1,
+  "nFields": 8,
+  "nRequired": 8,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о результате рассмотрения нарушений",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date",
+     "result:select[3]"
+    ]
+   },
+   {
+    "key": "decisions",
+    "title": "Результаты возражения к аудиторскому отчету",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "violationId:text",
+     "amount:number",
+     "status:select[3]",
+     "cancelled:number",
+     "note:bilingual"
+    ]
+   },
+   {
+    "key": "decision",
+    "title": "Решение, принятое по рассмотрению возражения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "conclusion|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-001",
+   "stage3-018"
+  ],
+  "nSections": 4,
+  "nCollections": 1,
+  "nFields": 8,
+  "nRequired": 7,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общие сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "periodFrom:date",
+     "periodTo:date",
+     "results:bilingual"
+    ]
+   },
+   {
+    "key": "conclusions",
+    "title": "Выводы по итогам ВГА",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   },
+   {
+    "key": "recommendations",
+    "title": "Рекомендации",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual",
+     "deadline:date?"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Меры реагирования",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual",
+     "deadline:date"
+    ]
+   }
+  ]
+ },
+ "conclusion|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-001",
+   "stage3-018"
+  ],
+  "nSections": 4,
+  "nCollections": 1,
+  "nFields": 8,
+  "nRequired": 7,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общие сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "periodFrom:date",
+     "periodTo:date",
+     "results:bilingual"
+    ]
+   },
+   {
+    "key": "conclusions",
+    "title": "Выводы по итогам ВГА",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   },
+   {
+    "key": "recommendations",
+    "title": "Рекомендации",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual",
+     "deadline:date?"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Меры реагирования",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual",
+     "deadline:date"
+    ]
+   }
+  ]
+ },
+ "prescription|Соответствие": {
+  "group": false,
+  "tabs": [
+   "Общая информация",
+   "Финансовые нарушения",
+   "Процедурные нарушения"
+  ],
+  "sources": [
+   "stage3-014",
+   "stage3-015",
+   "stage3-016"
+  ],
+  "nSections": 3,
+  "nCollections": 2,
+  "nFields": 23,
+  "nRequired": 12,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общие сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Общая информация",
+    "fields": [
+     "deadline:date",
+     "legalBasis:bilingual?",
+     "measures:bilingual?",
+     "procurementMeasures:bilingual?",
+     "liability:bilingual?",
+     "budgetCode:text?",
+     "head:person"
+    ]
+   },
+   {
+    "key": "financial",
+    "title": "Финансовые нарушения",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "total": "amount",
+    "tab": "Финансовые нарушения",
+    "fields": [
+     "violationId:text",
+     "riskType:text",
+     "riskObject:text",
+     "paragraph:text",
+     "deadline:date?",
+     "amount:number",
+     "recover:number?",
+     "restoreWork:number?",
+     "restoreAccounting:number?"
+    ]
+   },
+   {
+    "key": "procedural",
+    "title": "Процедурные нарушения",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "total": "amount",
+    "tab": "Процедурные нарушения",
+    "fields": [
+     "violationId:text",
+     "riskType:text",
+     "riskObject:text",
+     "paragraph:text",
+     "deadline:date?",
+     "amount:number",
+     "affected:number?"
+    ]
+   }
+  ]
+ },
+ "prescription|Фин. отчетность": {
+  "group": false,
+  "tabs": [
+   "Общая информация",
+   "Финансовые нарушения",
+   "Процедурные нарушения"
+  ],
+  "sources": [
+   "stage3-014",
+   "stage3-015",
+   "stage3-016"
+  ],
+  "nSections": 3,
+  "nCollections": 2,
+  "nFields": 23,
+  "nRequired": 12,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общие сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Общая информация",
+    "fields": [
+     "deadline:date",
+     "legalBasis:bilingual?",
+     "measures:bilingual?",
+     "procurementMeasures:bilingual?",
+     "liability:bilingual?",
+     "budgetCode:text?",
+     "head:person"
+    ]
+   },
+   {
+    "key": "financial",
+    "title": "Финансовые нарушения",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "total": "amount",
+    "tab": "Финансовые нарушения",
+    "fields": [
+     "violationId:text",
+     "riskType:text",
+     "riskObject:text",
+     "paragraph:text",
+     "deadline:date?",
+     "amount:number",
+     "recover:number?",
+     "restoreWork:number?",
+     "restoreAccounting:number?"
+    ]
+   },
+   {
+    "key": "procedural",
+    "title": "Процедурные нарушения",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "total": "amount",
+    "tab": "Процедурные нарушения",
+    "fields": [
+     "violationId:text",
+     "riskType:text",
+     "riskObject:text",
+     "paragraph:text",
+     "deadline:date?",
+     "amount:number",
+     "affected:number?"
+    ]
+   }
+  ]
+ },
+ "quality3|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage3-017"
+  ],
+  "nSections": 6,
+  "nCollections": 2,
+  "nFields": 51,
+  "nRequired": 26,
+  "sections": [
+   {
+    "key": "quality",
+    "title": "Реквизиты контроля качества",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:long",
+     "date:date",
+     "receivedAt:date",
+     "level:select[2]",
+     "departmentReview:boolean?",
+     "approverPosition:text?",
+     "basisKz:long?"
+    ]
+   },
+   {
+    "key": "context",
+    "title": "Сведения об аудиторском мероприятии · пункты 1–8",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "object:long",
+     "legalBasis:long",
+     "purpose:long",
+     "type:text",
+     "period:text",
+     "duration:text",
+     "group:long",
+     "responsible:text",
+     "objects:long"
+    ]
+   },
+   {
+    "key": "requirements",
+    "title": "Оценка соблюдения требований",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "complianceRu:long?",
+     "complianceKz:long?",
+     "formComplianceRu:long",
+     "formComplianceKz:long?",
+     "counterRu:long?",
+     "counterKz:long?",
+     "timelinessRu:long?",
+     "timelinessKz:long?",
+     "measuresRu:long",
+     "measuresKz:long?",
+     "recognitionRu:long",
+     "recognitionKz:long?",
+     "document1:bilingual?"
+    ]
+   },
+   {
+    "key": "remarks",
+    "title": "Замечания к документам (при наличии)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "document:text",
+     "version:text",
+     "remarkRu:long",
+     "remarkKz:long?",
+     "recommendationRu:long?",
+     "recommendationKz:long?"
+    ]
+   },
+   {
+    "key": "corrections",
+    "title": "Корректировки реестра нарушений (при необходимости)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "violationId:text",
+     "field:text",
+     "current:long",
+     "next:long",
+     "assessmentRu:long",
+     "assessmentKz:long?",
+     "question:long?",
+     "riskType:text?",
+     "riskObject:text?",
+     "paragraph:text?",
+     "npa:bilingual?",
+     "objectionAmount:number?",
+     "acceptedMeasures:number?"
+    ]
+   },
+   {
+    "key": "conclusion",
+    "title": "16. Выводы и рекомендации",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "decision:select[2]",
+     "textRu:long",
+     "textKz:long?"
+    ]
+   }
+  ]
+ },
+ "quality3|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage3-017"
+  ],
+  "nSections": 6,
+  "nCollections": 2,
+  "nFields": 51,
+  "nRequired": 26,
+  "sections": [
+   {
+    "key": "quality",
+    "title": "Реквизиты контроля качества",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:long",
+     "date:date",
+     "receivedAt:date",
+     "level:select[2]",
+     "departmentReview:boolean?",
+     "approverPosition:text?",
+     "basisKz:long?"
+    ]
+   },
+   {
+    "key": "context",
+    "title": "Сведения об аудиторском мероприятии · пункты 1–8",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "object:long",
+     "legalBasis:long",
+     "purpose:long",
+     "type:text",
+     "period:text",
+     "duration:text",
+     "group:long",
+     "responsible:text",
+     "objects:long"
+    ]
+   },
+   {
+    "key": "requirements",
+    "title": "Оценка соблюдения требований",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "complianceRu:long?",
+     "complianceKz:long?",
+     "formComplianceRu:long",
+     "formComplianceKz:long?",
+     "counterRu:long?",
+     "counterKz:long?",
+     "timelinessRu:long?",
+     "timelinessKz:long?",
+     "measuresRu:long",
+     "measuresKz:long?",
+     "recognitionRu:long",
+     "recognitionKz:long?",
+     "document1:bilingual?"
+    ]
+   },
+   {
+    "key": "remarks",
+    "title": "Замечания к документам (при наличии)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "document:text",
+     "version:text",
+     "remarkRu:long",
+     "remarkKz:long?",
+     "recommendationRu:long?",
+     "recommendationKz:long?"
+    ]
+   },
+   {
+    "key": "corrections",
+    "title": "Корректировки реестра нарушений (при необходимости)",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "violationId:text",
+     "field:text",
+     "current:long",
+     "next:long",
+     "assessmentRu:long",
+     "assessmentKz:long?",
+     "question:long?",
+     "riskType:text?",
+     "riskObject:text?",
+     "paragraph:text?",
+     "npa:bilingual?",
+     "objectionAmount:number?",
+     "acceptedMeasures:number?"
+    ]
+   },
+   {
+    "key": "conclusion",
+    "title": "16. Выводы и рекомендации",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "decision:select[2]",
+     "textRu:long",
+     "textKz:long?"
+    ]
+   }
+  ]
+ },
+ "notification|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-002",
+   "stage3-049"
+  ],
+  "nSections": 3,
+  "nCollections": 1,
+  "nFields": 22,
+  "nRequired": 16,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о результатах проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "location:text",
+     "place:text",
+     "recipient:bilingual",
+     "end:date",
+     "result:text",
+     "protected:text",
+     "court:text?",
+     "sent:date?"
+    ]
+   },
+   {
+    "key": "liability",
+    "title": "Сведения по нарушениям и ответственности",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "npa:long",
+     "responsibility:text",
+     "activity:text",
+     "termination:text",
+     "summary:long",
+     "phone:text",
+     "notes:long?"
+    ]
+   },
+   {
+    "key": "npa",
+    "title": "Реквизиты нарушенных норм НПА",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "kind:text",
+     "article:text",
+     "part:text?",
+     "paragraph:text?",
+     "subparagraph:text?",
+     "number:text",
+     "date:date"
+    ]
+   }
+  ]
+ },
+ "notification|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-002",
+   "stage3-049"
+  ],
+  "nSections": 3,
+  "nCollections": 1,
+  "nFields": 22,
+  "nRequired": 16,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о результатах проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "location:text",
+     "place:text",
+     "recipient:bilingual",
+     "end:date",
+     "result:text",
+     "protected:text",
+     "court:text?",
+     "sent:date?"
+    ]
+   },
+   {
+    "key": "liability",
+    "title": "Сведения по нарушениям и ответственности",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "npa:long",
+     "responsibility:text",
+     "activity:text",
+     "termination:text",
+     "summary:long",
+     "phone:text",
+     "notes:long?"
+    ]
+   },
+   {
+    "key": "npa",
+    "title": "Реквизиты нарушенных норм НПА",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "kind:text",
+     "article:text",
+     "part:text?",
+     "paragraph:text?",
+     "subparagraph:text?",
+     "number:text",
+     "date:date"
+    ]
+   }
+  ]
+ },
+ "forward-up|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-008"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 4,
+  "nRequired": 4,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче в вышестоящие органы",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "letterNumber:text",
+     "recipient:text",
+     "letterDate:date",
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "forward-up|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-008"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 4,
+  "nRequired": 4,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче в вышестоящие органы",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "letterNumber:text",
+     "recipient:text",
+     "letterDate:date",
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "reply-up|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-009"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 4,
+  "nRequired": 3,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "transfer:document<forward-up>"
+    ]
+   },
+   {
+    "key": "answers",
+    "title": "Сведения об ответе",
+    "collection": true,
+    "min": 1,
+    "attachments": true,
+    "fields": [
+     "description:bilingual",
+     "date:date",
+     "officials:text?"
+    ]
+   }
+  ]
+ },
+ "reply-up|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-009"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 4,
+  "nRequired": 3,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "transfer:document<forward-up>"
+    ]
+   },
+   {
+    "key": "answers",
+    "title": "Сведения об ответе",
+    "collection": true,
+    "min": 1,
+    "attachments": true,
+    "fields": [
+     "description:bilingual",
+     "date:date",
+     "officials:text?"
+    ]
+   }
+  ]
+ },
+ "forward-law|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-006"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче в правоохранительные органы",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "letterNumber:text",
+     "recipient:text",
+     "letterDate:date",
+     "description:bilingual",
+     "amount:number"
+    ]
+   }
+  ]
+ },
+ "forward-law|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-006"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче в правоохранительные органы",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "letterNumber:text",
+     "recipient:text",
+     "letterDate:date",
+     "description:bilingual",
+     "amount:number"
+    ]
+   }
+  ]
+ },
+ "reply-law|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-007"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 4,
+  "nRequired": 3,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "transfer:document<forward-law>"
+    ]
+   },
+   {
+    "key": "answers",
+    "title": "Сведения об ответе",
+    "collection": true,
+    "min": 1,
+    "attachments": true,
+    "fields": [
+     "description:bilingual",
+     "date:date",
+     "officials:text?"
+    ]
+   }
+  ]
+ },
+ "reply-law|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-007"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 4,
+  "nRequired": 3,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "transfer:document<forward-law>"
+    ]
+   },
+   {
+    "key": "answers",
+    "title": "Сведения об ответе",
+    "collection": true,
+    "min": 1,
+    "attachments": true,
+    "fields": [
+     "description:bilingual",
+     "date:date",
+     "officials:text?"
+    ]
+   }
+  ]
+ },
+ "forward-abp|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-004"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче в уполномоченные органы",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "letterNumber:text",
+     "recipient:text",
+     "letterDate:date",
+     "description:bilingual",
+     "amount:number"
+    ]
+   }
+  ]
+ },
+ "forward-abp|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-004"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче в уполномоченные органы",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "letterNumber:text",
+     "recipient:text",
+     "letterDate:date",
+     "description:bilingual",
+     "amount:number"
+    ]
+   }
+  ]
+ },
+ "reply-abp|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-005"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 6,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "transfer:document<forward-abp>",
+     "letterNumber:text",
+     "sender:text"
+    ]
+   },
+   {
+    "key": "answers",
+    "title": "Сведения об ответе",
+    "collection": true,
+    "min": 1,
+    "attachments": true,
+    "fields": [
+     "description:bilingual",
+     "date:date",
+     "officials:text?"
+    ]
+   }
+  ]
+ },
+ "reply-abp|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-005"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 6,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о передаче",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "transfer:document<forward-abp>",
+     "letterNumber:text",
+     "sender:text"
+    ]
+   },
+   {
+    "key": "answers",
+    "title": "Сведения об ответе",
+    "collection": true,
+    "min": 1,
+    "attachments": true,
+    "fields": [
+     "description:bilingual",
+     "date:date",
+     "officials:text?"
+    ]
+   }
+  ]
+ },
+ "claim-invalid|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-003"
+  ],
+  "nSections": 3,
+  "nCollections": 1,
+  "nFields": 21,
+  "nRequired": 10,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Договор по государственным закупкам",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "contract:text",
+     "number:text",
+     "date:date",
+     "protocolDate:date",
+     "protocolNumber:text",
+     "amount:number",
+     "claimDate:date",
+     "court:text",
+     "executor:person"
+    ]
+   },
+   {
+    "key": "defendants",
+    "title": "Соответчики",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?"
+    ]
+   },
+   {
+    "key": "enforcement",
+    "title": "Информация с АИС ОИП",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "creditor:text?",
+     "bailiff:text?",
+     "workplace:text?",
+     "address:text?",
+     "enforcementStart:date?",
+     "category:bilingual?",
+     "department:text?",
+     "writ:text?",
+     "writDate:date?",
+     "recoveryAmount:number?"
+    ]
+   }
+  ]
+ },
+ "claim-invalid|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-003"
+  ],
+  "nSections": 3,
+  "nCollections": 1,
+  "nFields": 21,
+  "nRequired": 10,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Договор по государственным закупкам",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "contract:text",
+     "number:text",
+     "date:date",
+     "protocolDate:date",
+     "protocolNumber:text",
+     "amount:number",
+     "claimDate:date",
+     "court:text",
+     "executor:person"
+    ]
+   },
+   {
+    "key": "defendants",
+    "title": "Соответчики",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?"
+    ]
+   },
+   {
+    "key": "enforcement",
+    "title": "Информация с АИС ОИП",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "creditor:text?",
+     "bailiff:text?",
+     "workplace:text?",
+     "address:text?",
+     "enforcementStart:date?",
+     "category:bilingual?",
+     "department:text?",
+     "writ:text?",
+     "writDate:date?",
+     "recoveryAmount:number?"
+    ]
+   }
+  ]
+ },
+ "claim-dishonest|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-050"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 4,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?",
+     "claimDate:date",
+     "court:text",
+     "executor:person"
+    ]
+   }
+  ]
+ },
+ "claim-dishonest|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-050"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 4,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?",
+     "claimDate:date",
+     "court:text",
+     "executor:person"
+    ]
+   }
+  ]
+ },
+ "claim-recover|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-010"
+  ],
+  "nSections": 2,
+  "nCollections": 0,
+  "nFields": 18,
+  "nRequired": 7,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "plaintiff:text",
+     "defendant:text",
+     "amount:number",
+     "claimDate:date",
+     "court:text",
+     "executor:person",
+     "demands:long",
+     "grounds:long?"
+    ]
+   },
+   {
+    "key": "enforcement",
+    "title": "Информация с АИС ОИП",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "creditor:text?",
+     "bailiff:text?",
+     "workplace:text?",
+     "address:text?",
+     "enforcementStart:date?",
+     "category:bilingual?",
+     "department:text?",
+     "writ:text?",
+     "writDate:date?",
+     "recoveryAmount:number?"
+    ]
+   }
+  ]
+ },
+ "claim-recover|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-010"
+  ],
+  "nSections": 2,
+  "nCollections": 0,
+  "nFields": 18,
+  "nRequired": 7,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "plaintiff:text",
+     "defendant:text",
+     "amount:number",
+     "claimDate:date",
+     "court:text",
+     "executor:person",
+     "demands:long",
+     "grounds:long?"
+    ]
+   },
+   {
+    "key": "enforcement",
+    "title": "Информация с АИС ОИП",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "creditor:text?",
+     "bailiff:text?",
+     "workplace:text?",
+     "address:text?",
+     "enforcementStart:date?",
+     "category:bilingual?",
+     "department:text?",
+     "writ:text?",
+     "writDate:date?",
+     "recoveryAmount:number?"
+    ]
+   }
+  ]
+ },
+ "claim-liquidation|Соответствие": {
+  "group": false,
+  "sources": [
+   "ПЗ: перечень документов / Figma: stage1-260"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 7,
+  "nRequired": 6,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения об иске",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?",
+     "claimDate:date",
+     "court:text",
+     "executor:person",
+     "demands:long",
+     "grounds:long"
+    ]
+   }
+  ]
+ },
+ "claim-liquidation|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "ПЗ: перечень документов / Figma: stage1-260"
+  ],
+  "nSections": 1,
+  "nCollections": 0,
+  "nFields": 7,
+  "nRequired": 6,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения об иске",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?",
+     "claimDate:date",
+     "court:text",
+     "executor:person",
+     "demands:long",
+     "grounds:long"
+    ]
+   }
+  ]
+ },
+ "claim-decisions|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-011"
+  ],
+  "nSections": 2,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Иски",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "kind:select[4]",
+     "claim:document<claim-*>"
+    ]
+   },
+   {
+    "key": "decision",
+    "title": "Решение",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date",
+     "court:text",
+     "text:long"
+    ]
+   }
+  ]
+ },
+ "claim-decisions|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-011"
+  ],
+  "nSections": 2,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Иски",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "kind:select[4]",
+     "claim:document<claim-*>"
+    ]
+   },
+   {
+    "key": "decision",
+    "title": "Решение",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date",
+     "court:text",
+     "text:long"
+    ]
+   }
+  ]
+ },
+ "response|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-013",
+   "stage3-055",
+   "stage3-056",
+   "stage3-057"
+  ],
+  "nSections": 5,
+  "nCollections": 4,
+  "nFields": 20,
+  "nRequired": 17,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общие сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "extension:boolean?",
+     "extensionReason:long{when extension}",
+     "deadline:date{when extension}"
+    ]
+   },
+   {
+    "key": "discipline",
+    "title": "Лица, в отношении которых принято дисциплинарное взыскание",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Список нарушений",
+    "collection": true,
+    "min": 0,
+    "attachments": true,
+    "fields": [
+     "violationId:text",
+     "violationType:text",
+     "amount:number",
+     "accepted:number",
+     "status:select[4]",
+     "date:date",
+     "letterNumber:text",
+     "letterDate:date",
+     "note:bilingual"
+    ]
+   },
+   {
+    "key": "risks",
+    "title": "Объекты риска",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "riskObject:text",
+     "measure:text",
+     "done:boolean?"
+    ]
+   },
+   {
+    "key": "recommendations",
+    "title": "Список рекомендаций",
+    "collection": true,
+    "min": 0,
+    "attachments": true,
+    "fields": [
+     "text:bilingual",
+     "done:boolean?"
+    ]
+   }
+  ]
+ },
+ "response|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-013",
+   "stage3-055",
+   "stage3-056",
+   "stage3-057"
+  ],
+  "nSections": 5,
+  "nCollections": 4,
+  "nFields": 20,
+  "nRequired": 17,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общие сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "extension:boolean?",
+     "extensionReason:long{when extension}",
+     "deadline:date{when extension}"
+    ]
+   },
+   {
+    "key": "discipline",
+    "title": "Лица, в отношении которых принято дисциплинарное взыскание",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Список нарушений",
+    "collection": true,
+    "min": 0,
+    "attachments": true,
+    "fields": [
+     "violationId:text",
+     "violationType:text",
+     "amount:number",
+     "accepted:number",
+     "status:select[4]",
+     "date:date",
+     "letterNumber:text",
+     "letterDate:date",
+     "note:bilingual"
+    ]
+   },
+   {
+    "key": "risks",
+    "title": "Объекты риска",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "riskObject:text",
+     "measure:text",
+     "done:boolean?"
+    ]
+   },
+   {
+    "key": "recommendations",
+    "title": "Список рекомендаций",
+    "collection": true,
+    "min": 0,
+    "attachments": true,
+    "fields": [
+     "text:bilingual",
+     "done:boolean?"
+    ]
+   }
+  ]
+ },
+ "completion|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage3-012"
+  ],
+  "nSections": 2,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общие сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "shortcomings:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Сведения о принятых мерах",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "measures:bilingual",
+     "administrative:bilingual",
+     "claims:bilingual",
+     "other:bilingual"
+    ]
+   }
+  ]
+ },
+ "completion|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage3-012"
+  ],
+  "nSections": 2,
+  "nCollections": 0,
+  "nFields": 5,
+  "nRequired": 5,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общие сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "shortcomings:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Сведения о принятых мерах",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "measures:bilingual",
+     "administrative:bilingual",
+     "claims:bilingual",
+     "other:bilingual"
+    ]
+   }
+  ]
+ },
+ "counter-instruction|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage1-325",
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.02"
+  ],
+  "nSections": 4,
+  "nCollections": 1,
+  "nFields": 10,
+  "nRequired": 8,
+  "sections": [
+   {
+    "key": "period",
+    "title": "Период охвата контроля",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "duration",
+    "title": "Продолжительность контроля",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date"
+    ]
+   },
+   {
+    "key": "general",
+    "title": "Сведения контроля",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "law:bilingual",
+     "responsible:person",
+     "effective:text?",
+     "direction:text?"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Детали вопроса",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "executor:person"
+    ]
+   }
+  ]
+ },
+ "counter-instruction|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage1-325",
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.02"
+  ],
+  "nSections": 4,
+  "nCollections": 1,
+  "nFields": 10,
+  "nRequired": 8,
+  "sections": [
+   {
+    "key": "period",
+    "title": "Период охвата контроля",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "duration",
+    "title": "Продолжительность контроля",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date"
+    ]
+   },
+   {
+    "key": "general",
+    "title": "Сведения контроля",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "law:bilingual",
+     "responsible:person",
+     "effective:text?",
+     "direction:text?"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Детали вопроса",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "executor:person"
+    ]
+   }
+  ]
+ },
+ "counter-account|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage1-326",
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.03"
+  ],
+  "nSections": 8,
+  "nCollections": 2,
+  "nFields": 47,
+  "nRequired": 37,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "number:text",
+     "registeredAt:date",
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date",
+     "scope:text",
+     "exceptional:boolean?",
+     "objectType:text"
+    ]
+   },
+   {
+    "key": "registration",
+    "title": "Прочее",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "goDate:date",
+     "department:text",
+     "basis:text",
+     "authority:text",
+     "investor:boolean?",
+     "prosecutor:text{when investor}",
+     "registrar:text",
+     "moratorium:text?"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Вопросы проверки",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:bilingual",
+     "subjectCode:text",
+     "subject:bilingual"
+    ]
+   },
+   {
+    "key": "subject",
+    "title": "Данные о субъекте",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?",
+     "ip:boolean?",
+     "opf:text",
+     "ownership:text",
+     "commercial:boolean?",
+     "address:bilingual",
+     "businessType:text",
+     "size:text",
+     "oked:text"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Данные об объектах",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "address:bilingual"
+    ]
+   },
+   {
+    "key": "unplanned",
+    "title": "Для внеплановой проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:text?",
+     "appealNumber:text?",
+     "iin:text?",
+     "applicant:text?"
+    ]
+   },
+   {
+    "key": "author",
+    "title": "Сотрудник, создавший акт о назначении проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual",
+     "authority:text",
+     "phone:text"
+    ]
+   },
+   {
+    "key": "signer",
+    "title": "Сотрудник, подписавший акт о назначении проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual",
+     "authority:text",
+     "phone:text"
+    ]
+   }
+  ]
+ },
+ "counter-account|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage1-326",
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.03"
+  ],
+  "nSections": 8,
+  "nCollections": 2,
+  "nFields": 47,
+  "nRequired": 37,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "number:text",
+     "registeredAt:date",
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date",
+     "scope:text",
+     "exceptional:boolean?",
+     "objectType:text"
+    ]
+   },
+   {
+    "key": "registration",
+    "title": "Прочее",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "goDate:date",
+     "department:text",
+     "basis:text",
+     "authority:text",
+     "investor:boolean?",
+     "prosecutor:text{when investor}",
+     "registrar:text",
+     "moratorium:text?"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Вопросы проверки",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:bilingual",
+     "subjectCode:text",
+     "subject:bilingual"
+    ]
+   },
+   {
+    "key": "subject",
+    "title": "Данные о субъекте",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "recipientBin:object",
+     "recipientName:bilingual?",
+     "ip:boolean?",
+     "opf:text",
+     "ownership:text",
+     "commercial:boolean?",
+     "address:bilingual",
+     "businessType:text",
+     "size:text",
+     "oked:text"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Данные об объектах",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "address:bilingual"
+    ]
+   },
+   {
+    "key": "unplanned",
+    "title": "Для внеплановой проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "basis:text?",
+     "appealNumber:text?",
+     "iin:text?",
+     "applicant:text?"
+    ]
+   },
+   {
+    "key": "author",
+    "title": "Сотрудник, создавший акт о назначении проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual",
+     "authority:text",
+     "phone:text"
+    ]
+   },
+   {
+    "key": "signer",
+    "title": "Сотрудник, подписавший акт о назначении проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual",
+     "authority:text",
+     "phone:text"
+    ]
+   }
+  ]
+ },
+ "counter-additional|Соответствие": {
+  "group": true,
+  "tabs": [
+   "Общая информация",
+   "Программа аудита",
+   "План аудита",
+   "Поручение"
+  ],
+  "sources": [
+   "stage1-329",
+   "stage1-330",
+   "stage1-331",
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.04"
+  ],
+  "nSections": 6,
+  "nCollections": 3,
+  "nFields": 44,
+  "nRequired": 33,
+  "sections": [
+   {
+    "key": "order",
+    "title": "Сведения о приказе",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Общая информация",
+    "fields": [
+     "type:select[5]",
+     "suspendDate:date{when type}",
+     "resumeDate:date{when type}",
+     "extendDate:date{when type}",
+     "reason:long",
+     "responsible:person",
+     "effective:text",
+     "information:bilingual",
+     "law:bilingual",
+     "basis:bilingual",
+     "notes:bilingual?"
+    ]
+   },
+   {
+    "key": "program",
+    "title": "Цель аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Программа аудита",
+    "fields": [
+     "purpose:bilingual"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Сроки (этапы) проведения",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Программа аудита",
+    "fields": [
+     "question:text",
+     "registration:text?",
+     "topic:text?",
+     "subtopic:text?",
+     "norms:bilingual",
+     "indicator:select[4]",
+     "budget:text?",
+     "from:date",
+     "to:date",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Объекты аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "План аудита",
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "start:date",
+     "end:date",
+     "location:bilingual",
+     "route:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "duration",
+    "title": "Срок аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Поручение",
+    "fields": [
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "risks",
+    "title": "Объект риска",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Поручение",
+    "fields": [
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "year:number",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?"
+    ]
+   }
+  ]
+ },
+ "counter-additional|Фин. отчетность": {
+  "group": true,
+  "tabs": [
+   "Общая информация",
+   "Программа аудита",
+   "План аудита",
+   "Поручение"
+  ],
+  "sources": [
+   "stage1-329",
+   "stage1-330",
+   "stage1-331",
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.04"
+  ],
+  "nSections": 6,
+  "nCollections": 3,
+  "nFields": 44,
+  "nRequired": 33,
+  "sections": [
+   {
+    "key": "order",
+    "title": "Сведения о приказе",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Общая информация",
+    "fields": [
+     "type:select[5]",
+     "suspendDate:date{when type}",
+     "resumeDate:date{when type}",
+     "extendDate:date{when type}",
+     "reason:long",
+     "responsible:person",
+     "effective:text",
+     "information:bilingual",
+     "law:bilingual",
+     "basis:bilingual",
+     "notes:bilingual?"
+    ]
+   },
+   {
+    "key": "program",
+    "title": "Цель аудита",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Программа аудита",
+    "fields": [
+     "purpose:bilingual"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Сроки (этапы) проведения",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Программа аудита",
+    "fields": [
+     "question:text",
+     "registration:text?",
+     "topic:text?",
+     "subtopic:text?",
+     "norms:bilingual",
+     "indicator:select[4]",
+     "budget:text?",
+     "from:date",
+     "to:date",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?"
+    ]
+   },
+   {
+    "key": "objects",
+    "title": "Объекты аудита",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "План аудита",
+    "fields": [
+     "bin:object",
+     "name:bilingual",
+     "start:date",
+     "end:date",
+     "location:bilingual",
+     "route:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "duration",
+    "title": "Срок аудиторского мероприятия",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "tab": "Поручение",
+    "fields": [
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "risks",
+    "title": "Объект риска",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "tab": "Поручение",
+    "fields": [
+     "riskType:select[7]",
+     "riskObject:text",
+     "riskNumber:text",
+     "year:number",
+     "amount:number",
+     "budgetAmount:number?",
+     "transfers:number?",
+     "assets:number?"
+    ]
+   }
+  ]
+ },
+ "counter-request|Соответствие": {
+  "group": false,
+  "sources": [
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.05"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 5,
+  "nRequired": 3,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Срок сдачи",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "deadline:datetime-local",
+     "date:date"
+    ]
+   },
+   {
+    "key": "requested",
+    "title": "Перечень необходимых документов",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "name:bilingual",
+     "period:text?",
+     "description:bilingual?"
+    ]
+   }
+  ]
+ },
+ "counter-request|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.05"
+  ],
+  "nSections": 2,
+  "nCollections": 1,
+  "nFields": 5,
+  "nRequired": 3,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Срок сдачи",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "deadline:datetime-local",
+     "date:date"
+    ]
+   },
+   {
+    "key": "requested",
+    "title": "Перечень необходимых документов",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "name:bilingual",
+     "period:text?",
+     "description:bilingual?"
+    ]
+   }
+  ]
+ },
+ "counter-obstruction|Соответствие": {
+  "group": true,
+  "sources": [
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.06"
+  ],
+  "nSections": 4,
+  "nCollections": 2,
+  "nFields": 9,
+  "nRequired": 9,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общая информация",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date",
+     "place:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "obstructions",
+    "title": "Воспрепятствования",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "form:text",
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "representatives",
+    "title": "Представители объекта аудита",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Принятые меры",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "counter-obstruction|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.06"
+  ],
+  "nSections": 4,
+  "nCollections": 2,
+  "nFields": 9,
+  "nRequired": 9,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Общая информация",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "date:date",
+     "place:bilingual",
+     "auditor:person"
+    ]
+   },
+   {
+    "key": "obstructions",
+    "title": "Воспрепятствования",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "form:text",
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "representatives",
+    "title": "Представители объекта аудита",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "iin:text",
+     "name:text",
+     "position:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Принятые меры",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   }
+  ]
+ },
+ "counter-act|Соответствие": {
+  "group": true,
+  "sources": [
+   "stage1-349",
+   "stage1-350",
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.07"
+  ],
+  "nSections": 8,
+  "nCollections": 3,
+  "nFields": 18,
+  "nRequired": 18,
+  "sections": [
+   {
+    "key": "object",
+    "title": "Объект контроля",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "general",
+    "title": "Место и дата проведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "place:bilingual",
+     "date:date"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Предмет / вопрос встречной проверки",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "answer:bilingual"
+    ]
+   },
+   {
+    "key": "period",
+    "title": "Срок проведения проверки и период охвата",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "participants",
+    "title": "Участники",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "participation:text",
+     "name:text",
+     "position:bilingual",
+     "from:date",
+     "to:date"
+    ]
+   },
+   {
+    "key": "results",
+    "title": "Сведения о результатах встречной проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   },
+   {
+    "key": "obstructions",
+    "title": "Воспрепятствования",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "form:text",
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Меры, принятые в ходе встречной проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   }
+  ]
+ },
+ "counter-act|Фин. отчетность": {
+  "group": true,
+  "sources": [
+   "stage1-349",
+   "stage1-350",
+   "Постановка Встречная проверка: UC.EKA.EGA.VP.07"
+  ],
+  "nSections": 8,
+  "nCollections": 3,
+  "nFields": 18,
+  "nRequired": 18,
+  "sections": [
+   {
+    "key": "object",
+    "title": "Объект контроля",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "general",
+    "title": "Место и дата проведения",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "place:bilingual",
+     "date:date"
+    ]
+   },
+   {
+    "key": "questions",
+    "title": "Предмет / вопрос встречной проверки",
+    "collection": true,
+    "min": 1,
+    "attachments": false,
+    "fields": [
+     "question:text",
+     "answer:bilingual"
+    ]
+   },
+   {
+    "key": "period",
+    "title": "Срок проведения проверки и период охвата",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "start:date",
+     "end:date",
+     "periodFrom:date",
+     "periodTo:date"
+    ]
+   },
+   {
+    "key": "participants",
+    "title": "Участники",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "participation:text",
+     "name:text",
+     "position:bilingual",
+     "from:date",
+     "to:date"
+    ]
+   },
+   {
+    "key": "results",
+    "title": "Сведения о результатах встречной проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   },
+   {
+    "key": "obstructions",
+    "title": "Воспрепятствования",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "form:text",
+     "description:bilingual"
+    ]
+   },
+   {
+    "key": "measures",
+    "title": "Меры, принятые в ходе встречной проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "text:bilingual"
+    ]
+   }
+  ]
+ },
+ "counter-notification|Соответствие": {
+  "group": false,
+  "sources": [
+   "stage1-341"
+  ],
+  "nSections": 3,
+  "nCollections": 1,
+  "nFields": 22,
+  "nRequired": 16,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о результатах проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "location:text",
+     "place:text",
+     "recipient:bilingual",
+     "end:date",
+     "result:text",
+     "protected:text",
+     "court:text?",
+     "sent:date?"
+    ]
+   },
+   {
+    "key": "liability",
+    "title": "Сведения по нарушениям и ответственности",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "npa:long",
+     "responsibility:text",
+     "activity:text",
+     "termination:text",
+     "summary:long",
+     "phone:text",
+     "notes:long?"
+    ]
+   },
+   {
+    "key": "npa",
+    "title": "Реквизиты нарушенных норм НПА",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "kind:text",
+     "article:text",
+     "part:text?",
+     "paragraph:text?",
+     "subparagraph:text?",
+     "number:text",
+     "date:date"
+    ]
+   }
+  ]
+ },
+ "counter-notification|Фин. отчетность": {
+  "group": false,
+  "sources": [
+   "stage1-341"
+  ],
+  "nSections": 3,
+  "nCollections": 1,
+  "nFields": 22,
+  "nRequired": 16,
+  "sections": [
+   {
+    "key": "general",
+    "title": "Сведения о результатах проверки",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "location:text",
+     "place:text",
+     "recipient:bilingual",
+     "end:date",
+     "result:text",
+     "protected:text",
+     "court:text?",
+     "sent:date?"
+    ]
+   },
+   {
+    "key": "liability",
+    "title": "Сведения по нарушениям и ответственности",
+    "collection": false,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "npa:long",
+     "responsibility:text",
+     "activity:text",
+     "termination:text",
+     "summary:long",
+     "phone:text",
+     "notes:long?"
+    ]
+   },
+   {
+    "key": "npa",
+    "title": "Реквизиты нарушенных норм НПА",
+    "collection": true,
+    "min": 0,
+    "attachments": false,
+    "fields": [
+     "kind:text",
+     "article:text",
+     "part:text?",
+     "paragraph:text?",
+     "subparagraph:text?",
+     "number:text",
+     "date:date"
+    ]
+   }
+  ]
+ }
+}
